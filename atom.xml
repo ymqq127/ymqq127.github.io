@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Li_Myu</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://ymqq127.github.io/</id>
+  <link href="https://ymqq127.github.io/" rel="alternate"/>
+  <link href="https://ymqq127.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Li_Myu</rights>
+  <subtitle>记录生活，分享技术</subtitle>
+  <title>花与玻璃的旅人</title>
+  <updated>2026-09-18T13:53:37.954Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <id>https://ymqq127.github.io/posts/d95d7e09.html</id>
+    <link href="https://ymqq127.github.io/posts/d95d7e09.html"/>
+    <published>2026-04-08T11:57:44.000Z</published>
+    <title>我的第一篇博客</title>
+    <updated>2026-09-18T13:53:37.954Z</updated>
+  </entry>
+</feed>
