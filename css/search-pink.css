@@ -23,7 +23,6 @@
 }
 .search-dialog .search-close-button:hover {
   color: #FF85A2 !important;
-  transform: rotate(90deg);
 }
 /* 搜索输入框 */
 .local-search-input {
