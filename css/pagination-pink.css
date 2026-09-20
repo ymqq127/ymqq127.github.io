@@ -1,0 +1,139 @@
+/* 分页器粉色圆角胶囊美化 */
+
+/* === 页码分页器（首页/归档/标签/分类） === */
+#pagination .pagination > * {
+  border-radius: 50px !important;
+  min-width: 2.5em !important;
+  padding: 0 6px !important;
+  transition: all .3s ease !important;
+  border: 1.5px solid rgba(255,133,162,.25) !important;
+  background: var(--card-bg) !important;
+  color: #C97080 !important;
+}
+
+/* 当前页 - 粉色渐变胶囊 */
+#pagination .page-number.current {
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.3) !important;
+  font-weight: 600 !important;
+}
+
+/* 页码 hover */
+#pagination .pagination > *:not(.space):hover {
+  background: linear-gradient(135deg, #FFD6E0, #FFB6C1) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 10px rgba(255,133,162,.25) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 上一页/下一页箭头按钮 */
+#pagination .extend {
+  font-size: .85em !important;
+}
+
+/* 省略号占位不显示边框 */
+#pagination .space {
+  border: none !important;
+  background: transparent !important;
+  color: #C97080 !important;
+}
+
+/* === 文章底部 上一篇/下一篇 === */
+#pagination.pagination-post {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+#pagination.pagination-post .pagination-related {
+  transition: all .3s ease !important;
+}
+
+#pagination.pagination-post .pagination-related:hover {
+  box-shadow: 0 4px 16px rgba(255,133,162,.2) !important;
+}
+
+/* 上一篇/下一篇标签文字 */
+#pagination.pagination-post .info-item-1 {
+  color: #FFB6C1 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+
+#pagination.pagination-post .info-item-2 {
+  color: #fff !important;
+}
+
+/* === 搜索结果分页器 === */
+.ais-Pagination-list .ais-Pagination-item .ais-Pagination-link {
+  border-radius: 50px !important;
+  border: 1.5px solid rgba(255,133,162,.25) !important;
+  background: var(--card-bg) !important;
+  color: #C97080 !important;
+  transition: all .3s ease !important;
+  min-width: 2.5em !important;
+  padding: 0 6px !important;
+}
+
+.ais-Pagination-list .ais-Pagination-item--selected .ais-Pagination-link {
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.3) !important;
+  font-weight: 600 !important;
+}
+
+.ais-Pagination-list .ais-Pagination-item:not(.ais-Pagination-item--selected):not(.ais-Pagination-item--disabled) .ais-Pagination-link:hover {
+  background: linear-gradient(135deg, #FFD6E0, #FFB6C1) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 10px rgba(255,133,162,.25) !important;
+  transform: translateY(-2px) !important;
+}
+
+.ais-Pagination-list .ais-Pagination-item--disabled .ais-Pagination-link {
+  opacity: .4 !important;
+  cursor: not-allowed !important;
+}
+
+/* === 深色模式适配 === */
+[data-theme="dark"] #pagination .pagination > *:not(.space):not(.current) {
+  background: #231a1e !important;
+  color: #d4a0a0 !important;
+  border-color: rgba(255,133,162,.2) !important;
+}
+
+[data-theme="dark"] #pagination .page-number.current {
+  background: linear-gradient(135deg, #c97a8a, #a05060) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(160,80,96,.4) !important;
+}
+
+[data-theme="dark"] #pagination .pagination > *:not(.space):hover {
+  background: linear-gradient(135deg, #a05060, #8a4050) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] #pagination .space {
+  background: transparent !important;
+  color: #d4a0a0 !important;
+  border: none !important;
+}
+
+[data-theme="dark"] .ais-Pagination-list .ais-Pagination-item .ais-Pagination-link {
+  background: #231a1e !important;
+  color: #d4a0a0 !important;
+  border-color: rgba(255,133,162,.2) !important;
+}
+
+[data-theme="dark"] .ais-Pagination-list .ais-Pagination-item--selected .ais-Pagination-link {
+  background: linear-gradient(135deg, #c97a8a, #a05060) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .ais-Pagination-list .ais-Pagination-item:not(.ais-Pagination-item--selected):not(.ais-Pagination-item--disabled) .ais-Pagination-link:hover {
+  background: linear-gradient(135deg, #a05060, #8a4050) !important;
+  color: #fff !important;
+}
