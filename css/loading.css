@@ -1,0 +1,64 @@
+/* 页面加载动画 */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF0F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+#loading-screen.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader-hearts {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.loader-hearts .heart {
+  position: absolute;
+  animation: heartPulse 1.4s ease-in-out infinite;
+}
+.loader-hearts .heart:nth-child(1) {
+  left: 0;
+  top: 10px;
+  animation-delay: 0s;
+}
+.loader-hearts .heart:nth-child(2) {
+  left: 18px;
+  top: 0;
+  animation-delay: 0.2s;
+}
+.loader-hearts .heart:nth-child(3) {
+  left: 36px;
+  top: 10px;
+  animation-delay: 0.4s;
+}
+@keyframes heartPulse {
+  0%, 100% { transform: scale(0.6); opacity: 0.3; }
+  50% { transform: scale(1); opacity: 1; }
+}
+.loader-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #FF85A2;
+  letter-spacing: 3px;
+  animation: textBlink 1.4s ease-in-out infinite;
+}
+@keyframes textBlink {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+[data-theme="dark"] #loading-screen {
+  background: #2a1a1f;
+}
+[data-theme="dark"] .loader-text {
+  color: #E8899A;
+}
