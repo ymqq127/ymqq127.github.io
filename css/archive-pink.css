@@ -1,0 +1,241 @@
+/* 标签云 + 归档页面 粉色时间线风格 */
+
+/* ===========================
+   标签云页面
+   =========================== */
+
+/* 标签胶囊 - 粉色渐变背景 */
+.tag-cloud-list a {
+  border-radius: 50px !important;
+  padding: 4px 16px !important;
+  margin: 5px 4px !important;
+  border: 1.5px solid rgba(255,133,162,.3) !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.1)) !important;
+  color: #C97080 !important;
+  font-weight: 500 !important;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) !important;
+  box-shadow: 0 2px 6px rgba(255,133,162,.08) !important;
+}
+
+/* 标签 hover - 粉色渐变填充 + 上浮 */
+.tag-cloud-list a:hover {
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(255,133,162,.3) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+}
+
+/* 标签 active */
+.tag-cloud-list a:active {
+  transform: translateY(-1px) scale(.98) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.2) !important;
+}
+
+/* 侧边栏标签云 */
+.card-tag-cloud a {
+  border-radius: 50px !important;
+  padding: 2px 10px !important;
+  margin: 2px 3px !important;
+  transition: all .3s ease !important;
+}
+
+.card-tag-cloud a:hover {
+  color: #FF85A2 !important;
+  background: rgba(255,182,193,.15) !important;
+}
+
+/* ===========================
+   归档页面 - 粉色时间线
+   =========================== */
+
+/* 时间线主线 - 粉色 */
+.article-sort {
+  border-left: 2px solid rgba(255,133,162,.4) !important;
+  margin-left: 10px !important;
+  padding-left: 20px !important;
+}
+
+/* 年份标题 */
+.article-sort-title {
+  margin-left: 10px !important;
+  padding-left: 20px !important;
+  color: #C97080 !important;
+}
+
+/* 年份标题前圆点 - 粉色 */
+.article-sort-title::before {
+  border: 5px solid #FF85A2 !important;
+  background: var(--card-bg) !important;
+  box-shadow: 0 0 0 3px rgba(255,133,162,.2) !important;
+}
+
+/* 年份标题下短线 */
+.article-sort-title::after {
+  background: rgba(255,133,162,.4) !important;
+}
+
+/* 年份标题 hover */
+.article-sort-title:hover::before {
+  border-color: #FFB6C1 !important;
+  box-shadow: 0 0 0 5px rgba(255,182,193,.25) !important;
+}
+
+/* 文章条目 */
+.article-sort-item {
+  margin: 0 0 20px 10px !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  background: var(--card-bg) !important;
+  border: 1px solid rgba(255,133,162,.1) !important;
+  transition: all .3s ease !important;
+}
+
+/* 文章条目 hover - 粉色边框 + 阴影 */
+.article-sort-item:hover {
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 4px 16px rgba(255,133,162,.12) !important;
+  transform: translateX(4px) !important;
+}
+
+/* 文章条目前圆点 - 粉色 */
+.article-sort-item::before {
+  border: 3px solid #FFB6C1 !important;
+  background: var(--card-bg) !important;
+  transition: all .3s ease !important;
+}
+
+/* 文章条目 hover 圆点 */
+.article-sort-item:hover::before {
+  border-color: #FF85A2 !important;
+  box-shadow: 0 0 0 3px rgba(255,133,162,.25) !important;
+}
+
+/* 年份条目特殊样式 */
+.article-sort-item.year {
+  font-size: 1.43em !important;
+  margin-bottom: 10px !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 0 0 16px !important;
+  color: #C97080 !important;
+  font-weight: 600 !important;
+}
+
+.article-sort-item.year::before {
+  border-color: #FF85A2 !important;
+  border-width: 5px !important;
+}
+
+.article-sort-item.year:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.article-sort-item.year:hover::before {
+  border-color: #FF85A2 !important;
+}
+
+/* 文章时间 - 粉色 */
+.article-sort-item-time {
+  color: #D4A0A0 !important;
+  font-size: .85em !important;
+}
+
+.article-sort-item-time i {
+  color: #FFB6C1 !important;
+}
+
+/* 文章标题 hover - 粉色 */
+.article-sort-item-title:hover {
+  color: #FF85A2 !important;
+}
+
+/* 文章封面圆角 */
+.article-sort-item-img {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 2px solid rgba(255,133,162,.15) !important;
+}
+
+/* ===========================
+   深色模式适配
+   =========================== */
+
+[data-theme="dark"] .tag-cloud-list a {
+  background: rgba(160,80,96,.15) !important;
+  color: #d4a0a0 !important;
+  border-color: rgba(255,133,162,.2) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .tag-cloud-list a:hover {
+  background: linear-gradient(135deg, #a05060, #8a4050) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(160,80,96,.3) !important;
+}
+
+[data-theme="dark"] .article-sort {
+  border-left-color: rgba(160,80,96,.4) !important;
+}
+
+[data-theme="dark"] .article-sort-title {
+  color: #d4a0a0 !important;
+}
+
+[data-theme="dark"] .article-sort-title::before {
+  border-color: #a05060 !important;
+  box-shadow: 0 0 0 3px rgba(160,80,96,.2) !important;
+}
+
+[data-theme="dark"] .article-sort-title::after {
+  background: rgba(160,80,96,.4) !important;
+}
+
+[data-theme="dark"] .article-sort-item {
+  border-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .article-sort-item:hover {
+  border-color: rgba(160,80,96,.3) !important;
+  box-shadow: 0 4px 16px rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .article-sort-item::before {
+  border-color: #a05060 !important;
+}
+
+[data-theme="dark"] .article-sort-item:hover::before {
+  border-color: #c97a8a !important;
+  box-shadow: 0 0 0 3px rgba(160,80,96,.25) !important;
+}
+
+[data-theme="dark"] .article-sort-item.year {
+  color: #d4a0a0 !important;
+}
+
+[data-theme="dark"] .article-sort-item.year::before {
+  border-color: #a05060 !important;
+}
+
+[data-theme="dark"] .article-sort-item-time {
+  color: #a08080 !important;
+}
+
+[data-theme="dark"] .article-sort-item-time i {
+  color: #a05060 !important;
+}
+
+[data-theme="dark"] .article-sort-item-title:hover {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .article-sort-item-img {
+  border-color: rgba(160,80,96,.2) !important;
+}
+
+[data-theme="dark"] .card-tag-cloud a:hover {
+  color: #c97a8a !important;
+  background: rgba(160,80,96,.15) !important;
+}
