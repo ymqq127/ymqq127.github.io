@@ -1,0 +1,47 @@
+/* 网站运行时间 - 粉色风格 */
+.site-runtime-wrap {
+  margin-top: 8px;
+  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.08));
+  border: 1px solid rgba(255,133,162,.2);
+  color: #C97080;
+  font-size: .85em;
+}
+
+.site-runtime-wrap i.fa-clock {
+  color: #FFB6C1;
+  font-size: .9em;
+}
+
+.runtime-label {
+  color: #C97080;
+  font-weight: 500;
+}
+
+#site-runtime {
+  color: #FF85A2;
+  font-weight: 600;
+}
+
+/* 深色模式 */
+[data-theme="dark"] .site-runtime-wrap {
+  background: rgba(160,80,96,.12);
+  border-color: rgba(160,80,96,.25);
+  color: #d4a0a0;
+}
+
+[data-theme="dark"] .site-runtime-wrap i.fa-clock {
+  color: #a05060;
+}
+
+[data-theme="dark"] .runtime-label {
+  color: #d4a0a0;
+}
+
+[data-theme="dark"] #site-runtime {
+  color: #c97a8a;
+}
