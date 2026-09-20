@@ -8,6 +8,18 @@
   background: rgba(40, 20, 30, 0.55);
   z-index: 1;
 }
+/* 封面底部渐变过渡，避免与内容区突兀 */
+#page-header.full_page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, #fff0f3, rgba(255,240,243,.6) 40%, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
 #page-header.full_page #site-info,
 #page-header.full_page #scroll-down,
 #page-header.full_page #nav {
@@ -25,4 +37,8 @@
 }
 #page-header.full_page #scroll-down {
   text-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+/* 深色模式封面底部渐变过渡 */
+[data-theme="dark"] #page-header.full_page::after {
+  background: linear-gradient(to top, #1a1215, rgba(26,18,21,.6) 40%, transparent);
 }
