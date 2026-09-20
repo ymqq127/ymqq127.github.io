@@ -14,3 +14,15 @@
   position: relative;
   z-index: 2;
 }
+#page-header.full_page #site-title {
+  text-shadow: 0 2px 8px rgba(0,0,0,.5), 0 0 20px rgba(0,0,0,.2);
+}
+#page-header.full_page #site-subtitle {
+  text-shadow: 0 1px 6px rgba(0,0,0,.4);
+}
+#page-header.full_page #site_social_icons a {
+  text-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+#page-header.full_page #scroll-down {
+  text-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
