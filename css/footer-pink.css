@@ -1,0 +1,87 @@
+/* 粉色页脚美化 */
+/* 页脚整体 */
+#footer {
+  background: linear-gradient(180deg, var(--global-bg) 0%, #fff0f3 30%, #ffe4ec 100%) !important;
+  border-top: none !important;
+  position: relative;
+}
+/* 粉色渐变分割线 */
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FFB6C1, #FF85A2, #FFB6C1, transparent);
+  border-radius: 1px;
+}
+/* 页脚文字颜色 */
+#footer, #footer a {
+  color: #C97080 !important;
+  transition: color .3s ease;
+}
+#footer a:hover {
+  color: #FF85A2 !important;
+}
+/* 分隔符粉色 */
+.footer-separator {
+  color: #FFD6E0 !important;
+}
+/* 版权文字 */
+.footer-copyright {
+  color: #C97080 !important;
+}
+/* 框架/主题文字 */
+.footer-other span {
+  color: #C97080 !important;
+}
+.footer-other a {
+  color: #FF85A2 !important;
+}
+.footer-other a:hover {
+  color: #FF6B8A !important;
+  text-decoration: underline;
+}
+/* 自定义文字 */
+.footer_custom_text {
+  color: #C97080 !important;
+}
+/* footer-flex 区域 */
+.footer-flex-title {
+  color: #FF85A2 !important;
+  font-weight: 700;
+}
+.footer-flex-content, .footer-flex-content a {
+  color: #C97080 !important;
+}
+.footer-flex-content a:hover {
+  color: #FF85A2 !important;
+}
+/* 深色模式适配 */
+[data-theme="dark"] #footer {
+  background: linear-gradient(180deg, var(--global-bg) 0%, #1e1519 30%, #231a1e 100%) !important;
+}
+[data-theme="dark"] #footer::before {
+  background: linear-gradient(90deg, transparent, #3a2a30, #E8899A, #3a2a30, transparent);
+}
+[data-theme="dark"] #footer,
+[data-theme="dark"] #footer a,
+[data-theme="dark"] .footer-copyright,
+[data-theme="dark"] .footer-other span,
+[data-theme="dark"] .footer_custom_text,
+[data-theme="dark"] .footer-flex-content,
+[data-theme="dark"] .footer-flex-content a {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .footer-separator {
+  color: #3a2a30 !important;
+}
+[data-theme="dark"] .footer-flex-title {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .footer-other a,
+[data-theme="dark"] .footer-flex-content a:hover {
+  color: #D06070 !important;
+}
