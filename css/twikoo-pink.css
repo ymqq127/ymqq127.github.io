@@ -1,0 +1,78 @@
+/* Twikoo 粉色主题 */
+#twikoo .tk-submit {
+  border-color: #FFB6C1;
+}
+#twikoo .tk-input {
+  border-color: #FFB6C1 !important;
+}
+#twikoo .tk-input:focus {
+  border-color: #FF85A2 !important;
+  box-shadow: 0 0 0 2px rgba(255, 133, 162, .2) !important;
+}
+#twikoo .tk-btn {
+  color: #fff !important;
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  transition: all .3s ease !important;
+}
+#twikoo .tk-btn:hover {
+  background: linear-gradient(135deg, #FF85A2, #FF6B8A) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 133, 162, .4);
+}
+#twikoo .tk-preview-btn {
+  color: #FF85A2 !important;
+  background: transparent !important;
+  border: 1px solid #FFB6C1 !important;
+  border-radius: 6px !important;
+}
+#twikoo .tk-preview-btn:hover {
+  background: rgba(255, 182, 193, .1) !important;
+}
+#twikoo .tk-actions-btn {
+  color: #FF85A2 !important;
+}
+#twikoo .tk-actions-btn:hover {
+  color: #FF6B8A !important;
+}
+#twikoo .tk-nick a {
+  color: #FF85A2 !important;
+}
+#twikoo .tk-nick a:hover {
+  color: #FF6B8A !important;
+}
+#twikoo .tk-replies .tk-content {
+  border-left-color: #FFB6C1 !important;
+}
+#twikoo .tk-tag {
+  background: #FFB6C1 !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
+#twikoo .tk-icon.__comment-emoji {
+  color: #FF85A2;
+}
+/* 深色模式适配 */
+[data-theme="dark"] #twikoo .tk-submit {
+  border-color: #C97080;
+}
+[data-theme="dark"] #twikoo .tk-input {
+  border-color: #C97080 !important;
+}
+[data-theme="dark"] #twikoo .tk-btn {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+}
+[data-theme="dark"] #twikoo .tk-btn:hover {
+  background: linear-gradient(135deg, #E8899A, #D06070) !important;
+}
+[data-theme="dark"] #twikoo .tk-preview-btn {
+  color: #E8899A !important;
+  border-color: #C97080 !important;
+}
+[data-theme="dark"] #twikoo .tk-actions-btn {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-nick a {
+  color: #E8899A !important;
+}
