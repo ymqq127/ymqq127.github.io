@@ -1,0 +1,76 @@
+/* 粉色文章目录(TOC)美化 */
+/* TOC卡片 */
+#card-toc {
+  border-radius: 12px !important;
+  border: none !important;
+  box-shadow: 0 2px 12px rgba(255,133,162,.08) !important;
+}
+/* TOC标题 */
+#card-toc .item-headline {
+  border-bottom: 2px solid #FFD6E0 !important;
+  padding-bottom: 8px !important;
+}
+#card-toc .item-headline i {
+  color: #FF85A2 !important;
+}
+#card-toc .item-headline span {
+  color: #FF85A2 !important;
+  font-weight: 700;
+}
+/* TOC链接 */
+.toc .toc-item .toc-link {
+  color: #C97080 !important;
+  transition: all .3s ease;
+  border-left: 2px solid transparent !important;
+  padding-left: 10px !important;
+}
+.toc .toc-item .toc-link:hover {
+  color: #FF85A2 !important;
+  background: rgba(255,182,193,.1) !important;
+  border-left-color: #FFB6C1 !important;
+}
+/* 当前活跃项粉色高亮 */
+.toc .toc-item.active .toc-link {
+  color: #FF85A2 !important;
+  font-weight: 600;
+  background: rgba(255,182,193,.12) !important;
+  border-left: 3px solid #FF85A2 !important;
+}
+/* TOC展开按钮 */
+.toc-expand {
+  color: #C97080 !important;
+  transition: all .3s ease;
+}
+.toc-expand:hover {
+  color: #FF85A2 !important;
+}
+/* 深色模式适配 */
+[data-theme="dark"] #card-toc {
+  box-shadow: 0 2px 12px rgba(0,0,0,.2) !important;
+}
+[data-theme="dark"] #card-toc .item-headline {
+  border-bottom-color: #3a2a30 !important;
+}
+[data-theme="dark"] #card-toc .item-headline i,
+[data-theme="dark"] #card-toc .item-headline span {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .toc .toc-item .toc-link {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .toc .toc-item .toc-link:hover {
+  color: #D06070 !important;
+  background: rgba(232,137,154,.08) !important;
+  border-left-color: #3a2a30 !important;
+}
+[data-theme="dark"] .toc .toc-item.active .toc-link {
+  color: #E8899A !important;
+  background: rgba(232,137,154,.1) !important;
+  border-left-color: #E8899A !important;
+}
+[data-theme="dark"] .toc-expand {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .toc-expand:hover {
+  color: #D06070 !important;
+}
