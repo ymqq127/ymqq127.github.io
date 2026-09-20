@@ -4,16 +4,28 @@
   transition: background .3s ease, box-shadow .3s ease !important;
 }
 #nav:not(.fixed) {
-  background: rgba(255,228,236,.85) !important;
+  background: rgba(180,100,120,.75) !important;
   backdrop-filter: blur(8px);
 }
 #nav.fixed {
-  background: rgba(255,228,236,.95) !important;
+  background: rgba(255,220,230,.95) !important;
   box-shadow: 0 2px 12px rgba(255,133,162,.1) !important;
 }
 /* 站点标题粉色 */
 #site-title, #site-title a {
   color: #FF85A2 !important;
+}
+/* 封面上导航栏文字变亮 */
+#page-header.full_page #nav #site-title,
+#page-header.full_page #nav #site-title a,
+#page-header.full_page #nav .menus_item a,
+#page-header.full_page #nav #search-button {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+#page-header.full_page #nav .menus_item a:hover {
+  color: #FFD6E0 !important;
+  background: rgba(255,255,255,.1) !important;
 }
 /* 菜单项 */
 .menus_item a {
