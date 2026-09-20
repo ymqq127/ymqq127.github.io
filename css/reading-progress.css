@@ -1,0 +1,16 @@
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2);
+  z-index: 99999;
+  opacity: 0;
+  transition: width .1s linear, opacity .3s ease;
+  box-shadow: 0 0 6px rgba(255, 133, 162, .4);
+}
+[data-theme="dark"] #reading-progress {
+  background: linear-gradient(90deg, #C97080, #E8899A);
+  box-shadow: 0 0 6px rgba(232, 137, 154, .3);
+}
