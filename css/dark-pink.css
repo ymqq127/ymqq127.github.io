@@ -1,0 +1,36 @@
+/* 深色模式 - 深粉灰配色 */
+[data-theme="dark"] {
+  --global-bg: #1a1215;
+  --card-bg: #231a1e;
+  --sidebar-bg: #1e1519;
+  --sidebar-menu-bg: #251c20;
+  --search-bg: #1e1519;
+  --tab-border-color: #3a2a30;
+  --tab-button-bg: #2a1f23;
+  --tab-button-hover-bg: #302428;
+  --tab-button-active-bg: #1e1519;
+  --btn-bg: #2a1f23;
+  --btn-hover-color: #3a2a30;
+  --text-bg-hover: #302428;
+  --blockquote-bg: #2a1f23;
+  --reward-pop: #2a1f23;
+  --scrollbar-color: #3a2a30;
+  --timeline-bg: #251c20;
+  --zoom-bg: #1e1519;
+}
+[data-theme="dark"] #page-header.nav-fixed > #nav,
+[data-theme="dark"] #page-header.not-top-img > #nav {
+  background: rgba(26, 18, 21, .8);
+}
+[data-theme="dark"] .container code {
+  background: #2a1f23;
+}
+[data-theme="dark"] .container pre > code {
+  background: #1e1519;
+}
+[data-theme="dark"] #web_bg:before {
+  background-color: rgba(26, 18, 21, .7);
+}
+[data-theme="dark"] #card-toc {
+  background: #251c20;
+}
