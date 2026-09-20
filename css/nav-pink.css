@@ -5,7 +5,7 @@
 }
 /* 封面上的导航栏 - 深粉半透明 + 白色文字 */
 #page-header.full_page #nav {
-  background: rgba(180,100,120,.75) !important;
+  background: rgba(140,110,120,.7) !important;
   backdrop-filter: blur(8px);
 }
 #page-header.full_page #nav #site-title,
@@ -101,7 +101,7 @@
 }
 /* 深色模式适配 */
 [data-theme="dark"] #page-header.full_page #nav {
-  background: rgba(26,18,21,.85) !important;
+  background: rgba(140,110,120,.7) !important;
 }
 [data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(26,18,21,.95) !important;
