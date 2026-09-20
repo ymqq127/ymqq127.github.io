@@ -1,7 +1,7 @@
 /* 粉色搜索框美化 */
 /* 搜索遮罩 */
 #search-mask {
-  background: rgba(255,200,210,.6) !important;
+  background: rgba(255,255,255,.6) !important;
   backdrop-filter: blur(4px);
 }
 /* 搜索弹窗 */
