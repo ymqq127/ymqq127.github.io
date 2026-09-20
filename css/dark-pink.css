@@ -1,6 +1,7 @@
 /* 浅色模式 - 浅粉色背景 */
 :root {
   --global-bg: #fff0f3;
+  --card-bg: #ffe4ec;
 }
 /* 深色模式 - 深粉灰配色 */
 [data-theme="dark"] {
