@@ -1,0 +1,117 @@
+/* 粉色搜索框美化 */
+/* 搜索遮罩 */
+#search-mask {
+  background: rgba(255,200,210,.6) !important;
+  backdrop-filter: blur(4px);
+}
+/* 搜索弹窗 */
+.search-dialog {
+  background: rgba(255,240,243,.98) !important;
+  border: 1px solid #FFD6E0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(255,133,162,.15) !important;
+}
+/* 搜索标题 */
+.search-dialog .search-dialog-title {
+  color: #FF85A2 !important;
+  font-weight: 700;
+}
+/* 关闭按钮 */
+.search-dialog .search-close-button {
+  color: #C97080 !important;
+  transition: all .3s ease;
+}
+.search-dialog .search-close-button:hover {
+  color: #FF85A2 !important;
+  transform: rotate(90deg);
+}
+/* 搜索输入框 */
+.local-search-input {
+  background: #fff !important;
+  border: 2px solid #FFD6E0 !important;
+  border-radius: 20px !important;
+  color: #C97080 !important;
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.local-search-input::placeholder {
+  color: #E8B0C0 !important;
+}
+.local-search-input:focus {
+  border-color: #FF85A2 !important;
+  box-shadow: 0 0 0 3px rgba(255,133,162,.15) !important;
+  outline: none !important;
+}
+/* 搜索结果 */
+#local-search-results .search-result-title {
+  color: #FF85A2 !important;
+}
+#local-search-results .search-result-title:hover {
+  color: #FF6B8A !important;
+}
+#local-search-results .search-result-content {
+  color: #C97080 !important;
+}
+/* 搜索结果分隔线 */
+#local-search-results .local-search__hit-item {
+  border-bottom: 1px solid #FFE4EC !important;
+  transition: all .3s ease;
+}
+#local-search-results .local-search__hit-item:hover {
+  background: rgba(255,182,193,.08) !important;
+}
+/* 搜索关键词高亮 */
+.search-keyword {
+  color: #FF6B8A !important;
+  background: rgba(255,182,193,.2) !important;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+/* 深色模式适配 */
+[data-theme="dark"] #search-mask {
+  background: rgba(0,0,0,.6) !important;
+}
+[data-theme="dark"] .search-dialog {
+  background: rgba(35,26,30,.98) !important;
+  border-color: #3a2a30 !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,.3) !important;
+}
+[data-theme="dark"] .search-dialog .search-dialog-title {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .search-dialog .search-close-button {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .search-dialog .search-close-button:hover {
+  color: #D06070 !important;
+}
+[data-theme="dark"] .local-search-input {
+  background: #1e1519 !important;
+  border-color: #3a2a30 !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] .local-search-input::placeholder {
+  color: #6a4a55 !important;
+}
+[data-theme="dark"] .local-search-input:focus {
+  border-color: #E8899A !important;
+  box-shadow: 0 0 0 3px rgba(232,137,154,.15) !important;
+}
+[data-theme="dark"] #local-search-results .search-result-title {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #local-search-results .search-result-title:hover {
+  color: #D06070 !important;
+}
+[data-theme="dark"] #local-search-results .search-result-content {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #local-search-results .local-search__hit-item {
+  border-bottom-color: #2a1f23 !important;
+}
+[data-theme="dark"] #local-search-results .local-search__hit-item:hover {
+  background: rgba(232,137,154,.05) !important;
+}
+[data-theme="dark"] .search-keyword {
+  color: #D06070 !important;
+  background: rgba(232,137,154,.1) !important;
+}
