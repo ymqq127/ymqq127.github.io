@@ -1,64 +1,112 @@
 /* Twikoo 粉色主题 */
+/* 输入区域 */
 #twikoo .tk-submit {
   border-color: #FFB6C1;
 }
 #twikoo .tk-input {
   border-color: #FFB6C1 !important;
+  border-radius: 8px !important;
 }
 #twikoo .tk-input:focus {
   border-color: #FF85A2 !important;
   box-shadow: 0 0 0 2px rgba(255, 133, 162, .2) !important;
 }
+/* 发送按钮 */
 #twikoo .tk-btn {
   color: #fff !important;
   background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
   border: none !important;
-  border-radius: 6px !important;
+  border-radius: 20px !important;
+  padding: 4px 20px !important;
   transition: all .3s ease !important;
 }
 #twikoo .tk-btn:hover {
   background: linear-gradient(135deg, #FF85A2, #FF6B8A) !important;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(255, 133, 162, .4);
+  box-shadow: 0 3px 10px rgba(255, 133, 162, .4);
 }
+/* 预览按钮 */
 #twikoo .tk-preview-btn {
   color: #FF85A2 !important;
   background: transparent !important;
   border: 1px solid #FFB6C1 !important;
-  border-radius: 6px !important;
+  border-radius: 20px !important;
 }
 #twikoo .tk-preview-btn:hover {
   background: rgba(255, 182, 193, .1) !important;
 }
-#twikoo .tk-actions-btn {
-  color: #FF85A2 !important;
-}
-#twikoo .tk-actions-btn:hover {
-  color: #FF6B8A !important;
-}
+/* 昵称 */
 #twikoo .tk-nick a {
   color: #FF85A2 !important;
 }
 #twikoo .tk-nick a:hover {
   color: #FF6B8A !important;
 }
+/* 回复左边线 */
 #twikoo .tk-replies .tk-content {
   border-left-color: #FFB6C1 !important;
 }
+/* 标签 */
 #twikoo .tk-tag {
   background: #FFB6C1 !important;
   color: #fff !important;
   border-radius: 4px !important;
 }
+/* 操作按钮(点赞/回复) */
+#twikoo .tk-actions-btn,
+#twikoo .tk-action-link {
+  color: #C97080 !important;
+  transition: all .3s ease !important;
+}
+#twikoo .tk-actions-btn:hover,
+#twikoo .tk-action-link:hover {
+  color: #FF85A2 !important;
+}
+/* 点赞按钮 */
+#twikoo .tk-action-icon {
+  color: #FF85A2 !important;
+}
+/* 表情按钮 */
 #twikoo .tk-icon.__comment-emoji {
   color: #FF85A2;
 }
+/* 评论计数 */
+#twikoo .tk-comments-count {
+  color: #C97080 !important;
+}
+#twikoo .tk-comments-count span {
+  color: #FF85A2 !important;
+  font-weight: 700;
+}
+/* 时间 */
+#twikoo .tk-time {
+  color: #C97080 !important;
+}
+/* 加载更多按钮 */
+#twikoo .tk-expand {
+  color: #FF85A2 !important;
+  border: 1px solid #FFB6C1 !important;
+  border-radius: 20px !important;
+  transition: all .3s ease !important;
+}
+#twikoo .tk-expand:hover {
+  background: rgba(255, 182, 193, .1) !important;
+  color: #FF6B8A !important;
+  border-color: #FF85A2 !important;
+}
+/* 评论内容链接 */
+#twikoo .tk-content a {
+  color: #FF85A2 !important;
+}
+#twikoo .tk-content a:hover {
+  color: #FF6B8A !important;
+}
 /* 深色模式适配 */
 [data-theme="dark"] #twikoo .tk-submit {
-  border-color: #C97080;
+  border-color: #3a2a30;
 }
 [data-theme="dark"] #twikoo .tk-input {
-  border-color: #C97080 !important;
+  border-color: #3a2a30 !important;
 }
 [data-theme="dark"] #twikoo .tk-btn {
   background: linear-gradient(135deg, #C97080, #E8899A) !important;
@@ -68,11 +116,47 @@
 }
 [data-theme="dark"] #twikoo .tk-preview-btn {
   color: #E8899A !important;
-  border-color: #C97080 !important;
-}
-[data-theme="dark"] #twikoo .tk-actions-btn {
-  color: #E8899A !important;
+  border-color: #3a2a30 !important;
 }
 [data-theme="dark"] #twikoo .tk-nick a {
   color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-nick a:hover {
+  color: #D06070 !important;
+}
+[data-theme="dark"] #twikoo .tk-replies .tk-content {
+  border-left-color: #3a2a30 !important;
+}
+[data-theme="dark"] #twikoo .tk-actions-btn,
+[data-theme="dark"] #twikoo .tk-action-link {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-actions-btn:hover,
+[data-theme="dark"] #twikoo .tk-action-link:hover {
+  color: #D06070 !important;
+}
+[data-theme="dark"] #twikoo .tk-action-icon {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-comments-count,
+[data-theme="dark"] #twikoo .tk-time {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-comments-count span {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-expand {
+  color: #E8899A !important;
+  border-color: #3a2a30 !important;
+}
+[data-theme="dark"] #twikoo .tk-expand:hover {
+  color: #D06070 !important;
+  border-color: #E8899A !important;
+  background: rgba(232,137,154,.08) !important;
+}
+[data-theme="dark"] #twikoo .tk-content a {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #twikoo .tk-content a:hover {
+  color: #D06070 !important;
 }
