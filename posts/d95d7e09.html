@@ -168,7 +168,7 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://lilimyumyyu.vercel.app',
+      envId: 'https://sweet-kangaroo-71b5b8.netlify.app/.netlify/functions/twikoo',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -182,7 +182,7 @@
   const init = (el = document, path = location.pathname) => {
     twikoo.init({
       el: el.querySelector('#twikoo-wrap'),
-      envId: 'https://lilimyumyyu.vercel.app',
+      envId: 'https://sweet-kangaroo-71b5b8.netlify.app/.netlify/functions/twikoo',
       region: '',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
