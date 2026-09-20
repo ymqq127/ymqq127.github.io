@@ -1,4 +1,8 @@
 /* 粉色导航栏美化 */
+/* 导航栏过渡 */
+#nav {
+  transition: background .3s ease, box-shadow .3s ease, transform .2s ease-in-out, opacity .2s ease-in-out !important;
+}
 /* 封面上的导航栏 - 深粉半透明 + 白色文字 */
 #page-header.full_page #nav {
   background: rgba(180,100,120,.75) !important;
@@ -19,10 +23,29 @@
 #page-header.full_page #nav .menus_item a::after {
   background: linear-gradient(90deg, #FFD6E0, #fff);
 }
-/* 非封面页面导航栏 - 浅粉背景 + 粉色文字 */
-#page-header.not-top-img #nav {
+/* 滚动后固定导航栏 - 浅粉背景 + 粉色文字 */
+#page-header.nav-fixed #nav {
   background: rgba(255,220,230,.95) !important;
   box-shadow: 0 2px 12px rgba(255,133,162,.1) !important;
+}
+#page-header.nav-fixed #nav #site-title,
+#page-header.nav-fixed #nav #site-title a,
+#page-header.nav-fixed #nav .menus_item a,
+#page-header.nav-fixed #nav #search-button,
+#page-header.nav-fixed #nav #toggle-menu {
+  color: #C97080 !important;
+  text-shadow: none !important;
+}
+#page-header.nav-fixed #nav .menus_item a:hover {
+  color: #FF85A2 !important;
+  background: rgba(255,182,193,.15) !important;
+}
+#page-header.nav-fixed #nav .menus_item a::after {
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2);
+}
+/* 非封面页面导航栏 */
+#page-header.not-top-img #nav {
+  background: rgba(255,220,230,.95) !important;
 }
 #page-header.not-top-img #nav #site-title,
 #page-header.not-top-img #nav #site-title a,
@@ -30,20 +53,11 @@
 #page-header.not-top-img #nav #search-button,
 #page-header.not-top-img #nav #toggle-menu {
   color: #C97080 !important;
-  text-shadow: none !important;
-}
-#page-header.not-top-img #nav .menus_item a:hover {
-  color: #FF85A2 !important;
-  background: rgba(255,182,193,.15) !important;
-}
-#page-header.not-top-img #nav .menus_item a::after {
-  background: linear-gradient(90deg, #FFB6C1, #FF85A2);
 }
 /* 菜单粉色下划线 */
 .menus_item a {
   position: relative;
   border-radius: 6px;
-  transition: all .3s ease !important;
 }
 .menus_item a::after {
   content: '';
@@ -89,10 +103,18 @@
 [data-theme="dark"] #page-header.full_page #nav {
   background: rgba(26,18,21,.85) !important;
 }
-[data-theme="dark"] #page-header.not-top-img #nav {
+[data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(26,18,21,.95) !important;
   box-shadow: 0 2px 12px rgba(0,0,0,.3) !important;
 }
+[data-theme="dark"] #page-header.not-top-img #nav {
+  background: rgba(26,18,21,.95) !important;
+}
+[data-theme="dark"] #page-header.nav-fixed #nav #site-title,
+[data-theme="dark"] #page-header.nav-fixed #nav #site-title a,
+[data-theme="dark"] #page-header.nav-fixed #nav .menus_item a,
+[data-theme="dark"] #page-header.nav-fixed #nav #search-button,
+[data-theme="dark"] #page-header.nav-fixed #nav #toggle-menu,
 [data-theme="dark"] #page-header.not-top-img #nav #site-title,
 [data-theme="dark"] #page-header.not-top-img #nav #site-title a,
 [data-theme="dark"] #page-header.not-top-img #nav .menus_item a,
@@ -100,10 +122,12 @@
 [data-theme="dark"] #page-header.not-top-img #nav #toggle-menu {
   color: #E8899A !important;
 }
+[data-theme="dark"] #page-header.nav-fixed #nav .menus_item a:hover,
 [data-theme="dark"] #page-header.not-top-img #nav .menus_item a:hover {
   color: #D06070 !important;
   background: rgba(232,137,154,.08) !important;
 }
+[data-theme="dark"] #page-header.nav-fixed #nav .menus_item a::after,
 [data-theme="dark"] #page-header.not-top-img #nav .menus_item a::after {
   background: linear-gradient(90deg, #3a2a30, #E8899A);
 }
