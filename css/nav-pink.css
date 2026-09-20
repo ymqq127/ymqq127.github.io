@@ -1,0 +1,136 @@
+/* 粉色导航栏美化 */
+/* 导航栏整体 */
+#nav {
+  transition: background .3s ease, box-shadow .3s ease !important;
+}
+#nav:not(.fixed) {
+  background: rgba(255,228,236,.85) !important;
+  backdrop-filter: blur(8px);
+}
+#nav.fixed {
+  background: rgba(255,228,236,.95) !important;
+  box-shadow: 0 2px 12px rgba(255,133,162,.1) !important;
+}
+/* 站点标题粉色 */
+#site-title, #site-title a {
+  color: #FF85A2 !important;
+}
+/* 菜单项 */
+.menus_item a {
+  color: #C97080 !important;
+  transition: all .3s ease !important;
+  border-radius: 6px;
+  position: relative;
+}
+/* 菜单hover背景 */
+.menus_item a:hover {
+  color: #FF85A2 !important;
+  background: rgba(255,182,193,.15) !important;
+}
+/* 菜单粉色下划线 */
+.menus_item a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2);
+  border-radius: 1px;
+  transition: width .3s ease;
+}
+.menus_item a:hover::after {
+  width: 60%;
+}
+/* 当前活跃菜单项 */
+.menus_item.active a {
+  color: #FF85A2 !important;
+}
+.menus_item.active a::after {
+  width: 60%;
+}
+/* 菜单图标 */
+.menus_item a i {
+  color: #FF85A2 !important;
+  transition: all .3s ease;
+}
+.menus_item a:hover i {
+  transform: scale(1.15);
+}
+/* 子菜单 */
+.menus_item_child {
+  background: rgba(255,228,236,.98) !important;
+  border: 1px solid #FFD6E0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(255,133,162,.1) !important;
+}
+.menus_item_child li a {
+  color: #C97080 !important;
+  border-radius: 4px !important;
+}
+.menus_item_child li a:hover {
+  color: #FF85A2 !important;
+  background: rgba(255,182,193,.15) !important;
+}
+/* 搜索按钮 */
+#search-button {
+  color: #C97080 !important;
+  transition: all .3s ease;
+}
+#search-button:hover {
+  color: #FF85A2 !important;
+}
+/* 移动端菜单 */
+#mobile-sidebar #mobile-menu .mobile-menu-item a {
+  color: #C97080 !important;
+  transition: all .3s ease;
+}
+#mobile-sidebar #mobile-menu .mobile-menu-item a:hover,
+#mobile-sidebar #mobile-menu .mobile-menu-item.active a {
+  color: #FF85A2 !important;
+}
+/* 深色模式适配 */
+[data-theme="dark"] #nav:not(.fixed) {
+  background: rgba(26,18,21,.85) !important;
+}
+[data-theme="dark"] #nav.fixed {
+  background: rgba(26,18,21,.95) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,.3) !important;
+}
+[data-theme="dark"] #site-title,
+[data-theme="dark"] #site-title a {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .menus_item a,
+[data-theme="dark"] #search-button,
+[data-theme="dark"] #mobile-sidebar #mobile-menu .mobile-menu-item a {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .menus_item a:hover,
+[data-theme="dark"] .menus_item.active a {
+  color: #D06070 !important;
+  background: rgba(232,137,154,.08) !important;
+}
+[data-theme="dark"] .menus_item a::after {
+  background: linear-gradient(90deg, #3a2a30, #E8899A);
+}
+[data-theme="dark"] .menus_item a i {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .menus_item_child {
+  background: rgba(35,26,30,.98) !important;
+  border-color: #3a2a30 !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3) !important;
+}
+[data-theme="dark"] .menus_item_child li a:hover {
+  color: #D06070 !important;
+  background: rgba(232,137,154,.08) !important;
+}
+[data-theme="dark"] #search-button:hover {
+  color: #D06070 !important;
+}
+[data-theme="dark"] #mobile-sidebar #mobile-menu .mobile-menu-item a:hover,
+[data-theme="dark"] #mobile-sidebar #mobile-menu .mobile-menu-item.active a {
+  color: #D06070 !important;
+}
