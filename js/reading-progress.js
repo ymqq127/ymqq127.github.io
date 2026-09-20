@@ -1,0 +1,2 @@
+/*! Reading Progress Bar */
+!function(){var bar=document.createElement("div");bar.id="reading-progress";document.body.appendChild(bar);function update(){if(!document.querySelector(".post-content")){bar.style.width="0";bar.style.opacity="0";return}var h=document.documentElement.scrollHeight-window.innerHeight;var s=window.scrollY;var p=h>0?s/h*100:0;bar.style.width=Math.min(p,100)+"%";bar.style.opacity=p>0?"1":"0"}window.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update);update()}();
