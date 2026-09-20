@@ -1,0 +1,16 @@
+#page-header.full_page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.45);
+  z-index: 1;
+}
+#page-header.full_page #site-info,
+#page-header.full_page #scroll-down,
+#page-header.full_page #nav {
+  position: relative;
+  z-index: 2;
+}
