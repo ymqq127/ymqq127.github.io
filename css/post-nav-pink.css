@@ -1,0 +1,136 @@
+/* 文章上下篇导航 — 粉色渐变按钮 */
+
+/* === 容器 === */
+.pagination-post {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  margin-top: 40px !important;
+}
+
+/* === 单个导航卡片 === */
+.pagination-related {
+  position: relative !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  transition: all .4s cubic-bezier(.4,0,.2,1) !important;
+}
+
+/* 粉色渐变遮罩覆盖原图暗色背景 */
+.pagination-related::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(135deg, rgba(255,133,162,.75), rgba(255,182,193,.65)) !important;
+  z-index: 1 !important;
+  transition: all .4s ease !important;
+}
+
+/* hover遮罩加深 */
+.pagination-related:hover::before {
+  background: linear-gradient(135deg, rgba(255,100,140,.85), rgba(255,160,180,.75)) !important;
+}
+
+/* hover卡片浮起 */
+.pagination-related:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 30px rgba(255,133,162,.3) !important;
+}
+
+/* === 文字信息层 === */
+.pagination-related .info {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* "上一篇"/"下一篇" 标签 */
+.pagination-related .info .info-item-1 {
+  color: rgba(255,255,255,.8) !important;
+  font-size: .85em !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+/* 文章标题 */
+.pagination-related .info .info-item-2 {
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,.1) !important;
+}
+
+/* hover标题微动 */
+.pagination-related:hover .info .info-item-2 {
+  transform: translateX(4px) !important;
+}
+.pagination-related.next-post:hover .info .info-item-2 {
+  transform: translateX(-4px) !important;
+}
+
+/* info-2 揭示效果 */
+.pagination-related .info .info-2 {
+  color: #fff !important;
+}
+.pagination-related:hover .info .info-2 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* === 无封面图时的默认背景 === */
+.pagination-related.no-desc {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+}
+.pagination-related.no-desc::before {
+  display: none !important;
+}
+
+/* === 单篇时占满宽度 === */
+.pagination-post .full-width {
+  border-radius: 16px !important;
+}
+
+/* === 中间分隔线 === */
+.pagination-post .pagination-related + .pagination-related {
+  border-left: 2px solid rgba(255,255,255,.3) !important;
+}
+
+/* === 移动端 === */
+@media (max-width: 768px) {
+  .pagination-post .pagination-related + .pagination-related {
+    border-left: none !important;
+    border-top: 2px solid rgba(255,255,255,.3) !important;
+  }
+  .pagination-related .info .info-item-1,
+  .pagination-related .info .info-item-2 {
+    padding: 16px 24px !important;
+  }
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .pagination-related::before {
+  background: linear-gradient(135deg, rgba(160,80,96,.8), rgba(100,50,60,.7)) !important;
+}
+[data-theme="dark"] .pagination-related:hover::before {
+  background: linear-gradient(135deg, rgba(180,90,110,.9), rgba(120,60,70,.8)) !important;
+}
+[data-theme="dark"] .pagination-related:hover {
+  box-shadow: 0 8px 30px rgba(201,112,128,.25) !important;
+}
+[data-theme="dark"] .pagination-related .info .info-item-1 {
+  color: rgba(255,255,255,.7) !important;
+}
+[data-theme="dark"] .pagination-related .info .info-item-2 {
+  color: rgba(255,240,245,.95) !important;
+}
+[data-theme="dark"] .pagination-related.no-desc {
+  background: linear-gradient(135deg, #C97080, #A05060) !important;
+}
+[data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
+  border-left-color: rgba(255,255,255,.15) !important;
+}
+@media (max-width: 768px) {
+  [data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
+    border-top-color: rgba(255,255,255,.15) !important;
+  }
+}
