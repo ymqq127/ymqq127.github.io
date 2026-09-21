@@ -1,0 +1,86 @@
+/* 文章版权声明粉色卡片 */
+
+.post-copyright {
+  border: 1.5px solid rgba(255,133,162,.2) !important;
+  border-radius: 12px !important;
+  padding: 16px 20px 16px 20px !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.06), rgba(255,133,162,.03)) !important;
+  transition: all .3s ease !important;
+  overflow: hidden;
+}
+
+/* 版权图标 */
+.post-copyright::before {
+  color: #FFB6C1 !important;
+  font-size: 1.5em !important;
+  top: 8px !important;
+  right: 14px !important;
+  opacity: .6;
+}
+
+/* hover 粉色阴影 */
+.post-copyright:hover {
+  border-color: rgba(255,133,162,.35) !important;
+  box-shadow: 0 4px 16px rgba(255,133,162,.12) !important;
+}
+
+/* 标签名（作者/链接/声明） */
+.post-copyright-meta {
+  color: #FF85A2 !important;
+  font-weight: 600 !important;
+}
+
+.post-copyright-meta i {
+  color: #FFB6C1 !important;
+}
+
+/* 标签值 */
+.post-copyright-info {
+  padding-left: 8px !important;
+}
+
+.post-copyright-info a {
+  color: #C97080 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(255,133,162,.3) !important;
+  transition: all .3s ease !important;
+}
+
+.post-copyright-info a:hover {
+  color: #FF85A2 !important;
+  border-bottom-color: #FF85A2 !important;
+  border-bottom-style: solid !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .post-copyright {
+  border-color: rgba(160,80,96,.2) !important;
+  background: rgba(160,80,96,.06) !important;
+}
+
+[data-theme="dark"] .post-copyright::before {
+  color: #a05060 !important;
+}
+
+[data-theme="dark"] .post-copyright:hover {
+  border-color: rgba(160,80,96,.35) !important;
+  box-shadow: 0 4px 16px rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .post-copyright-meta {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .post-copyright-meta i {
+  color: #a05060 !important;
+}
+
+[data-theme="dark"] .post-copyright-info a {
+  color: #d4a0a0 !important;
+  border-bottom-color: rgba(160,80,96,.3) !important;
+}
+
+[data-theme="dark"] .post-copyright-info a:hover {
+  color: #c97a8a !important;
+  border-bottom-color: #c97a8a !important;
+}
