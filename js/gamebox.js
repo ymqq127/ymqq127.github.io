@@ -1,21 +1,9 @@
-/*! 花璃匣 — 游戏展示组件 */
+/*! 花璃匣 — 游戏展示（竖向自动滚动） */
 (function () {
   'use strict';
 
   /* ====== 游戏数据配置 ====== */
-  /* cover: 封面图URL（建议 130x170 比例） */
-  /* name: 游戏名 */
-  /* brief: 简介一句话 */
-  /* tags: 标签数组 */
-  /* desc: 详细介绍（支持HTML） */
   var games = [
-    {
-      name: '原神',
-      cover: 'https://img.moegirl.org.cn/common/thumb/b/b9/%E5%8E%9F%E7%A5%9E%E5%9B%BD%E9%99%85%E6%9C%8D%E7%89%88Logo.png/250px-%E5%8E%9F%E7%A5%9E%E5%9B%BD%E9%99%85%E6%9C%8D%E7%89%88Logo.png',
-      brief: '开放世界冒险RPG',
-      tags: ['开放世界', 'RPG', '二次元'],
-      desc: '<p>《原神》是米哈游自研的一款开放世界冒险RPG，玩家将在游戏中探索名为"提瓦特"的幻想世界。</p><p>游戏拥有精美的画面、丰富的剧情和自由的探索玩法，支持多平台联机。</p>'
-    },
     {
       name: '塞尔达传说：王国之泪',
       cover: 'https://img.moegirl.org.cn/common/thumb/e/e5/TotK_Box_Art.png/250px-TotK_Box_Art.png',
@@ -49,23 +37,39 @@
   /* ====== 以下无需修改 ====== */
   if (!games || games.length === 0) return;
 
+  // 随机打乱顺序
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  var list = shuffle(games);
+
+  var ITEM_H = 72; // 每条高度，与CSS一致
+  var INTERVAL = 3500; // 滚动间隔ms
+
   function build() {
     var aside = document.getElementById('aside-content');
     if (!aside) { setTimeout(build, 300); return; }
 
     var announcement = aside.querySelector('.card-announcement');
 
-    // 创建卡片
+    // 构建HTML：首项 + 随机列表 + 首项（无缝循环）
+    var html = list.map(function (g, i) {
+      return '<div class="gamebox-item" data-index="' + i + '">' +
+        '<img class="gamebox-thumb" src="' + g.cover + '" alt="' + g.name + '" loading="lazy" onerror="this.src=\'/img/friend_404.gif\'">' +
+        '<div class="gamebox-text"><div class="gamebox-name">' + g.name + '</div><div class="gamebox-brief">' + g.brief + '</div></div>' +
+        '</div>';
+    }).join('');
+
     var card = document.createElement('div');
     card.className = 'card-widget card-gamebox';
     card.innerHTML =
       '<div class="item-headline"><i class="fas fa-gamepad"></i><span>花璃匣</span></div>' +
-      '<div class="gamebox-scroll">' + games.map(function (g, i) {
-        return '<div class="gamebox-card" data-index="' + i + '">' +
-          '<div class="gamebox-cover-wrap"><img class="gamebox-cover" src="' + g.cover + '" alt="' + g.name + '" loading="lazy" onerror="this.src=\'/img/friend_404.gif\'"></div>' +
-          '<div class="gamebox-info"><div class="gamebox-name">' + g.name + '</div><div class="gamebox-brief">' + g.brief + '</div></div>' +
-          '</div>';
-      }).join('') + '</div>';
+      '<div class="gamebox-viewport"><div class="gamebox-track">' + html + '</div></div>';
 
     // 插入到公告下方
     if (announcement && announcement.nextSibling) {
@@ -74,45 +78,64 @@
       aside.appendChild(card);
     }
 
-    // 创建弹窗
+    // 自动滚动
+    var track = card.querySelector('.gamebox-track');
+    var idx = 0;
+    var total = list.length;
+    var paused = false;
+
+    // hover暂停
+    card.addEventListener('mouseenter', function () { paused = true; });
+    card.addEventListener('mouseleave', function () { paused = false; });
+
+    setInterval(function () {
+      if (paused) return;
+      idx++;
+      track.style.transform = 'translateY(-' + (idx * ITEM_H) + 'px)';
+
+      // 无缝循环：滚到克隆项后瞬间跳回
+      if (idx >= total) {
+        setTimeout(function () {
+          track.style.transition = 'none';
+          idx = 0;
+          track.style.transform = 'translateY(0)';
+          // 强制重绘后恢复过渡
+          void track.offsetHeight;
+          track.style.transition = 'transform .5s cubic-bezier(.4,0,.2,1)';
+        }, 520);
+      }
+    }, INTERVAL);
+
+    // 弹窗
     var mask = document.createElement('div');
     mask.className = 'gamebox-modal-mask';
     mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close">&times;</button><div id="gamebox-modal-content"></div></div>';
     document.body.appendChild(mask);
 
-    // 点击卡片打开弹窗
     card.addEventListener('click', function (e) {
-      var c = e.target.closest('.gamebox-card');
-      if (!c) return;
-      var idx = parseInt(c.getAttribute('data-index'));
-      var g = games[idx];
+      var item = e.target.closest('.gamebox-item');
+      if (!item) return;
+      var i = parseInt(item.getAttribute('data-index'));
+      var g = list[i];
       if (!g) return;
-
       var tags = (g.tags || []).map(function (t) { return '<span class="gamebox-modal-tag">' + t + '</span>'; }).join('');
       document.getElementById('gamebox-modal-content').innerHTML =
         '<img class="gamebox-modal-cover" src="' + g.cover + '" alt="' + g.name + '" onerror="this.src=\'/img/friend_404.gif\'">' +
         '<div class="gamebox-modal-body">' +
         '<div class="gamebox-modal-name">' + g.name + '</div>' +
         (tags ? '<div class="gamebox-modal-tags">' + tags + '</div>' : '') +
-        '<div class="gamebox-modal-desc">' + g.desc + '</div>' +
-        '</div>';
-
+        '<div class="gamebox-modal-desc">' + g.desc + '</div></div>';
       mask.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
 
-    // 关闭弹窗
     function closeModal() {
       mask.classList.remove('active');
       document.body.style.overflow = '';
     }
     mask.querySelector('.gamebox-modal-close').addEventListener('click', closeModal);
-    mask.addEventListener('click', function (e) {
-      if (e.target === mask) closeModal();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeModal();
-    });
+    mask.addEventListener('click', function (e) { if (e.target === mask) closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
   }
 
   if (document.readyState === 'loading') {
