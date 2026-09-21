@@ -1,0 +1,357 @@
+/* 关于页面 — 粉色个性化排版 */
+
+/* ========== 页面容器 ========== */
+#page.about-page .page-title {
+  color: #FF85A2 !important;
+  position: relative !important;
+  padding-bottom: 16px !important;
+}
+#page.about-page .page-title::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 60px !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2) !important;
+  border-radius: 2px !important;
+}
+
+/* ========== 个人信息卡片 ========== */
+.about-page .about-info-card {
+  background: linear-gradient(135deg, rgba(255,182,193,.08), rgba(255,133,162,.04)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 16px !important;
+  padding: 32px 28px !important;
+  margin: 24px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all .4s cubic-bezier(.4,0,.2,1) !important;
+}
+.about-page .about-info-card:hover {
+  border-color: rgba(255,133,162,.35) !important;
+  box-shadow: 0 8px 30px rgba(255,133,162,.12) !important;
+  transform: translateY(-2px) !important;
+}
+.about-page .about-info-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2, #FFB6C1) !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+/* ========== 头像区域 ========== */
+.about-page .about-avatar {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  border: 3px solid #FFB6C1 !important;
+  box-shadow: 0 4px 20px rgba(255,133,162,.25) !important;
+  display: block !important;
+  margin: 0 auto 20px !important;
+  transition: all .4s ease !important;
+  object-fit: cover !important;
+}
+.about-page .about-avatar:hover {
+  transform: scale(1.05) rotate(3deg) !important;
+  border-color: #FF85A2 !important;
+  box-shadow: 0 6px 28px rgba(255,133,162,.35) !important;
+}
+
+/* ========== 名字与签名 ========== */
+.about-page .about-name {
+  text-align: center !important;
+  font-size: 1.6em !important;
+  color: #FF85A2 !important;
+  margin: 12px 0 6px !important;
+  font-weight: 700 !important;
+}
+.about-page .about-motto {
+  text-align: center !important;
+  color: #C97080 !important;
+  font-style: italic !important;
+  font-size: .95em !important;
+  margin: 0 0 20px !important;
+  padding: 0 20px !important;
+  position: relative !important;
+}
+.about-page .about-motto::before,
+.about-page .about-motto::after {
+  content: '❀' !important;
+  color: #FFB6C1 !important;
+  margin: 0 6px !important;
+  font-style: normal !important;
+}
+
+/* ========== 分隔线 ========== */
+.about-page .about-divider {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, #FFB6C1, transparent) !important;
+  margin: 28px 0 !important;
+}
+
+/* ========== 章节标题 ========== */
+.about-page .about-section-title {
+  color: #FF85A2 !important;
+  font-size: 1.3em !important;
+  font-weight: 700 !important;
+  margin: 28px 0 16px !important;
+  padding-left: 14px !important;
+  border-left: 4px solid #FFB6C1 !important;
+  position: relative !important;
+}
+.about-page .about-section-title::before {
+  content: '✦' !important;
+  position: absolute !important;
+  left: -12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #FFB6C1 !important;
+  font-size: .7em !important;
+}
+
+/* ========== 标签/技能胶囊 ========== */
+.about-page .about-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 12px 0 !important;
+}
+.about-page .about-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.08)) !important;
+  color: #C97080 !important;
+  border: 1px solid rgba(255,133,162,.2) !important;
+  border-radius: 50px !important;
+  padding: 6px 16px !important;
+  font-size: .88em !important;
+  transition: all .3s ease !important;
+  cursor: default !important;
+}
+.about-page .about-tag:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.28), rgba(255,133,162,.15)) !important;
+  border-color: #FFB6C1 !important;
+  color: #FF85A2 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 12px rgba(255,133,162,.15) !important;
+}
+
+/* ========== 时间线 ========== */
+.about-page .about-timeline {
+  position: relative !important;
+  padding-left: 28px !important;
+  margin: 16px 0 !important;
+}
+.about-page .about-timeline::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 6px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 2px !important;
+  background: linear-gradient(180deg, #FFB6C1, rgba(255,182,193,.2)) !important;
+  border-radius: 1px !important;
+}
+.about-page .about-timeline-item {
+  position: relative !important;
+  margin-bottom: 18px !important;
+  padding: 10px 16px !important;
+  background: rgba(255,182,193,.06) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,133,162,.1) !important;
+  transition: all .3s ease !important;
+}
+.about-page .about-timeline-item:hover {
+  background: rgba(255,182,193,.12) !important;
+  border-color: rgba(255,133,162,.22) !important;
+  transform: translateX(4px) !important;
+}
+.about-page .about-timeline-item::before {
+  content: '' !important;
+  position: absolute !important;
+  left: -22px !important;
+  top: 14px !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: #FFB6C1 !important;
+  border-radius: 50% !important;
+  border: 2px solid #fff !important;
+  box-shadow: 0 0 6px rgba(255,133,162,.3) !important;
+}
+.about-page .about-timeline-date {
+  color: #FF85A2 !important;
+  font-weight: 700 !important;
+  font-size: .9em !important;
+  margin-bottom: 4px !important;
+}
+.about-page .about-timeline-text {
+  color: #666 !important;
+  font-size: .92em !important;
+  line-height: 1.6 !important;
+}
+
+/* ========== 链接列表 ========== */
+.about-page .about-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin: 12px 0 !important;
+}
+.about-page .about-link-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: rgba(255,182,193,.08) !important;
+  border: 1px solid rgba(255,133,162,.15) !important;
+  border-radius: 10px !important;
+  padding: 8px 16px !important;
+  color: #C97080 !important;
+  text-decoration: none !important;
+  transition: all .3s ease !important;
+  font-size: .9em !important;
+}
+.about-page .about-link-item:hover {
+  background: rgba(255,182,193,.18) !important;
+  border-color: #FFB6C1 !important;
+  color: #FF85A2 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(255,133,162,.15) !important;
+}
+
+/* ========== 引用格言 ========== */
+.about-page .about-quote {
+  background: linear-gradient(135deg, rgba(255,182,193,.1), rgba(255,133,162,.05)) !important;
+  border-left: 4px solid #FFB6C1 !important;
+  border-radius: 0 12px 12px 0 !important;
+  padding: 20px 24px !important;
+  margin: 24px 0 !important;
+  color: #888 !important;
+  font-style: italic !important;
+  position: relative !important;
+}
+.about-page .about-quote::before {
+  content: '❝' !important;
+  position: absolute !important;
+  top: 8px !important;
+  left: 12px !important;
+  font-size: 1.6em !important;
+  color: rgba(255,133,162,.25) !important;
+  font-style: normal !important;
+}
+
+/* ========== 文章内容区通用 ========== */
+.about-page .post-content h2 {
+  color: #FF85A2 !important;
+  border-bottom: 2px solid rgba(255,182,193,.3) !important;
+  padding-bottom: 8px !important;
+}
+.about-page .post-content h3 {
+  color: #E8899A !important;
+}
+.about-page .post-content a {
+  color: #FF85A2 !important;
+  border-bottom: 1px dashed rgba(255,133,162,.3) !important;
+  transition: all .3s ease !important;
+}
+.about-page .post-content a:hover {
+  color: #E8899A !important;
+  border-bottom-style: solid !important;
+}
+.about-page .post-content ul li::marker {
+  color: #FFB6C1 !important;
+}
+.about-page .post-content img {
+  border-radius: 12px !important;
+  border: 2px solid rgba(255,182,193,.2) !important;
+  transition: all .3s ease !important;
+}
+.about-page .post-content img:hover {
+  border-color: #FFB6C1 !important;
+  box-shadow: 0 4px 20px rgba(255,133,162,.2) !important;
+}
+
+/* ========== 深色模式 ========== */
+[data-theme="dark"] .about-page .about-info-card {
+  background: linear-gradient(135deg, rgba(201,112,128,.1), rgba(168,80,96,.05)) !important;
+  border-color: rgba(201,112,128,.2) !important;
+}
+[data-theme="dark"] .about-page .about-info-card:hover {
+  border-color: rgba(201,112,128,.4) !important;
+  box-shadow: 0 8px 30px rgba(201,112,128,.15) !important;
+}
+[data-theme="dark"] .about-page .about-info-card::before {
+  background: linear-gradient(90deg, #C97080, #E8899A, #C97080) !important;
+}
+[data-theme="dark"] .about-page .about-avatar {
+  border-color: #C97080 !important;
+  box-shadow: 0 4px 20px rgba(201,112,128,.25) !important;
+}
+[data-theme="dark"] .about-page .about-name { color: #E8899A !important; }
+[data-theme="dark"] .about-page .about-motto { color: #A05060 !important; }
+[data-theme="dark"] .about-page .about-motto::before,
+[data-theme="dark"] .about-page .about-motto::after { color: #C97080 !important; }
+[data-theme="dark"] .about-page .about-divider {
+  background: linear-gradient(90deg, transparent, #C97080, transparent) !important;
+}
+[data-theme="dark"] .about-page .about-section-title {
+  color: #E8899A !important;
+  border-left-color: #C97080 !important;
+}
+[data-theme="dark"] .about-page .about-section-title::before { color: #C97080 !important; }
+[data-theme="dark"] .about-page .about-tag {
+  background: linear-gradient(135deg, rgba(201,112,128,.15), rgba(168,80,96,.08)) !important;
+  color: #A05060 !important;
+  border-color: rgba(201,112,128,.2) !important;
+}
+[data-theme="dark"] .about-page .about-tag:hover {
+  background: linear-gradient(135deg, rgba(201,112,128,.25), rgba(168,80,96,.15)) !important;
+  border-color: #C97080 !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] .about-page .about-timeline::before {
+  background: linear-gradient(180deg, #C97080, rgba(201,112,128,.2)) !important;
+}
+[data-theme="dark"] .about-page .about-timeline-item {
+  background: rgba(201,112,128,.06) !important;
+  border-color: rgba(201,112,128,.12) !important;
+}
+[data-theme="dark"] .about-page .about-timeline-item:hover {
+  background: rgba(201,112,128,.12) !important;
+  border-color: rgba(201,112,128,.25) !important;
+}
+[data-theme="dark"] .about-page .about-timeline-item::before {
+  background: #C97080 !important;
+  box-shadow: 0 0 6px rgba(201,112,128,.3) !important;
+}
+[data-theme="dark"] .about-page .about-timeline-date { color: #E8899A !important; }
+[data-theme="dark"] .about-page .about-timeline-text { color: #aaa !important; }
+[data-theme="dark"] .about-page .about-link-item {
+  background: rgba(201,112,128,.08) !important;
+  border-color: rgba(201,112,128,.15) !important;
+  color: #A05060 !important;
+}
+[data-theme="dark"] .about-page .about-link-item:hover {
+  background: rgba(201,112,128,.18) !important;
+  border-color: #C97080 !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] .about-page .about-quote {
+  background: linear-gradient(135deg, rgba(201,112,128,.1), rgba(168,80,96,.05)) !important;
+  border-left-color: #C97080 !important;
+  color: #999 !important;
+}
+[data-theme="dark"] .about-page .about-quote::before { color: rgba(201,112,128,.3) !important; }
+[data-theme="dark"] .about-page .post-content h2 { color: #E8899A !important; border-bottom-color: rgba(201,112,128,.3) !important; }
+[data-theme="dark"] .about-page .post-content h3 { color: #C97080 !important; }
+[data-theme="dark"] .about-page .post-content a { color: #E8899A !important; border-bottom-color: rgba(201,112,128,.3) !important; }
+[data-theme="dark"] .about-page .post-content a:hover { color: #C97080 !important; }
+[data-theme="dark"] .about-page .post-content ul li::marker { color: #C97080 !important; }
+[data-theme="dark"] .about-page .post-content img { border-color: rgba(201,112,128,.2) !important; }
+[data-theme="dark"] .about-page .post-content img:hover { border-color: #C97080 !important; box-shadow: 0 4px 20px rgba(201,112,128,.2) !important; }
