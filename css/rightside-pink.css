@@ -1,0 +1,146 @@
+/* 另下角工具栏 — 粉色圆形+hover发光 */
+
+/* === 整体容器 === */
+#rightside {
+  opacity: 0 !important;
+  transition: all .5s ease !important;
+}
+#rightside.rightside-show {
+  opacity: 1 !important;
+}
+
+/* === 按钮：粉色圆形基础 === */
+#rightside > div > button,
+#rightside > div > a {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: rgba(255,182,193,.15) !important;
+  color: #FF85A2 !important;
+  border: 1.5px solid rgba(255,133,162,.25) !important;
+  text-align: center !important;
+  font-size: 15px !important;
+  line-height: 38px !important;
+  transition: all .35s cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+  margin-bottom: 6px !important;
+}
+
+/* === hover：发光浮起 === */
+#rightside > div > button:hover,
+#rightside > div > a:hover {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  color: #fff !important;
+  border-color: #FF85A2 !important;
+  transform: translateY(-3px) scale(1.1) !important;
+  box-shadow:
+    0 4px 16px rgba(255,133,162,.4),
+    0 0 20px rgba(255,182,193,.3),
+    0 0 40px rgba(255,133,162,.15) !important;
+}
+
+/* === 回到顶部按钮特殊 === */
+#go-up {
+  background: rgba(255,133,162,.2) !important;
+  border-color: rgba(255,133,162,.35) !important;
+}
+#go-up:hover {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  border-color: #FF85A2 !important;
+}
+
+/* === 设置按钮（齿轮） === */
+#rightside-config {
+  background: rgba(255,182,193,.2) !important;
+  border-color: rgba(255,133,162,.3) !important;
+}
+#rightside-config:hover {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  border-color: #FF85A2 !important;
+}
+
+/* === 展开子按钮动画 === */
+#rightside-config-hide button,
+#rightside-config-hide a {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(255,182,193,.12) !important;
+  color: #FF85A2 !important;
+  border: 1.5px solid rgba(255,133,162,.20) !important;
+  font-size: 14px !important;
+  line-height: 36px !important;
+  transition: all .35s cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.08) !important;
+}
+#rightside-config-hide button:hover,
+#rightside-config-hide a:hover {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  color: #fff !important;
+  border-color: #FF85A2 !important;
+  transform: translateY(-2px) scale(1.08) !important;
+  box-shadow:
+    0 4px 16px rgba(255,133,162,.35),
+    0 0 20px rgba(255,182,193,.25) !important;
+}
+
+/* === 阅读进度百分比 === */
+#go-up .scroll-percent {
+  color: #FF85A2 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] #rightside > div > button,
+[data-theme="dark"] #rightside > div > a {
+  background: rgba(201,112,128,.12) !important;
+  color: #E8899A !important;
+  border-color: rgba(201,112,128,.25) !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
+}
+[data-theme="dark"] #rightside > div > button:hover,
+[data-theme="dark"] #rightside > div > a:hover {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  color: #fff !important;
+  border-color: #C97080 !important;
+  box-shadow:
+    0 4px 16px rgba(201,112,128,.35),
+    0 0 20px rgba(232,137,154,.2),
+    0 0 40px rgba(201,112,128,.1) !important;
+}
+[data-theme="dark"] #go-up {
+  background: rgba(201,112,128,.18) !important;
+  border-color: rgba(201,112,128,.3) !important;
+}
+[data-theme="dark"] #go-up:hover {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  border-color: #C97080 !important;
+}
+[data-theme="dark"] #rightside-config {
+  background: rgba(201,112,128,.18) !important;
+  border-color: rgba(201,112,128,.28) !important;
+}
+[data-theme="dark"] #rightside-config:hover {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  border-color: #C97080 !important;
+}
+[data-theme="dark"] #rightside-config-hide button,
+[data-theme="dark"] #rightside-config-hide a {
+  background: rgba(201,112,128,.1) !important;
+  color: #E8899A !important;
+  border-color: rgba(201,112,128,.18) !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.06) !important;
+}
+[data-theme="dark"] #rightside-config-hide button:hover,
+[data-theme="dark"] #rightside-config-hide a:hover {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  color: #fff !important;
+  border-color: #C97080 !important;
+  box-shadow:
+    0 4px 16px rgba(201,112,128,.3),
+    0 0 20px rgba(232,137,154,.15) !important;
+}
+[data-theme="dark"] #go-up .scroll-percent {
+  color: #E8899A !important;
+}
