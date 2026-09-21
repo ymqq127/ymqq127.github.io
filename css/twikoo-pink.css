@@ -114,6 +114,9 @@
   color: #FF6B8A !important;
 }
 /* 深色模式适配 */
+[data-theme="dark"] #twikoo {
+  background: #1e1519 !important;
+}
 [data-theme="dark"] #twikoo .tk-submit {
   border-color: #3a2a30;
   background: #1e1519 !important;
