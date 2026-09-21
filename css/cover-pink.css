@@ -1,0 +1,108 @@
+/* 文章封面 hover 粉色遮罩 + 标题浮现 */
+
+/* === 封面粉色遮罩 === */
+.recent-post-item .post_cover {
+  position: relative;
+}
+
+.recent-post-item .post_cover::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(135deg, rgba(255,133,162,.35), rgba(255,182,193,.25)) !important;
+  opacity: 0 !important;
+  transition: opacity .4s ease !important;
+  z-index: 1 !important;
+  pointer-events: none;
+}
+
+/* 封面遮罩中央阅读圆圈 - 纯CSS */
+.recent-post-item .post_cover a {
+  position: relative !important;
+  display: block !important;
+}
+
+.recent-post-item .post_cover a::after {
+  content: '→' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(.5) !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255,255,255,.92) !important;
+  color: #FF85A2 !important;
+  border-radius: 50% !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  opacity: 0 !important;
+  z-index: 2 !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(255,133,162,.3) !important;
+  line-height: 1 !important;
+}
+
+/* hover 显示遮罩 + 圆圈图标 */
+.recent-post-item:hover .post_cover::after {
+  opacity: 1 !important;
+}
+
+.recent-post-item:hover .post_cover a::after {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* === 标题浮现效果 === */
+.recent-post-item .article-title {
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+  position: relative;
+}
+
+.recent-post-item:hover .article-title {
+  color: #FF85A2 !important;
+  transform: translateX(6px) !important;
+}
+
+/* === 文章元信息微动 === */
+.recent-post-item .article-meta-wrap {
+  transition: all .4s ease !important;
+}
+
+.recent-post-item:hover .article-meta-wrap {
+  transform: translateX(3px) !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .recent-post-item .post_cover::after {
+  background: linear-gradient(135deg, rgba(160,80,96,.4), rgba(100,50,60,.3)) !important;
+}
+
+[data-theme="dark"] .recent-post-item .post_cover a::after {
+  background: rgba(30,15,20,.92) !important;
+  color: #c97a8a !important;
+  box-shadow: 0 4px 14px rgba(160,80,96,.3) !important;
+}
+
+[data-theme="dark"] .recent-post-item:hover .article-title {
+  color: #c97a8a !important;
+}
+
+/* === 移动端适配 === */
+@media (max-width: 768px) {
+  .recent-post-item .post_cover a::after {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 15px !important;
+  }
+
+  .recent-post-item:hover .article-title {
+    transform: translateX(3px) !important;
+  }
+}
