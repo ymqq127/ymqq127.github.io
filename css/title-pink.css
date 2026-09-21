@@ -1,0 +1,99 @@
+/* 文章标题粉色左侧竖线装饰 */
+
+/* === 面页文章卡片标题 === */
+.recent-post-item .article-title {
+  padding-left: 14px !important;
+  border-left: 3px solid #FFB6C1 !important;
+  transition: all .3s ease !important;
+}
+
+.recent-post-item:hover .article-title {
+  border-left-color: #FF85A2 !important;
+}
+
+/* === 文章页标题 === */
+#post-info .post-title {
+  padding-left: 16px !important;
+  border-left: 4px solid #FFB6C1 !important;
+}
+
+/* === 文章内容标题 h1-h6 === */
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+  padding-left: 14px !important;
+  border-left: 3px solid #FFB6C1 !important;
+  transition: border-color .3s ease !important;
+}
+
+#article-container h1 {
+  border-left-width: 4px !important;
+}
+
+#article-container h2 {
+  border-left-width: 3.5px !important;
+}
+
+#article-container h3 {
+  border-left-width: 3px !important;
+}
+
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+  border-left-width: 2.5px !important;
+}
+
+/* 内容标题 hover 变深粉 */
+#article-container h1:hover,
+#article-container h2:hover,
+#article-container h3:hover,
+#article-container h4:hover,
+#article-container h5:hover,
+#article-container h6:hover {
+  border-left-color: #FF85A2 !important;
+}
+
+/* === 归档页面年份标题 === */
+.article-sort-item.year {
+  padding-left: 18px !important;
+  border-left: 3px solid #FFB6C1 !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .recent-post-item .article-title {
+  border-left-color: #a05060 !important;
+}
+
+[data-theme="dark"] .recent-post-item:hover .article-title {
+  border-left-color: #c97a8a !important;
+}
+
+[data-theme="dark"] #post-info .post-title {
+  border-left-color: #a05060 !important;
+}
+
+[data-theme="dark"] #article-container h1,
+[data-theme="dark"] #article-container h2,
+[data-theme="dark"] #article-container h3,
+[data-theme="dark"] #article-container h4,
+[data-theme="dark"] #article-container h5,
+[data-theme="dark"] #article-container h6 {
+  border-left-color: #a05060 !important;
+}
+
+[data-theme="dark"] #article-container h1:hover,
+[data-theme="dark"] #article-container h2:hover,
+[data-theme="dark"] #article-container h3:hover,
+[data-theme="dark"] #article-container h4:hover,
+[data-theme="dark"] #article-container h5:hover,
+[data-theme="dark"] #article-container h6:hover {
+  border-left-color: #c97a8a !important;
+}
+
+[data-theme="dark"] .article-sort-item.year {
+  border-left-color: #a05060 !important;
+}
