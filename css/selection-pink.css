@@ -1,0 +1,19 @@
+/* 全局文字选中 — 粉色高亮背景 */
+::selection {
+  background: rgba(255,133,162,.3) !important;
+  color: #C97080 !important;
+}
+::-moz-selection {
+  background: rgba(255,133,162,.3) !important;
+  color: #C97080 !important;
+}
+
+/* 深色模式 */
+[data-theme="dark"] ::selection {
+  background: rgba(232,137,154,.3) !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] ::-moz-selection {
+  background: rgba(232,137,154,.3) !important;
+  color: #E8899A !important;
+}
