@@ -10,7 +10,22 @@
   height: 100px !important;
 }
 
-/* 站点信息区 — 光滑玻璃卡片 + 反光 */
+/* 站点信息区 — 统一布局（浅色+深色） */
+#page-header.full_page #site-info {
+  border-radius: 20px !important;
+  padding: 30px 40px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1px solid transparent !important;
+}
+
+/* 站点信息区 — 浅色模式 */
+#page-header.full_page #site-info {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 站点信息区 — 深色模式玻璃 + 反光 */
 [data-theme="dark"] #page-header.full_page #site-info {
   background: linear-gradient(
     135deg,
@@ -22,10 +37,6 @@
   border: 1px solid rgba(255,200,210, .1) !important;
   border-top-color: rgba(255,230,240, .18) !important;
   border-left-color: rgba(255,220,230, .14) !important;
-  border-radius: 20px !important;
-  padding: 30px 40px !important;
-  position: relative !important;
-  overflow: hidden !important;
   box-shadow:
     0 8px 32px rgba(0,0,0,.25),
     inset 0 1px 0 rgba(255,255,255,.08),
@@ -34,7 +45,7 @@
     inset -1px 0 0 rgba(0,0,0,.1) !important;
 }
 
-/* 站点信息区 — 反光条 */
+/* 反光条 — 仅深色模式 */
 [data-theme="dark"] #page-header.full_page #site-info::before {
   content: "" !important;
   position: absolute !important;
@@ -54,7 +65,7 @@
   z-index: 0 !important;
 }
 
-/* 站点信息区 — 顶部弧形反光 */
+/* 顶部弧形反光 — 仅深色模式 */
 [data-theme="dark"] #page-header.full_page #site-info::after {
   content: "" !important;
   position: absolute !important;
@@ -106,7 +117,21 @@
   text-shadow: 0 1px 4px rgba(0,0,0,.3) !important;
 }
 
-/* 导航栏 — 封面上透明 */
+/* 导航栏 — 统一布局 */
+#page-header.full_page #nav,
+#page-header.nav-fixed #nav,
+#page-header.not-top-img #nav {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* 导航栏 — 浅色模式封面透明 */
+#page-header.full_page #nav {
+  background: transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+/* 导航栏 — 深色模式封面透明 */
 [data-theme="dark"] #page-header.full_page #nav {
   background: rgba(15, 8, 12, .1) !important;
   border-bottom: 1px solid rgba(255,200,210, .06) !important;
