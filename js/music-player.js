@@ -12,6 +12,13 @@
       url: '/music/%E5%BE%A1%E6%89%8B%E6%B4%97%E4%BA%AE%E5%A4%AA.mp3',
       cover: '/img/music-cover.svg',
       theme: '#FF85A2'
+    },
+    {
+      name: 'BGM 006',
+      artist: 'Unknown',
+      url: '/music/bgm006.ogg',
+      cover: '/img/music-cover.svg',
+      theme: '#FFB6C1'
     }
   ];
 
