@@ -1,16 +1,46 @@
+/* 阅读进度条 — 粉色增强版 */
 #reading-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3px;
-  width: 0;
-  background: linear-gradient(90deg, #FFB6C1, #FF85A2);
-  z-index: 99999;
-  opacity: 0;
-  transition: width .1s linear, opacity .3s ease;
-  box-shadow: 0 0 6px rgba(255, 133, 162, .4);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 4px !important;
+  width: 0 !important;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2, #FFB6C1) !important;
+  background-size: 200% 100% !important;
+  z-index: 99999 !important;
+  opacity: 0 !important;
+  transition: width .1s linear, opacity .3s ease !important;
+  border-radius: 0 2px 2px 0 !important;
+  box-shadow: 0 0 8px rgba(255,133,162,.5), 0 0 3px rgba(255,182,193,.6) !important;
+  animation: readingProgressShimmer 2s linear infinite !important;
 }
+
+/* 流光动画 */
+@keyframes readingProgressShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 前端光点 */
+#reading-progress::after {
+  content: '' !important;
+  position: absolute !important;
+  right: -3px !important;
+  top: -2px !important;
+  width: 8px !important;
+  height: 8px !important;
+  background: #FF85A2 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 6px rgba(255,133,162,.8), 0 0 12px rgba(255,182,193,.4) !important;
+}
+
+/* 深色模式 */
 [data-theme="dark"] #reading-progress {
-  background: linear-gradient(90deg, #C97080, #E8899A);
-  box-shadow: 0 0 6px rgba(232, 137, 154, .3);
+  background: linear-gradient(90deg, #C97080, #E8899A, #C97080) !important;
+  background-size: 200% 100% !important;
+  box-shadow: 0 0 8px rgba(232,137,154,.4), 0 0 3px rgba(201,112,128,.5) !important;
+}
+[data-theme="dark"] #reading-progress::after {
+  background: #E8899A !important;
+  box-shadow: 0 0 6px rgba(232,137,154,.7), 0 0 12px rgba(201,112,128,.4) !important;
 }
