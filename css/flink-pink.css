@@ -1,0 +1,111 @@
+/* 友链页面粉色卡片风格 */
+
+/* === 友链卡片 === */
+.flink-list-item {
+  border: 1.5px solid rgba(255,133,162,.15) !important;
+  border-radius: 12px !important;
+  background: var(--card-bg) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+  overflow: hidden !important;
+}
+
+/* hover 背景遮罩改为粉色 */
+.flink-list-item::before {
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.1)) !important;
+  border-radius: 12px !important;
+}
+
+/* hover 浮起 + 粉色边框 + 阴影 */
+.flink-list-item:hover {
+  border-color: rgba(255,133,162,.4) !important;
+  box-shadow: 0 8px 24px rgba(255,133,162,.15), 0 2px 8px rgba(255,133,162,.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* 头像圆角 + 粉色边框 */
+.flink-item-icon {
+  border-radius: 50% !important;
+  border: 2px solid rgba(255,133,162,.25) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.flink-item-icon img {
+  border-radius: 50% !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+/* hover 头像边框加深 */
+.flink-list-item:hover .flink-item-icon {
+  border-color: rgba(255,133,162,.5) !important;
+  box-shadow: 0 0 0 3px rgba(255,182,193,.2) !important;
+}
+
+/* hover 头像不隐藏，改为微放大 */
+.flink-list-item:hover .flink-item-icon {
+  margin-left: 15px !important;
+  width: 60px !important;
+  transform: scale(1.05) !important;
+}
+
+/* 友链名称 */
+.flink-item-name {
+  color: #C97080 !important;
+  font-weight: 600 !important;
+  transition: color .3s ease !important;
+}
+
+.flink-list-item:hover .flink-item-name {
+  color: #FF85A2 !important;
+}
+
+/* 友链描述 */
+.flink-item-desc {
+  color: #D4A0A0 !important;
+}
+
+/* 友链分组标题 */
+.flink-name {
+  color: #C97080 !important;
+  padding-left: 14px !important;
+  border-left: 3px solid #FFB6C1 !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .flink-list-item {
+  border-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .flink-list-item::before {
+  background: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .flink-list-item:hover {
+  border-color: rgba(160,80,96,.4) !important;
+  box-shadow: 0 8px 24px rgba(160,80,96,.2), 0 2px 8px rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .flink-item-icon {
+  border-color: rgba(160,80,96,.25) !important;
+}
+
+[data-theme="dark"] .flink-list-item:hover .flink-item-icon {
+  border-color: rgba(160,80,96,.5) !important;
+  box-shadow: 0 0 0 3px rgba(160,80,96,.2) !important;
+}
+
+[data-theme="dark"] .flink-item-name {
+  color: #d4a0a0 !important;
+}
+
+[data-theme="dark"] .flink-list-item:hover .flink-item-name {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .flink-item-desc {
+  color: #a08080 !important;
+}
+
+[data-theme="dark"] .flink-name {
+  color: #d4a0a0 !important;
+  border-left-color: #a05060 !important;
+}
