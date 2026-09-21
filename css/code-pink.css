@@ -1,0 +1,155 @@
+/* 代码块粉色美化 - mac按钮 + 背景 + 高亮 */
+
+/* === Mac按钮粉色化 === */
+.highlight-tools .macStyle > * {
+  transition: all .3s ease !important;
+}
+
+/* 关闭按钮 - 粉红 */
+.highlight-tools .mac-close {
+  background: #FF85A2 !important;
+}
+
+/* 最小化按钮 - 浅粉 */
+.highlight-tools .mac-minimize {
+  background: #FFB6C1 !important;
+}
+
+/* 最大化按钮 - 粉紫 */
+.highlight-tools .mac-maximize {
+  background: #D4A0B0 !important;
+}
+
+/* Mac按钮 hover */
+.highlight-tools .macStyle > *:hover {
+  transform: scale(1.15) !important;
+  box-shadow: 0 0 6px rgba(255,133,162,.4) !important;
+}
+
+/* === 工具栏粉色化 === */
+.highlight-tools {
+  background: rgba(40,20,28,.95) !important;
+  border-bottom: 1px solid rgba(255,133,162,.1) !important;
+}
+
+.highlight-tools .code-lang {
+  color: #D4A0A0 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+
+.highlight-tools i {
+  color: #C97080 !important;
+}
+
+.highlight-tools i:hover {
+  color: #FF85A2 !important;
+}
+
+/* === 代码块整体 === */
+figure.highlight {
+  border: 1px solid rgba(255,133,162,.12) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(255,133,162,.06) !important;
+}
+
+/* === 行号粉色 === */
+.gutter pre {
+  color: rgba(255,133,162,.35) !important;
+}
+
+.gutter {
+  border-right: 1px solid rgba(255,133,162,.08) !important;
+}
+
+/* === 选中行粉色高亮 === */
+.highlight .code .line.marked {
+  background: rgba(255,133,162,.08) !important;
+}
+
+/* === 复制提示粉色 === */
+.copy-notice {
+  background: rgba(255,133,162,.9) !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+}
+
+/* === 展开按钮粉色 === */
+.code-expand-btn i {
+  color: #C97080 !important;
+}
+
+.code-expand-btn:hover i {
+  color: #FF85A2 !important;
+}
+
+/* === 行内代码粉色 === */
+code {
+  background: rgba(255,182,193,.12) !important;
+  color: #C97080 !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+}
+
+pre code {
+  background: none !important;
+  color: var(--hl-color) !important;
+  padding: 0 !important;
+}
+
+/* === 深色模式 - 代码块保持深色，仅按钮/边框粉色 === */
+[data-theme="dark"] .highlight-tools {
+  background: rgba(35,18,24,.95) !important;
+  border-bottom-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .highlight-tools .code-lang {
+  color: #a08080 !important;
+}
+
+[data-theme="dark"] .highlight-tools i {
+  color: #a07070 !important;
+}
+
+[data-theme="dark"] .highlight-tools i:hover {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] figure.highlight {
+  border-color: rgba(160,80,96,.12) !important;
+  box-shadow: 0 4px 16px rgba(160,80,96,.08) !important;
+}
+
+[data-theme="dark"] .gutter pre {
+  color: rgba(160,80,96,.3) !important;
+}
+
+[data-theme="dark"] .gutter {
+  border-right-color: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .highlight .code .line.marked {
+  background: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .copy-notice {
+  background: rgba(160,80,96,.9) !important;
+}
+
+[data-theme="dark"] .code-expand-btn i {
+  color: #a07070 !important;
+}
+
+[data-theme="dark"] .code-expand-btn:hover i {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] code {
+  background: rgba(160,80,96,.12) !important;
+  color: #d4a0a0 !important;
+}
+
+/* 浅色模式 - 代码块粉色边框增强 */
+:root:not([data-theme="dark"]) figure.highlight {
+  box-shadow: 0 4px 20px rgba(255,133,162,.08) !important;
+}
