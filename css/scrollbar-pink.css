@@ -1,0 +1,56 @@
+/* 滚动条粉色美化 */
+
+/* 浅色模式 - 粉色滚动条 */
+:root {
+  --scrollbar-color: #FFB6C1;
+}
+
+/* Chrome/Safari 滚动条增强 */
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #FFB6C1 !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255,255,255,.3) !important;
+  transition: background .3s ease !important;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #FF85A2 !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255,182,193,.08) !important;
+  border-radius: 10px !important;
+}
+
+/* Firefox 滚动条 */
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: #FFB6C1 rgba(255,182,193,.08) !important;
+}
+
+/* 深色模式 */
+[data-theme="dark"] {
+  --scrollbar-color: #a05060;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-thumb {
+  background: #a05060 !important;
+  border-color: rgba(0,0,0,.2) !important;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-thumb:hover {
+  background: #c97a8a !important;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-track {
+  background: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] * {
+  scrollbar-color: #a05060 rgba(160,80,96,.1) !important;
+}
