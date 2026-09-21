@@ -1,0 +1,132 @@
+/* Note引用块 + blockquote 粉色装饰 */
+
+/* === blockquote 粉色左侧竖线 === */
+blockquote {
+  border-left: 4px solid #FFB6C1 !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.06), rgba(255,133,162,.03)) !important;
+  border-radius: 0 8px 8px 0 !important;
+  color: #C97080 !important;
+}
+
+blockquote footer cite {
+  color: #D4A0A0 !important;
+}
+
+/* === Note 提示块 - 圆角 + 粉色边框 === */
+.note {
+  border-radius: 12px !important;
+  border: 1.5px solid rgba(255,133,162,.15) !important;
+  transition: all .3s ease !important;
+}
+
+.note:hover {
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 4px 12px rgba(255,133,162,.08) !important;
+}
+
+/* 默认 Note - 粉色系 */
+.note.default {
+  border-left-color: #FFB6C1 !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.06), rgba(255,133,162,.03)) !important;
+}
+
+.note.default:not(.no-icon)::before {
+  color: #FFB6C1 !important;
+}
+
+/* primary Note - 粉紫 */
+.note.primary {
+  border-left-color: #D4A0B0 !important;
+  background: linear-gradient(135deg, rgba(212,160,176,.08), rgba(212,160,176,.03)) !important;
+}
+
+.note.primary:not(.no-icon)::before {
+  color: #D4A0B0 !important;
+}
+
+/* info Note - 浅粉蓝 */
+.note.info {
+  border-left-color: #B0C4D4 !important;
+  background: linear-gradient(135deg, rgba(176,196,212,.06), rgba(176,196,212,.03)) !important;
+}
+
+.note.info:not(.no-icon)::before {
+  color: #B0C4D4 !important;
+}
+
+/* success Note - 粉绿 */
+.note.success {
+  border-left-color: #A0D4B0 !important;
+  background: linear-gradient(135deg, rgba(160,212,176,.06), rgba(160,212,176,.03)) !important;
+}
+
+.note.success:not(.no-icon)::before {
+  color: #A0D4B0 !important;
+}
+
+/* warning Note - 粉橙 */
+.note.warning {
+  border-left-color: #D4B0A0 !important;
+  background: linear-gradient(135deg, rgba(212,176,160,.06), rgba(212,176,160,.03)) !important;
+}
+
+.note.warning:not(.no-icon)::before {
+  color: #D4B0A0 !important;
+}
+
+/* danger Note - 粉红 */
+.note.danger {
+  border-left-color: #FF85A2 !important;
+  background: linear-gradient(135deg, rgba(255,133,162,.08), rgba(255,133,162,.04)) !important;
+}
+
+.note.danger:not(.no-icon)::before {
+  color: #FF85A2 !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] blockquote {
+  border-left-color: #a05060 !important;
+  background: rgba(160,80,96,.06) !important;
+  color: #d4a0a0 !important;
+}
+
+[data-theme="dark"] blockquote footer cite {
+  color: #a08080 !important;
+}
+
+[data-theme="dark"] .note {
+  border-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .note:hover {
+  border-color: rgba(160,80,96,.3) !important;
+  box-shadow: 0 4px 12px rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .note.default {
+  border-left-color: #a05060 !important;
+  background: rgba(160,80,96,.06) !important;
+}
+
+[data-theme="dark"] .note.default:not(.no-icon)::before {
+  color: #a05060 !important;
+}
+
+[data-theme="dark"] .note.primary {
+  border-left-color: #9a7080 !important;
+  background: rgba(154,112,128,.06) !important;
+}
+
+[data-theme="dark"] .note.primary:not(.no-icon)::before {
+  color: #9a7080 !important;
+}
+
+[data-theme="dark"] .note.danger {
+  border-left-color: #c97a8a !important;
+  background: rgba(201,122,138,.08) !important;
+}
+
+[data-theme="dark"] .note.danger:not(.no-icon)::before {
+  color: #c97a8a !important;
+}
