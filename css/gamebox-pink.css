@@ -1,0 +1,280 @@
+/* 花璃匣 — 游戏展示卡片 */
+.card-gamebox {
+  margin-top: 0 !important;
+  overflow: visible !important;
+}
+.card-gamebox .item-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid rgba(255,182,193,.15) !important;
+  margin-bottom: 12px !important;
+}
+.card-gamebox .item-headline i {
+  color: #FF85A2 !important;
+  margin-right: 6px;
+  font-size: 16px;
+}
+.card-gamebox .item-headline span {
+  color: #FF85A2 !important;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* 横向滚动容器 */
+.gamebox-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 10px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #FFB6C1 transparent;
+}
+.gamebox-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.gamebox-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.gamebox-scroll::-webkit-scrollbar-thumb {
+  background: #FFB6C1;
+  border-radius: 2px;
+}
+
+/* 游戏卡片 */
+.gamebox-card {
+  flex: 0 0 130px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255,240,243,.5);
+  border: 1px solid rgba(255,182,193,.15);
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  position: relative;
+}
+.gamebox-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(255,133,162,.2);
+  border-color: rgba(255,133,162,.3);
+}
+
+/* 游戏封面 */
+.gamebox-cover {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+.gamebox-card:hover .gamebox-cover {
+  transform: scale(1.05);
+}
+.gamebox-cover-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.gamebox-cover-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to top, rgba(255,240,243,.5), transparent);
+  pointer-events: none;
+}
+
+/* 游戏信息 */
+.gamebox-info {
+  padding: 8px 8px 10px;
+}
+.gamebox-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e8557a;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gamebox-brief {
+  font-size: 10px;
+  color: #C97080;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== 弹窗遮罩 ===== */
+.gamebox-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.55);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.gamebox-modal-mask.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 弹窗卡片 */
+.gamebox-modal {
+  width: 90%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fff8fa;
+  border-radius: 16px;
+  border: 1px solid rgba(255,182,193,.2);
+  box-shadow: 0 16px 48px rgba(0,0,0,.2), 0 0 60px rgba(255,133,162,.08);
+  transform: scale(.9) translateY(20px);
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #FFB6C1 transparent;
+}
+.gamebox-modal-mask.active .gamebox-modal {
+  transform: scale(1) translateY(0);
+}
+.gamebox-modal::-webkit-scrollbar {
+  width: 4px;
+}
+.gamebox-modal::-webkit-scrollbar-thumb {
+  background: #FFB6C1;
+  border-radius: 2px;
+}
+
+/* 弹窗关闭按钮 */
+.gamebox-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255,182,193,.2);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all .2s ease;
+  color: #FF85A2;
+  font-size: 14px;
+}
+.gamebox-modal-close:hover {
+  background: #FF85A2;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* 弹窗封面 */
+.gamebox-modal-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+/* 弹窗内容 */
+.gamebox-modal-body {
+  padding: 20px;
+}
+.gamebox-modal-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e8557a;
+  margin-bottom: 6px;
+}
+.gamebox-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.gamebox-modal-tag {
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 50px;
+  background: rgba(255,182,193,.15);
+  color: #FF85A2;
+  border: 1px solid rgba(255,182,193,.2);
+}
+.gamebox-modal-desc {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.7;
+}
+.gamebox-modal-desc p {
+  margin: 0 0 8px;
+}
+
+/* ===== 深色模式 ===== */
+[data-theme="dark"] .gamebox-card {
+  background: rgba(40,25,32,.5);
+  border-color: rgba(255,133,162,.08);
+}
+[data-theme="dark"] .gamebox-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,.3);
+  border-color: rgba(255,133,162,.15);
+}
+[data-theme="dark"] .gamebox-cover-wrap::after {
+  background: linear-gradient(to top, rgba(40,25,32,.5), transparent);
+}
+[data-theme="dark"] .gamebox-name {
+  color: #FFB6C1;
+}
+[data-theme="dark"] .gamebox-brief {
+  color: #A07080;
+}
+[data-theme="dark"] .gamebox-modal {
+  background: #1e1519;
+  border-color: rgba(255,133,162,.1);
+  box-shadow: 0 16px 48px rgba(0,0,0,.4), 0 0 40px rgba(255,133,162,.04);
+}
+[data-theme="dark"] .gamebox-modal-name {
+  color: #FFB6C1;
+}
+[data-theme="dark"] .gamebox-modal-tag {
+  background: rgba(255,133,162,.08);
+  color: #E8899A;
+  border-color: rgba(255,133,162,.12);
+}
+[data-theme="dark"] .gamebox-modal-desc {
+  color: #aaa;
+}
+[data-theme="dark"] .gamebox-modal-close {
+  background: rgba(255,133,162,.1);
+  color: #E8899A;
+}
+[data-theme="dark"] .gamebox-modal-close:hover {
+  background: #E8899A;
+  color: #1e1519;
+}
+[data-theme="dark"] .gamebox-scroll::-webkit-scrollbar-thumb {
+  background: #5a3a45;
+}
+[data-theme="dark"] .gamebox-modal::-webkit-scrollbar-thumb {
+  background: #5a3a45;
+}
