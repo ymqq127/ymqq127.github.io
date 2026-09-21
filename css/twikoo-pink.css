@@ -1,19 +1,19 @@
 /* Twikoo 粉色主题 */
-/* 评论区白色背景 */
+/* 评论区浅粉背景 */
 #twikoo {
-  background: #fff !important;
+  background: #fff8fa !important;
   border-radius: 12px;
   padding: 20px;
 }
 /* 输入区域 */
 #twikoo .tk-submit {
   border-color: #FFB6C1;
-  background: #fff !important;
+  background: #fff8fa !important;
 }
 #twikoo .tk-input {
   border-color: #FFB6C1 !important;
   border-radius: 8px !important;
-  background: #fff !important;
+  background: #fff8fa !important;
 }
 #twikoo .tk-input:focus {
   border-color: #FF85A2 !important;
@@ -21,7 +21,7 @@
 }
 /* 昵称/邮箱等输入框 */
 #twikoo .tk-meta-input .tk-input {
-  background: #fff !important;
+  background: #fff8fa !important;
 }
 /* 发送按钮 */
 #twikoo .tk-btn {
