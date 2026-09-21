@@ -3,10 +3,10 @@
 #nav {
   transition: background .3s ease, box-shadow .3s ease, transform .2s ease-in-out, opacity .2s ease-in-out !important;
 }
-/* 封面上的导航栏 - 深粉半透明 + 白色文字 */
+/* 封面上的导航栏 - 完全透明 + 白色文字 */
 #page-header.full_page #nav {
-  background: rgba(160,110,125,.7) !important;
-  backdrop-filter: blur(8px);
+  background: transparent !important;
+  backdrop-filter: none;
 }
 #page-header.full_page #nav #site-title,
 #page-header.full_page #nav #site-title a,
@@ -91,7 +91,7 @@
 }
 /* 深色模式适配 */
 [data-theme="dark"] #page-header.full_page #nav {
-  background: rgba(160,110,125,.7) !important;
+  background: transparent !important;
 }
 [data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(26,18,21,.95) !important;
