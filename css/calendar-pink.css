@@ -1,0 +1,175 @@
+/* 日历组件 — 粉色风格 */
+
+/* === 日历卡片容器 === */
+.card-calendar {
+  background: var(--card-bg) !important;
+  border-radius: 12px !important;
+  padding: 18px 16px 14px !important;
+  margin-bottom: 16px !important;
+  border: 1px solid rgba(255,133,162,.1) !important;
+  box-shadow: 0 2px 12px rgba(255,133,162,.06) !important;
+  transition: all .3s ease !important;
+}
+.card-calendar:hover {
+  box-shadow: 0 4px 20px rgba(255,133,162,.1) !important;
+}
+
+/* 卡片标题 */
+.card-calendar .item-headline {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 14px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid rgba(255,133,162,.12) !important;
+}
+.card-calendar .item-headline i {
+  color: #FF85A2 !important;
+  margin-right: 6px !important;
+  font-size: .9em !important;
+}
+.card-calendar .item-headline span {
+  color: #C97080 !important;
+  font-size: .9em !important;
+  font-weight: 600 !important;
+}
+
+/* === 日历主体 === */
+.pink-calendar {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  font-size: .82em !important;
+}
+
+/* 星期标题行 */
+.pink-calendar thead th {
+  color: #B06070 !important;
+  font-weight: 600 !important;
+  font-size: .85em !important;
+  padding: 6px 0 !important;
+  text-align: center !important;
+}
+.pink-calendar thead th:first-child {
+  color: #FF85A2 !important;
+}
+.pink-calendar thead th:last-child {
+  color: #FF85A2 !important;
+}
+
+/* 日期单元格 */
+.pink-calendar td {
+  text-align: center !important;
+  padding: 4px 0 !important;
+  height: 30px !important;
+  vertical-align: middle !important;
+}
+.pink-calendar td span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  transition: all .25s ease !important;
+  color: #888 !important;
+  cursor: default !important;
+}
+
+/* 周末文字 */
+.pink-calendar td:first-child span,
+.pink-calendar td:last-child span {
+  color: #C97080 !important;
+}
+
+/* 其他月份日期 */
+.pink-calendar td.other-month span {
+  color: #ccc !important;
+  opacity: .5 !important;
+}
+
+/* 当天高亮 */
+.pink-calendar td.today span {
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.35) !important;
+}
+
+/* hover效果 */
+.pink-calendar td span:not(.today-span):hover {
+  background: rgba(255,182,193,.15) !important;
+  color: #FF85A2 !important;
+}
+
+/* === 月份导航 === */
+.calendar-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 10px !important;
+}
+.calendar-nav .calendar-title {
+  font-size: .95em !important;
+  font-weight: 600 !important;
+  color: #C97080 !important;
+}
+.calendar-nav button {
+  background: rgba(255,182,193,.12) !important;
+  border: 1px solid rgba(255,133,162,.15) !important;
+  color: #FF85A2 !important;
+  border-radius: 6px !important;
+  width: 26px !important;
+  height: 26px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all .25s ease !important;
+  font-size: .8em !important;
+  padding: 0 !important;
+}
+.calendar-nav button:hover {
+  background: rgba(255,182,193,.25) !important;
+  border-color: #FFB6C1 !important;
+  transform: scale(1.1) !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .card-calendar {
+  border-color: rgba(201,112,128,.12) !important;
+  box-shadow: 0 2px 12px rgba(201,112,128,.05) !important;
+}
+[data-theme="dark"] .card-calendar:hover {
+  box-shadow: 0 4px 20px rgba(201,112,128,.08) !important;
+}
+[data-theme="dark"] .card-calendar .item-headline {
+  border-bottom-color: rgba(201,112,128,.15) !important;
+}
+[data-theme="dark"] .card-calendar .item-headline i { color: #E8899A !important; }
+[data-theme="dark"] .card-calendar .item-headline span { color: #A05060 !important; }
+[data-theme="dark"] .pink-calendar thead th { color: #8A4050 !important; }
+[data-theme="dark"] .pink-calendar thead th:first-child,
+[data-theme="dark"] .pink-calendar thead th:last-child { color: #E8899A !important; }
+[data-theme="dark"] .pink-calendar td span { color: #999 !important; }
+[data-theme="dark"] .pink-calendar td:first-child span,
+[data-theme="dark"] .pink-calendar td:last-child span { color: #A05060 !important; }
+[data-theme="dark"] .pink-calendar td.other-month span { color: #555 !important; opacity: .4 !important; }
+[data-theme="dark"] .pink-calendar td.today span {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.35) !important;
+}
+[data-theme="dark"] .pink-calendar td span:not(.today-span):hover {
+  background: rgba(201,112,128,.15) !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] .calendar-nav .calendar-title { color: #A05060 !important; }
+[data-theme="dark"] .calendar-nav button {
+  background: rgba(201,112,128,.1) !important;
+  border-color: rgba(201,112,128,.15) !important;
+  color: #E8899A !important;
+}
+[data-theme="dark"] .calendar-nav button:hover {
+  background: rgba(201,112,128,.2) !important;
+  border-color: #C97080 !important;
+}
