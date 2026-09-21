@@ -1,0 +1,91 @@
+/* 文章卡片 hover 粉色美化 */
+
+/* === 面页文章卡片 === */
+.recent-post-item {
+  border: 1.5px solid rgba(255,133,162,.1) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.recent-post-item:hover {
+  border-color: rgba(255,133,162,.35) !important;
+  box-shadow: 0 8px 24px rgba(255,133,162,.15), 0 2px 8px rgba(255,133,162,.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* 封面图 hover 微放大 */
+.recent-post-item:hover .post-bg {
+  transform: scale(1.06) !important;
+}
+
+/* === 侧边栏卡片 === */
+.card-widget {
+  border: 1.5px solid rgba(255,133,162,.1) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.card-widget:hover {
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 6px 18px rgba(255,133,162,.12) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* ===文章页相关卡片 === */
+.post-recommend {
+  border: 1.5px solid rgba(255,133,162,.1) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.post-recommend:hover {
+  border-color: rgba(255,133,162,.35) !important;
+  box-shadow: 0 8px 24px rgba(255,133,162,.15) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* === 友链卡片 === */
+.friend-link-item {
+  border: 1.5px solid rgba(255,133,162,.1) !important;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.friend-link-item:hover {
+  border-color: rgba(255,133,162,.35) !important;
+  box-shadow: 0 6px 18px rgba(255,133,162,.12) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .recent-post-item {
+  border-color: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .recent-post-item:hover {
+  border-color: rgba(160,80,96,.35) !important;
+  box-shadow: 0 8px 24px rgba(160,80,96,.2), 0 2px 8px rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .card-widget {
+  border-color: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .card-widget:hover {
+  border-color: rgba(160,80,96,.3) !important;
+  box-shadow: 0 6px 18px rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .post-recommend {
+  border-color: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .post-rerecommend:hover {
+  border-color: rgba(160,80,96,.35) !important;
+  box-shadow: 0 8px 24px rgba(160,80,96,.2) !important;
+}
+
+[data-theme="dark"] .friend-link-item {
+  border-color: rgba(160,80,96,.1) !important;
+}
+
+[data-theme="dark"] .friend-link-item:hover {
+  border-color: rgba(160,80,96,.35) !important;
+  box-shadow: 0 6px 18px rgba(160,80,96,.15) !important;
+}
