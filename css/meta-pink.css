@@ -1,0 +1,255 @@
+/* 文章meta信息 — 日期/分类/标签粉色胶囊 */
+
+/* === 首页卡片meta === */
+.recent-post-item .article-meta-wrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 8px 0 4px !important;
+}
+
+/* 隐藏竖线分隔符 */
+.recent-post-item .article-meta-separator {
+  display: none !important;
+}
+
+/* 日期胶囊 */
+.recent-post-item .post-meta-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 3px 12px 3px 8px !important;
+  color: #C97080 !important;
+  font-size: .82em !important;
+  transition: all .3s ease !important;
+}
+.recent-post-item .post-meta-date i {
+  color: #FF85A2 !important;
+  margin-right: 4px !important;
+  font-size: .9em !important;
+}
+.recent-post-item .post-meta-date:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+
+/* 评论胶囊 */
+.recent-post-item .article-meta {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 3px 12px 3px 8px !important;
+  color: #C97080 !important;
+  font-size: .82em !important;
+  transition: all .3s ease !important;
+}
+.recent-post-item .article-meta i {
+  color: #FF85A2 !important;
+  margin-right: 4px !important;
+  font-size: .9em !important;
+}
+.recent-post-item .article-meta:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+.recent-post-item .article-meta a {
+  color: #C97080 !important;
+}
+.recent-post-item .article-meta a:hover {
+  color: #FF85A2 !important;
+}
+
+/* meta标签文字 */
+.recent-post-item .article-meta-label {
+  color: #B06070 !important;
+  font-size: .85em !important;
+}
+
+/* 分类/标签链接胶囊 */
+.recent-post-item .article-meta-link,
+.recent-post-item .article-meta a:not(.twikoo-count) {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 3px 12px 3px 8px !important;
+  color: #C97080 !important;
+  text-decoration: none !important;
+  transition: all .3s ease !important;
+}
+.recent-post-item .article-meta-link:hover,
+.recent-post-item .article-meta a:not(.twikoo-count):hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  color: #FF85A2 !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+
+/* === 文章详情页meta === */
+.article-container .article-meta-wrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.article-container .article-meta-separator {
+  display: none !important;
+}
+.article-container .post-meta-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 4px 14px 4px 10px !important;
+  color: #C97080 !important;
+  font-size: .85em !important;
+  transition: all .3s ease !important;
+}
+.article-container .post-meta-date i {
+  color: #FF85A2 !important;
+  margin-right: 5px !important;
+}
+.article-container .post-meta-date:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+.article-container .article-meta {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 4px 14px 4px 10px !important;
+  color: #C97080 !important;
+  font-size: .85em !important;
+  transition: all .3s ease !important;
+}
+.article-container .article-meta i {
+  color: #FF85A2 !important;
+  margin-right: 5px !important;
+}
+.article-container .article-meta:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+.article-container .article-meta a {
+  color: #C97080 !important;
+  text-decoration: none !important;
+}
+.article-container .article-meta a:hover {
+  color: #FF85A2 !important;
+}
+.article-container .article-meta-label {
+  color: #B06070 !important;
+}
+.article-container .article-meta-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 4px 14px 4px 10px !important;
+  color: #C97080 !important;
+  transition: all .3s ease !important;
+}
+.article-container .article-meta-link:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  color: #FF85A2 !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+
+/* === 文章底部标签 === */
+.post-tags .tag-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06)) !important;
+  border: 1px solid rgba(255,133,162,.18) !important;
+  border-radius: 50px !important;
+  padding: 4px 14px 4px 10px !important;
+  color: #C97080 !important;
+  margin: 4px 4px !important;
+  transition: all .3s ease !important;
+}
+.post-tags .tag-item i {
+  color: #FF85A2 !important;
+  margin-right: 5px !important;
+}
+.post-tags .tag-item:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.22), rgba(255,133,162,.12)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  color: #FF85A2 !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .recent-post-item .post-meta-date,
+[data-theme="dark"] .recent-post-item .article-meta,
+[data-theme="dark"] .recent-post-item .article-meta-link,
+[data-theme="dark"] .recent-post-item .article-meta a:not(.twikoo-count) {
+  background: linear-gradient(135deg, rgba(201,112,128,.1), rgba(168,80,96,.05)) !important;
+  border-color: rgba(201,112,128,.18) !important;
+  color: #A05060 !important;
+}
+[data-theme="dark"] .recent-post-item .post-meta-date i,
+[data-theme="dark"] .recent-post-item .article-meta i {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .recent-post-item .post-meta-date:hover,
+[data-theme="dark"] .recent-post-item .article-meta:hover,
+[data-theme="dark"] .recent-post-item .article-meta-link:hover,
+[data-theme="dark"] .recent-post-item .article-meta a:not(.twikoo-count):hover {
+  background: linear-gradient(135deg, rgba(201,112,128,.2), rgba(168,80,96,.1)) !important;
+  border-color: rgba(201,112,128,.3) !important;
+  color: #E8899A !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
+}
+[data-theme="dark"] .recent-post-item .article-meta-label {
+  color: #8A4050 !important;
+}
+[data-theme="dark"] .article-container .post-meta-date,
+[data-theme="dark"] .article-container .article-meta,
+[data-theme="dark"] .article-container .article-meta-link {
+  background: linear-gradient(135deg, rgba(201,112,128,.1), rgba(168,80,96,.05)) !important;
+  border-color: rgba(201,112,128,.18) !important;
+  color: #A05060 !important;
+}
+[data-theme="dark"] .article-container .post-meta-date i,
+[data-theme="dark"] .article-container .article-meta i {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .article-container .post-meta-date:hover,
+[data-theme="dark"] .article-container .article-meta:hover,
+[data-theme="dark"] .article-container .article-meta-link:hover {
+  background: linear-gradient(135deg, rgba(201,112,128,.2), rgba(168,80,96,.1)) !important;
+  border-color: rgba(201,112,128,.3) !important;
+  color: #E8899A !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
+}
+[data-theme="dark"] .article-container .article-meta a { color: #A05060 !important; }
+[data-theme="dark"] .article-container .article-meta a:hover { color: #E8899A !important; }
+[data-theme="dark"] .article-container .article-meta-label { color: #8A4050 !important; }
+[data-theme="dark"] .post-tags .tag-item {
+  background: linear-gradient(135deg, rgba(201,112,128,.1), rgba(168,80,96,.05)) !important;
+  border-color: rgba(201,112,128,.18) !important;
+  color: #A05060 !important;
+}
+[data-theme="dark"] .post-tags .tag-item i { color: #E8899A !important; }
+[data-theme="dark"] .post-tags .tag-item:hover {
+  background: linear-gradient(135deg, rgba(201,112,128,.2), rgba(168,80,96,.1)) !important;
+  border-color: rgba(201,112,128,.3) !important;
+  color: #E8899A !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
+}
