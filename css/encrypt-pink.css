@@ -1,0 +1,150 @@
+/* 文章加密页面 — 粉色密码输入框 */
+
+/* === 加密内容容器 === */
+.hbe-content {
+  max-width: 480px !important;
+  margin: 60px auto !important;
+  padding: 40px 36px !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.06), rgba(255,133,162,.03)) !important;
+  border: 1px solid rgba(255,133,162,.2) !important;
+  border-radius: 20px !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 24px rgba(255,133,162,.08) !important;
+}
+
+/* 顶部粉色渐变条 */
+.hbe-content::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #FFB6C1, #FF85A2, #FFB6C1) !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+/* 锁图标区域 */
+.hbe-content .hbe-icon {
+  margin-bottom: 20px !important;
+}
+.hbe-content .hbe-icon i,
+.hbe-content .hbe-icon svg {
+  color: #FF85A2 !important;
+  font-size: 2.5em !important;
+  opacity: .8 !important;
+}
+
+/* 提示文字 */
+.hbe-content p {
+  color: #C97080 !important;
+  font-size: .95em !important;
+  margin-bottom: 24px !important;
+  line-height: 1.6 !important;
+}
+
+/* === 密码输入框 === */
+.hbe-input {
+  width: 100% !important;
+  padding: 12px 18px !important;
+  background: rgba(255,255,255,.8) !important;
+  border: 1.5px solid rgba(255,133,162,.25) !important;
+  border-radius: 12px !important;
+  color: #666 !important;
+  font-size: .95em !important;
+  outline: none !important;
+  transition: all .3s ease !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.06) !important;
+}
+.hbe-input:focus {
+  border-color: #FF85A2 !important;
+  background: #fff !important;
+  box-shadow: 0 4px 16px rgba(255,133,162,.15) !important;
+}
+.hbe-input::placeholder {
+  color: #D4A0B0 !important;
+}
+
+/* === 提交按钮 === */
+.hbe-button {
+  display: inline-block !important;
+  margin-top: 18px !important;
+  padding: 10px 36px !important;
+  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-size: .95em !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all .35s cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 4px 14px rgba(255,133,162,.3) !important;
+  letter-spacing: 1px !important;
+}
+.hbe-button:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 6px 22px rgba(255,133,162,.4), 0 0 30px rgba(255,182,193,.2) !important;
+  background: linear-gradient(135deg, #FF7090, #FFA8B8) !important;
+}
+.hbe-button:active {
+  transform: translateY(0) scale(.98) !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.3) !important;
+}
+
+/* === 错误提示 === */
+.hbe-error {
+  color: #FF85A2 !important;
+  font-size: .88em !important;
+  margin-top: 12px !important;
+  padding: 8px 14px !important;
+  background: rgba(255,133,162,.08) !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255,133,162,.15) !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .hbe-content {
+  background: linear-gradient(135deg, rgba(201,112,128,.08), rgba(168,80,96,.04)) !important;
+  border-color: rgba(201,112,128,.2) !important;
+  box-shadow: 0 4px 24px rgba(201,112,128,.08) !important;
+}
+[data-theme="dark"] .hbe-content::before {
+  background: linear-gradient(90deg, #C97080, #E8899A, #C97080) !important;
+}
+[data-theme="dark"] .hbe-content .hbe-icon i,
+[data-theme="dark"] .hbe-content .hbe-icon svg {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .hbe-content p {
+  color: #A05060 !important;
+}
+[data-theme="dark"] .hbe-input {
+  background: rgba(26,18,21,.8) !important;
+  border-color: rgba(201,112,128,.25) !important;
+  color: #ccc !important;
+  box-shadow: 0 2px 8px rgba(201,112,128,.06) !important;
+}
+[data-theme="dark"] .hbe-input:focus {
+  border-color: #E8899A !important;
+  background: rgba(26,18,21,.95) !important;
+  box-shadow: 0 4px 16px rgba(201,112,128,.15) !important;
+}
+[data-theme="dark"] .hbe-input::placeholder {
+  color: #8A4050 !important;
+}
+[data-theme="dark"] .hbe-button {
+  background: linear-gradient(135deg, #C97080, #E8899A) !important;
+  box-shadow: 0 4px 14px rgba(201,112,128,.3) !important;
+}
+[data-theme="dark"] .hbe-button:hover {
+  background: linear-gradient(135deg, #D08090, #F09AA8) !important;
+  box-shadow: 0 6px 22px rgba(201,112,128,.4), 0 0 30px rgba(232,137,154,.15) !important;
+}
+[data-theme="dark"] .hbe-error {
+  color: #E8899A !important;
+  background: rgba(201,112,128,.08) !important;
+  border-color: rgba(201,112,128,.15) !important;
+}
