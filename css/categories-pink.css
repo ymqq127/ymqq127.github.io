@@ -1,0 +1,143 @@
+/* 分类页面粉色胶囊美化 */
+
+/* === 分类页面 === */
+.category-list a {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 6px 18px !important;
+  margin: 4px 6px !important;
+  border-radius: 50px !important;
+  border: 1.5px solid rgba(255,133,162,.25) !important;
+  background: linear-gradient(135deg, rgba(255,182,193,.1), rgba(255,133,162,.05)) !important;
+  color: #C97080 !important;
+  font-weight: 500 !important;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) !important;
+  box-shadow: 0 2px 6px rgba(255,133,162,.06) !important;
+}
+
+.category-list a:hover {
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(255,133,162,.3) !important;
+  transform: translateY(-2px) scale(1.03) !important;
+  padding: 6px 22px !important;
+}
+
+/* 分类文章数 */
+.category-list-count {
+  margin-left: 6px !important;
+  padding: 1px 8px !important;
+  border-radius: 50px !important;
+  background: rgba(255,133,162,.12) !important;
+  color: #FF85A2 !important;
+  font-size: .8em !important;
+  font-weight: 600 !important;
+}
+
+.category-list a:hover .category-list-count {
+  background: rgba(255,255,255,.25) !important;
+  color: #fff !important;
+}
+
+/* 去掉括号 */
+.category-list-count::before,
+.category-list-count::after {
+  content: none !important;
+}
+
+/* 列表项间距 */
+.category-list li {
+  margin: 4px 0 !important;
+  padding: .12em .4em .12em .4em !important;
+}
+
+/* 子分类缩进 */
+.category-list ul {
+  padding-left: 16px !important;
+}
+
+/* === 侧边栏分类卡片 === */
+.card-category-list-item a {
+  border-radius: 50px !important;
+  border: 1.5px solid rgba(255,133,162,.15) !important;
+  background: transparent !important;
+  transition: all .3s ease !important;
+  margin: 3px 0 !important;
+}
+
+.card-category-list-item a:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.1)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  color: #FF85A2 !important;
+  padding: 2px 12px !important;
+}
+
+.card-category-list-count {
+  color: #FF85A2 !important;
+}
+
+/* === 侧边栏归档卡片 === */
+.card-archive-list-item a {
+  border-radius: 50px !important;
+  border: 1.5px solid rgba(255,133,162,.15) !important;
+  background: transparent !important;
+  transition: all .3s ease !important;
+  margin: 3px 0 !important;
+}
+
+.card-archive-list-item a:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.1)) !important;
+  border-color: rgba(255,133,162,.3) !important;
+  color: #FF85A2 !important;
+  padding: 2px 12px !important;
+}
+
+/* === 深色模式 === */
+[data-theme="dark"] .category-list a {
+  background: rgba(160,80,96,.1) !important;
+  color: #d4a0a0 !important;
+  border-color: rgba(160,80,96,.2) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .category-list a:hover {
+  background: linear-gradient(135deg, #a05060, #8a4050) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(160,80,96,.3) !important;
+}
+
+[data-theme="dark"] .category-list-count {
+  background: rgba(160,80,96,.15) !important;
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .category-list a:hover .category-list-count {
+  background: rgba(255,255,255,.2) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .card-category-list-item a {
+  border-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .card-category-list-item a:hover {
+  background: rgba(160,80,96,.12) !important;
+  border-color: rgba(160,80,96,.3) !important;
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .card-category-list-count {
+  color: #c97a8a !important;
+}
+
+[data-theme="dark"] .card-archive-list-item a {
+  border-color: rgba(160,80,96,.15) !important;
+}
+
+[data-theme="dark"] .card-archive-list-item a:hover {
+  background: rgba(160,80,96,.12) !important;
+  border-color: rgba(160,80,96,.3) !important;
+  color: #c97a8a !important;
+}
