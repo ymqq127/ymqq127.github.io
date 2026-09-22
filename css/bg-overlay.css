@@ -42,3 +42,18 @@
 [data-theme="dark"] #page-header.full_page::after {
   background: linear-gradient(to top, #1a1215, rgba(26,18,21,.6) 40%, transparent);
 }
+
+/* === 移动端适配 === */
+@media (max-width: 768px) {
+  /* 手机端封面遮罩稍浅，避免小屏过暗 */
+  #page-header.full_page::before {
+    background: rgba(40, 20, 30, 0.4);
+  }
+  /* 手机端底部渐变高度减小 */
+  #page-header.full_page::after {
+    height: 60px;
+  }
+  [data-theme="dark"] #page-header.full_page::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

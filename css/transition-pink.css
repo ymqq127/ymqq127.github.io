@@ -1,19 +1,27 @@
 /* 页面加载过渡 — 粉色淡入动画（纯CSS，无JS依赖） */
 
-/* 页面内容淡入上移 */
-#body-wrap {
-  animation: pinkFadeUp .6s cubic-bezier(.4,0,.2,1) both !important;
+/* === 桌面端：完整动画（含transform） === */
+@media (min-width: 769px) {
+  #body-wrap {
+    animation: pinkFadeUp .6s cubic-bezier(.4,0,.2,1) both !important;
+  }
+  #page-header {
+    animation: pinkScaleIn .7s cubic-bezier(.4,0,.2,1) both !important;
+  }
 }
 
-/* 封面区域微缩放还原 */
-#page-header {
-  animation: pinkScaleIn .7s cubic-bezier(.4,0,.2,1) both !important;
+/* === 手机端：纯opacity动画（避免transform创建新包含块，破坏position:fixed和background-attachment:fixed） === */
+@media (max-width: 768px) {
+  #body-wrap {
+    animation: pinkFadeIn .6s cubic-bezier(.4,0,.2,1) both !important;
+  }
+  #page-header {
+    animation: pinkFadeIn .7s cubic-bezier(.4,0,.2,1) both !important;
+  }
 }
 
-/* 侧边栏淡入（不使用transform，避免破坏mobile sidebar的position:fixed） */
-#sidebar {
-  animation: pinkFadeIn .5s ease .15s both !important;
-}
+/* 桌面侧边栏淡入（#sidebar是手机端侧边栏容器，不能加opacity动画否则手机侧边栏初始不可见） */
+/* 桌面侧边栏卡片已有 .card-widget 逐个淡入动画，无需额外处理 */
 
 /* 文章卡片依次淡入 */
 .recent-post-item:nth-child(1) { animation: pinkFadeUp .5s cubic-bezier(.4,0,.2,1) .1s both !important; }
