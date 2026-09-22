@@ -51,7 +51,7 @@
         theme: '#FF85A2',
         loop: 'all',
         order: 'list',
-        preload: 'none',
+        preload: 'metadata',
         volume: 0.7,
         mutex: true,
         listFolded: true,
