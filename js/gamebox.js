@@ -1,4 +1,4 @@
-/*! 花璃匣 — 游戏展示（竖向自动滚动） */
+/*! 花璃匣 — 游戏展示（竖向自动滚动 + 启匣随机抽取） */
 (function () {
   'use strict';
 
@@ -68,7 +68,10 @@
     var card = document.createElement('div');
     card.className = 'card-widget card-gamebox';
     card.innerHTML =
-      '<div class="item-headline"><i class="fas fa-gamepad"></i><span>花璃匣</span></div>' +
+      '<div class="gamebox-header">' +
+        '<div class="item-headline"><i class="fas fa-gamepad"></i><span>花璃匣</span></div>' +
+        '<button class="gamebox-lucky-btn" title="随机抽取">启匣</button>' +
+      '</div>' +
       '<div class="gamebox-viewport"><div class="gamebox-track">' + html + '</div></div>';
 
     // 插入到公告下方
@@ -112,14 +115,13 @@
     mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close">&times;</button><div id="gamebox-modal-content"></div></div>';
     document.body.appendChild(mask);
 
-    card.addEventListener('click', function (e) {
-      var item = e.target.closest('.gamebox-item');
-      if (!item) return;
-      var i = parseInt(item.getAttribute('data-index'));
-      var g = list[i];
-      if (!g) return;
+    // 打开弹窗
+    function openModal(g) {
       var tags = (g.tags || []).map(function (t) { return '<span class="gamebox-modal-tag">' + t + '</span>'; }).join('');
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      var topText = isDark ? '去往下一场璃落' : '去往下一场花开';
       document.getElementById('gamebox-modal-content').innerHTML =
+        '<div class="gamebox-modal-top">' + topText + '</div>' +
         '<img class="gamebox-modal-cover" src="' + g.cover + '" alt="' + g.name + '" onerror="this.src=\'/img/friend_404.gif\'">' +
         '<div class="gamebox-modal-body">' +
         '<div class="gamebox-modal-name">' + g.name + '</div>' +
@@ -127,6 +129,25 @@
         '<div class="gamebox-modal-desc">' + g.desc + '</div></div>';
       mask.classList.add('active');
       document.body.style.overflow = 'hidden';
+    }
+
+    // 点击卡片打开弹窗
+    card.addEventListener('click', function (e) {
+      var btn = e.target.closest('.gamebox-lucky-btn');
+      if (btn) return; // 启匣按钮单独处理
+      var item = e.target.closest('.gamebox-item');
+      if (!item) return;
+      var i = parseInt(item.getAttribute('data-index'));
+      var g = list[i];
+      if (!g) return;
+      openModal(g);
+    });
+
+    // 启匣按钮：随机抽取
+    card.querySelector('.gamebox-lucky-btn').addEventListener('click', function (e) {
+      e.stopPropagation();
+      var ri = Math.floor(Math.random() * list.length);
+      openModal(list[ri]);
     });
 
     function closeModal() {

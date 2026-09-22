@@ -10,9 +10,9 @@
   animation: pinkScaleIn .7s cubic-bezier(.4,0,.2,1) both !important;
 }
 
-/* 侧边栏从右滑入 */
+/* 侧边栏淡入（不使用transform，避免破坏mobile sidebar的position:fixed） */
 #sidebar {
-  animation: pinkSlideLeft .5s cubic-bezier(.4,0,.2,1) .15s both !important;
+  animation: pinkFadeIn .5s ease .15s both !important;
 }
 
 /* 文章卡片依次淡入 */

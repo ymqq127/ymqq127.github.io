@@ -1,0 +1,137 @@
+/* 手机侧边栏粉色美化 */
+
+/* 遮罩层 */
+#menu-mask {
+  background: rgba(30, 15, 20, .6) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+/* 侧边栏面板 */
+#sidebar-menus {
+  background: linear-gradient(180deg, #fff5f7 0%, #fff0f3 100%) !important;
+  border-left: 1px solid rgba(255,182,193,.15) !important;
+}
+
+/* 头像 */
+#sidebar-menus > .avatar-img img {
+  border-radius: 50% !important;
+  border: 3px solid #FFD6E0 !important;
+  box-shadow: 0 0 15px rgba(255,133,162,.2);
+  transition: transform .5s ease;
+}
+#sidebar-menus > .avatar-img img:hover {
+  transform: rotate(360deg);
+}
+
+/* 站点数据 */
+#sidebar-menus .site-data .headline {
+  color: #C97080 !important;
+}
+#sidebar-menus .site-data .length-num {
+  color: #FF85A2 !important;
+  font-weight: 700;
+}
+
+/* 菜单卡片 */
+#sidebar-menus .menus_items {
+  background: rgba(255,255,255,.7) !important;
+  border: 1px solid rgba(255,182,193,.15) !important;
+  box-shadow: 0 2px 12px rgba(255,133,162,.08) !important;
+  border-radius: 12px !important;
+}
+
+/* 菜单项 */
+#sidebar-menus .site-page {
+  color: #666 !important;
+  border-radius: 8px !important;
+  transition: all .25s ease !important;
+}
+#sidebar-menus .site-page:hover {
+  background: linear-gradient(135deg, rgba(255,182,193,.15), rgba(255,133,162,.1)) !important;
+  color: #FF85A2 !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+  transform: translateX(3px) !important;
+}
+#sidebar-menus .site-page i:first-child {
+  color: #FF85A2 !important;
+}
+
+/* 子菜单 */
+#sidebar-menus .menus_item_child {
+  background: rgba(255,240,243,.5) !important;
+  border-radius: 8px !important;
+}
+#sidebar-menus .menus_item_child .site-page {
+  color: #C97080 !important;
+  font-size: 1em !important;
+}
+#sidebar-menus .menus_item_child .site-page:hover {
+  color: #FF85A2 !important;
+}
+
+/* 分隔线 */
+#sidebar-menus hr {
+  border-color: rgba(255,182,193,.2) !important;
+}
+
+/* 滚动条 */
+#sidebar-menus::-webkit-scrollbar {
+  width: 4px;
+}
+#sidebar-menus::-webkit-scrollbar-track {
+  background: transparent;
+}
+#sidebar-menus::-webkit-scrollbar-thumb {
+  background: rgba(255,182,193,.3);
+  border-radius: 2px;
+}
+
+/* ===== 深色模式 ===== */
+[data-theme="dark"] #menu-mask {
+  background: rgba(0, 0, 0, .7) !important;
+}
+[data-theme="dark"] #sidebar-menus {
+  background: linear-gradient(180deg, #1e1519 0%, #231a1e 100%) !important;
+  border-left-color: rgba(255,133,162,.08) !important;
+}
+[data-theme="dark"] #sidebar-menus > .avatar-img img {
+  border-color: #3a2a30 !important;
+}
+[data-theme="dark"] #sidebar-menus .site-data .headline {
+  color: #A07080 !important;
+}
+[data-theme="dark"] #sidebar-menus .site-data .length-num {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #sidebar-menus .menus_items {
+  background: rgba(37,28,32,.8) !important;
+  border-color: rgba(255,133,162,.08) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,.2) !important;
+}
+[data-theme="dark"] #sidebar-menus .site-page {
+  color: #ccc !important;
+}
+[data-theme="dark"] #sidebar-menus .site-page:hover {
+  background: rgba(232,137,154,.1) !important;
+  color: #E8899A !important;
+  box-shadow: 0 2px 8px rgba(232,137,154,.08) !important;
+}
+[data-theme="dark"] #sidebar-menus .site-page i:first-child {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #sidebar-menus .menus_item_child {
+  background: rgba(30,21,25,.6) !important;
+}
+[data-theme="dark"] #sidebar-menus .menus_item_child .site-page {
+  color: #A07080 !important;
+}
+[data-theme="dark"] #sidebar-menus .menus_item_child .site-page:hover {
+  color: #E8899A !important;
+}
+[data-theme="dark"] #sidebar-menus hr {
+  border-color: rgba(255,133,162,.08) !important;
+}
+[data-theme="dark"] #sidebar-menus::-webkit-scrollbar-thumb {
+  background: rgba(232,137,154,.2);
+}

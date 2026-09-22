@@ -1,15 +1,25 @@
-/* 花璃匣 — 游戏展示（竖向自动滚动） */
+/* 花璃匣 — 游戏展示（竖向自动滚动 + 启匣按钮） */
 .card-gamebox {
   margin-top: 0 !important;
   overflow: hidden !important;
 }
-.card-gamebox .item-headline {
+
+/* 头部：标题左对齐 + 启匣按钮右对齐 */
+.gamebox-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 10px !important;
   border-bottom: 1px solid rgba(255,182,193,.15) !important;
   margin-bottom: 8px !important;
+}
+.card-gamebox .item-headline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
 }
 .card-gamebox .item-headline i {
   color: #FF85A2 !important;
@@ -21,6 +31,31 @@
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1px;
+}
+
+/* 启匣按钮 */
+.gamebox-lucky-btn {
+  background: linear-gradient(135deg, #FFB6C1, #FF85A2);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .3s ease;
+  box-shadow: 0 2px 8px rgba(255,133,162,.25);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.gamebox-lucky-btn:hover {
+  background: linear-gradient(135deg, #FF85A2, #FF6B8A);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255,133,162,.35);
+}
+.gamebox-lucky-btn:active {
+  transform: translateY(0) scale(.96);
 }
 
 /* 滚动视口 */
@@ -147,6 +182,18 @@
   transform: scale(1) translateY(0);
 }
 
+/* 弹窗顶部文案 */
+.gamebox-modal-top {
+  text-align: center;
+  padding: 14px 16px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #FF85A2;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, rgba(255,182,193,.08), rgba(255,133,162,.04));
+  border-bottom: 1px solid rgba(255,182,193,.1);
+}
+
 /* 关闭按钮 */
 .gamebox-modal-close {
   position: absolute;
@@ -176,7 +223,6 @@
   height: 200px;
   object-fit: cover;
   display: block;
-  border-radius: 16px 16px 0 0;
 }
 
 /* 弹窗内容 */
@@ -229,10 +275,23 @@
 [data-theme="dark"] .gamebox-viewport::after {
   background: linear-gradient(to top, var(--card-bg, #231a1e), transparent);
 }
+[data-theme="dark"] .gamebox-lucky-btn {
+  background: linear-gradient(135deg, #8a4a5a, #6a3a4a);
+  box-shadow: 0 2px 8px rgba(0,0,0,.3);
+}
+[data-theme="dark"] .gamebox-lucky-btn:hover {
+  background: linear-gradient(135deg, #9a5a6a, #7a4a5a);
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+}
 [data-theme="dark"] .gamebox-modal {
   background: #1e1519;
   border-color: rgba(255,133,162,.1);
   box-shadow: 0 16px 48px rgba(0,0,0,.4), 0 0 40px rgba(255,133,162,.04);
+}
+[data-theme="dark"] .gamebox-modal-top {
+  color: #E8899A;
+  background: linear-gradient(135deg, rgba(232,137,154,.06), rgba(232,137,154,.02));
+  border-bottom-color: rgba(255,133,162,.08);
 }
 [data-theme="dark"] .gamebox-modal-name { color: #FFB6C1; }
 [data-theme="dark"] .gamebox-modal-tag {
