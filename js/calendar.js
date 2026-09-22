@@ -1,4 +1,4 @@
-/*! Pink Calendar Widget */
+/*! Pink Calendar Widget — 支持 PJAX 重新初始化 */
 !function(){
   var now = new Date();
   var curYear = now.getFullYear();
@@ -53,6 +53,10 @@
     var announcement = document.querySelector('.card-announcement');
     if (!aside) return;
 
+    // 移除旧的日历（避免 PJAX 重复）
+    var old = aside.querySelector('.card-calendar');
+    if (old) old.remove();
+
     var card = document.createElement('div');
     card.className = 'card-widget card-calendar';
     card.innerHTML = '<div class="item-headline"><i class="fas fa-calendar-alt"></i><span>日历</span></div><div class="calendar-body"></div>';
@@ -77,9 +81,13 @@
     }
   }
 
+  // 初始化
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', build);
   } else {
     build();
   }
+
+  // PJAX 导航后重新初始化
+  document.addEventListener('pjax:complete', build);
 }();

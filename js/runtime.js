@@ -40,6 +40,9 @@
       setTimeout(init, 500)
       return
     }
+    // 移除旧的运行时间（避免 PJAX 重复）
+    var old = footer.querySelector('.site-runtime-wrap')
+    if (old) old.remove()
     var div = document.createElement('div')
     div.className = 'site-runtime-wrap'
     div.innerHTML = '<i class="fas fa-clock"></i> <span class="runtime-label">本站已运行</span> <span id="site-runtime"></span>'
@@ -54,4 +57,7 @@
   } else {
     init()
   }
+
+  // PJAX 导航后重新初始化
+  document.addEventListener('pjax:complete', init)
 })()

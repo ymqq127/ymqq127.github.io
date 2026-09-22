@@ -1,4 +1,4 @@
-/*! 花璃匣 — 游戏展示（竖向自动滚动 + 启匣随机抽取） */
+/*! 花璃匣 — 游戏展示（竖向自动滚动 + 启匣随机抽取 + PJAX 支持） */
 (function () {
   'use strict';
 
@@ -51,11 +51,53 @@
   var ITEM_H = 72; // 每条高度，与CSS一致
   var INTERVAL = 3500; // 滚动间隔ms
 
+  // 全局弹窗遮罩（跨 PJAX 复用）
+  var mask = document.querySelector('.gamebox-modal-mask');
+  if (!mask) {
+    mask = document.createElement('div');
+    mask.className = 'gamebox-modal-mask';
+    mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close">&times;</button><div id="gamebox-modal-content"></div></div>';
+    document.body.appendChild(mask);
+  }
+
+  // 打开弹窗
+  function openModal(g) {
+    var tags = (g.tags || []).map(function (t) { return '<span class="gamebox-modal-tag">' + t + '</span>'; }).join('');
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    var topText = isDark ? '去往下一场璃落' : '去往下一场花开';
+    document.getElementById('gamebox-modal-content').innerHTML =
+      '<div class="gamebox-modal-top">' + topText + '</div>' +
+      '<img class="gamebox-modal-cover" src="' + g.cover + '" alt="' + g.name + '" onerror="this.src=\'/img/friend_404.gif\'">' +
+      '<div class="gamebox-modal-body">' +
+      '<div class="gamebox-modal-name">' + g.name + '</div>' +
+      (tags ? '<div class="gamebox-modal-tags">' + tags + '</div>' : '') +
+      '<div class="gamebox-modal-desc">' + g.desc + '</div></div>';
+    mask.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    mask.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // 弹窗关闭事件（只绑定一次）
+  if (!mask._bindClose) {
+    mask.querySelector('.gamebox-modal-close').addEventListener('click', closeModal);
+    mask.addEventListener('click', function (e) { if (e.target === mask) closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    mask._bindClose = true;
+  }
+
   function build() {
     var aside = document.getElementById('aside-content');
     if (!aside) { setTimeout(build, 300); return; }
 
     var announcement = aside.querySelector('.card-announcement');
+
+    // 移除旧的花璃匣（避免 PJAX 重复）
+    var oldCard = aside.querySelector('.card-gamebox');
+    if (oldCard) oldCard.remove();
 
     // 构建HTML：首项 + 随机列表 + 首项（无缝循环）
     var html = list.map(function (g, i) {
@@ -109,28 +151,6 @@
       }
     }, INTERVAL);
 
-    // 弹窗
-    var mask = document.createElement('div');
-    mask.className = 'gamebox-modal-mask';
-    mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close">&times;</button><div id="gamebox-modal-content"></div></div>';
-    document.body.appendChild(mask);
-
-    // 打开弹窗
-    function openModal(g) {
-      var tags = (g.tags || []).map(function (t) { return '<span class="gamebox-modal-tag">' + t + '</span>'; }).join('');
-      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      var topText = isDark ? '去往下一场璃落' : '去往下一场花开';
-      document.getElementById('gamebox-modal-content').innerHTML =
-        '<div class="gamebox-modal-top">' + topText + '</div>' +
-        '<img class="gamebox-modal-cover" src="' + g.cover + '" alt="' + g.name + '" onerror="this.src=\'/img/friend_404.gif\'">' +
-        '<div class="gamebox-modal-body">' +
-        '<div class="gamebox-modal-name">' + g.name + '</div>' +
-        (tags ? '<div class="gamebox-modal-tags">' + tags + '</div>' : '') +
-        '<div class="gamebox-modal-desc">' + g.desc + '</div></div>';
-      mask.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
     // 点击卡片打开弹窗
     card.addEventListener('click', function (e) {
       var btn = e.target.closest('.gamebox-lucky-btn');
@@ -149,19 +169,15 @@
       var ri = Math.floor(Math.random() * list.length);
       openModal(list[ri]);
     });
-
-    function closeModal() {
-      mask.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    mask.querySelector('.gamebox-modal-close').addEventListener('click', closeModal);
-    mask.addEventListener('click', function (e) { if (e.target === mask) closeModal(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
   }
 
+  // 初始化
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', build);
   } else {
     build();
   }
+
+  // PJAX 导航后重新初始化
+  document.addEventListener('pjax:complete', build);
 })();
