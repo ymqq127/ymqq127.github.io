@@ -29,12 +29,31 @@
   background: rgba(255,182,193,.1) !important;
   border-left-color: #FFB6C1 !important;
 }
-/* 当前活跃项粉色高亮 */
+/* 当前活跃项粉色高亮 — 左侧发光指示条 + 圆点标记 */
 .toc .toc-item.active .toc-link {
   color: #FF85A2 !important;
-  font-weight: 600;
-  background: rgba(255,182,193,.12) !important;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgba(255,133,162,.15), rgba(255,182,193,.06)) !important;
   border-left: 3px solid #FF85A2 !important;
+  box-shadow: -4px 0 12px rgba(255,133,162,.2) !important;
+  position: relative;
+}
+.toc .toc-item.active .toc-link::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FF85A2;
+  box-shadow: 0 0 6px rgba(255,133,162,.5);
+  animation: tocPulse 2s ease-in-out infinite;
+}
+@keyframes tocPulse {
+  0%, 100% { box-shadow: 0 0 4px rgba(255,133,162,.4); }
+  50% { box-shadow: 0 0 10px rgba(255,133,162,.7); }
 }
 /* TOC展开按钮 */
 .toc-expand {
@@ -65,8 +84,13 @@
 }
 [data-theme="dark"] .toc .toc-item.active .toc-link {
   color: #E8899A !important;
-  background: rgba(232,137,154,.1) !important;
+  background: linear-gradient(90deg, rgba(232,137,154,.12), rgba(232,137,154,.04)) !important;
   border-left-color: #E8899A !important;
+  box-shadow: -4px 0 12px rgba(232,137,154,.15) !important;
+}
+[data-theme="dark"] .toc .toc-item.active .toc-link::before {
+  background: #E8899A;
+  box-shadow: 0 0 6px rgba(232,137,154,.5);
 }
 [data-theme="dark"] .toc-expand {
   color: #E8899A !important;
