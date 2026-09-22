@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 350">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1a3e"/><stop offset="100%" stop-color="#0d0d2a"/></linearGradient></defs>
+  <rect width="250" height="350" rx="8" fill="url(#bg)"/>
+  <text x="125" y="130" font-family="serif" font-size="26" fill="#8ea8f0" text-anchor="middle" font-weight="bold">崩坏</text>
+  <text x="125" y="170" font-family="serif" font-size="22" fill="#b0c4f8" text-anchor="middle">星穹铁道</text>
+  <text x="125" y="260" font-size="40" fill="#8ea8f0" text-anchor="middle" opacity="0.3">✦</text>
+  <rect x="10" y="10" width="230" height="330" rx="6" fill="none" stroke="#8ea8f0" stroke-width="1" opacity="0.3"/>
+</svg>

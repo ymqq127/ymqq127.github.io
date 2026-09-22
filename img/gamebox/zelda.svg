@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 350">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a5c2a"/><stop offset="100%" stop-color="#0d3318"/></linearGradient></defs>
+  <rect width="250" height="350" rx="8" fill="url(#bg)"/>
+  <text x="125" y="140" font-family="serif" font-size="28" fill="#7ec882" text-anchor="middle" font-weight="bold">塞尔达传说</text>
+  <text x="125" y="180" font-family="serif" font-size="22" fill="#a8e6ac" text-anchor="middle">王国之泪</text>
+  <text x="125" y="260" font-size="40" fill="#7ec882" text-anchor="middle" opacity="0.3">⚔</text>
+  <rect x="10" y="10" width="230" height="330" rx="6" fill="none" stroke="#7ec882" stroke-width="1" opacity="0.3"/>
+</svg>
