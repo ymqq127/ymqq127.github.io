@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="zt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d7a4a"/>
+      <stop offset="100%" stop-color="#0d3318"/>
+    </linearGradient>
+  </defs>
+  <rect width="60" height="60" rx="8" fill="url(#zt)"/>
+  <polygon points="30,12 40,30 20,30" fill="none" stroke="#7ec882" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="30,18 36,28 24,28" fill="none" stroke="#a8e6ac" stroke-width="0.8" opacity="0.35"/>
+  <text x="30" y="44" font-family="serif" font-size="8" fill="#7ec882" text-anchor="middle" font-weight="bold" letter-spacing="1">塞尔达</text>
+  <text x="30" y="54" font-size="5" fill="#a8e6ac" text-anchor="middle" opacity="0.6" letter-spacing="0.5">ZELDA</text>
+</svg>

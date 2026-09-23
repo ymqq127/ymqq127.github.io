@@ -6,28 +6,32 @@
   var games = [
     {
       name: '塞尔达传说：王国之泪',
-      cover: '/img/gamebox/zelda.svg',
+      thumb: '/img/gamebox/zelda-thumb.svg',
+      cover: '/img/gamebox/zelda-cover.svg',
       brief: '开放世界动作冒险',
       tags: ['开放世界', '动作', 'Switch'],
       desc: '<p>《塞尔达传说：王国之泪》是任天堂开发的开放世界动作冒险游戏，是《旷野之息》的续作。</p><p>全新的"究极手"等能力带来无限创意玩法，海拉鲁大陆的天空与地底等待探索。</p>'
     },
     {
       name: '星穹铁道',
-      cover: '/img/gamebox/starrail.svg',
+      thumb: '/img/gamebox/starrail-thumb.svg',
+      cover: '/img/gamebox/starrail-cover.svg',
       brief: '银河冒险回合制RPG',
       tags: ['回合制', 'RPG', '二次元'],
       desc: '<p>《崩坏：星穹铁道》是米哈游出品的银河冒险回合制RPG。</p><p>乘坐星穹列车，在星海间旅行，与各种伙伴结交，探索银河的真相。</p>'
     },
     {
       name: '空洞骑士',
-      cover: '/img/gamebox/hollowknight.svg',
+      thumb: '/img/gamebox/hollowknight-thumb.svg',
+      cover: '/img/gamebox/hollowknight-cover.svg',
       brief: '硬核2D动作冒险',
       tags: ['Metroidvania', '动作', '独立游戏'],
       desc: '<p>《空洞骑士》是一款2D动作冒险游戏，探索广阔而错综复杂的地下昆虫王国。</p><p>极具挑战的战斗、精美的手绘画风、深邃的世界观，是Metroidvania类游戏的巅峰之作。</p>'
     },
     {
       name: '动物森友会',
-      cover: '/img/gamebox/animalcrossing.svg',
+      thumb: '/img/gamebox/animalcrossing-thumb.svg',
+      cover: '/img/gamebox/animalcrossing-cover.svg',
       brief: '悠闲生活模拟',
       tags: ['模拟', '休闲', 'Switch'],
       desc: '<p>《集合啦！动物森友会》是任天堂推出的生活模拟游戏。</p><p>在无人岛上建造自己的家园，与可爱的动物邻居们一起生活，钓鱼、捉虫、装饰，享受慢节奏的岛屿生活。</p>'
@@ -67,7 +71,7 @@
     var topText = isDark ? '去往下一场璃落' : '去往下一场花开';
     document.getElementById('gamebox-modal-content').innerHTML =
       '<div class="gamebox-modal-top">' + topText + '</div>' +
-      '<img class="gamebox-modal-cover" src="' + g.cover + '" alt="' + g.name + '" onerror="this.src=\'/img/friend_404.gif\'">' +
+      '<img class="gamebox-modal-cover" src="' + (g.cover || '/img/gamebox/default-cover.svg') + '" alt="' + g.name + '" onerror="this.src=\'/img/gamebox/default-cover.svg\'">' +
       '<div class="gamebox-modal-body">' +
       '<div class="gamebox-modal-name">' + g.name + '</div>' +
       (tags ? '<div class="gamebox-modal-tags">' + tags + '</div>' : '') +
@@ -102,7 +106,7 @@
     // 构建HTML：首项 + 随机列表 + 首项（无缝循环）
     var html = list.map(function (g, i) {
       return '<div class="gamebox-item" data-index="' + i + '">' +
-        '<img class="gamebox-thumb" src="' + g.cover + '" alt="' + g.name + '" loading="lazy" onerror="this.src=\'/img/friend_404.gif\'">' +
+        '<img class="gamebox-thumb" src="' + (g.thumb || '/img/gamebox/default-thumb.svg') + '" alt="' + g.name + '" loading="lazy" onerror="this.src=\'/img/gamebox/default-thumb.svg\'">' +
         '<div class="gamebox-text"><div class="gamebox-name">' + g.name + '</div><div class="gamebox-brief">' + g.brief + '</div></div>' +
         '</div>';
     }).join('');
