@@ -1070,23 +1070,26 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 #page-header.not-top-img #nav #toggle-menu {
   color: #C97080 !important;
 }
-/* 菜单粉色下划线 */
+/* 菜单粉色下划线 — 使用主题::after伪元素，改为粉色 */
 .menus_item a.site-page {
   border-radius: 6px;
   text-decoration: none !important;
 }
 .menus_item a.site-page span {
-  text-decoration-color: transparent;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
-  text-decoration-line: underline;
-  transition: text-decoration-color .3s ease;
+  text-decoration: none !important;
 }
-.menus_item a.site-page:hover span {
-  text-decoration-color: #FF85A2;
+.menus_item a.site-page:not(.child):after {
+  background-color: #FFB6C1 !important;
+  height: 2px !important;
+  border-radius: 1px !important;
 }
-.menus_item.active a.site-page span {
-  text-decoration-color: #FF85A2;
+.menus_item a.site-page:not(.child):hover:after {
+  background-color: #FF85A2 !important;
+  width: 100% !important;
+}
+.menus_item.active a.site-page:not(.child):after {
+  background-color: #FF85A2 !important;
+  width: 100% !important;
 }
 /* 菜单图标 */
 .menus_item a i {
