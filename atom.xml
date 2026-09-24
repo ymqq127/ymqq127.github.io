@@ -10,21 +10,23 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>花与玻璃的旅人 — 记录生活，分享技术</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-09-18T13:53:37.954Z</updated>
+  <updated>2026-09-24T14:12:43.445Z</updated>
   <entry>
     <author>
       <name>Li_Myu</name>
     </author>
+    <category term="生活" scheme="https://ymqq127.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="随笔" scheme="https://ymqq127.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     <content>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h2><p>欢迎来到花与玻璃的旅人！这是我的第一篇博客文章，在这里记录生活与技术。</p><h2 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h2><p>这个博客基于 Hexo 搭建，使用了 Butterfly 主题并定制了粉色风格。我希望这里能成为一个小小的角落，分享我的所思所想。</p><h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><ul><li>Hexo 静态站点生成</li><li>Butterfly 主题</li><li>粉色主题定制</li><li>GitHub Pages 部署</li></ul><h3 id="特色功能"><a href="#特色功能" class="headerlink" title="特色功能"></a>特色功能</h3><ul><li>🎮 花璃匣游戏展示</li><li>🎵 音乐播放器</li><li>🌸 樱花飘落特效</li><li>📖 3D 标签云</li></ul><h2 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h2><ol><li>持续更新技术文章</li><li>分享游戏体验与推荐</li><li>记录生活中的点滴</li></ol><blockquote><p>花与玻璃，皆有其光。</p></blockquote><hr><p>感谢你的到来，希望你喜欢这里 🌸</p>]]>
     </content>
     <id>https://ymqq127.github.io/posts/d95d7e09.html</id>
     <link href="https://ymqq127.github.io/posts/d95d7e09.html"/>
     <published>2026-04-08T11:57:44.000Z</published>
     <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="你好，世界"]]>
     </summary>
     <title>我的第一篇博客</title>
-    <updated>2026-09-18T13:53:37.954Z</updated>
+    <updated>2026-09-24T14:12:43.445Z</updated>
   </entry>
 </feed>
