@@ -3174,15 +3174,17 @@ pre code {
 }
 .about-page .about-tech-label {
   flex-shrink: 0 !important;
-  width: 80px !important;
+  width: auto !important;
+  min-width: 80px !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   color: #FF85A2 !important;
   text-align: center !important;
-  padding: 2px 8px !important;
+  padding: 2px 10px !important;
   background: rgba(255,133,162,.1) !important;
   border-radius: 6px !important;
   margin-right: 14px !important;
+  white-space: nowrap !important;
 }
 .about-page .about-tech-value {
   font-size: 14px !important;
