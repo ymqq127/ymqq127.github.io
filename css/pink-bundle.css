@@ -4180,15 +4180,14 @@ pre code {
   transform: scale(1.1) !important;
 }
 
-/* 下一首按钮不旋转 — transition 只过渡颜色，不过渡 transform */
+/* 下一首按钮 — hover 无变化，保持向右方向 */
 .aplayer .aplayer-icon-forward {
   animation: none !important;
-  transition: fill .3s ease !important;
+  transition: none !important;
 }
 .aplayer .aplayer-icon-forward:hover {
-  fill: #ff6b8a !important;
   animation: none !important;
-  transform: scale(1.1) !important;
+  transition: none !important;
 }
 
 /* 进度条 */
