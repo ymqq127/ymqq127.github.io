@@ -4182,13 +4182,12 @@ pre code {
   transform: scale(1.1) !important;
 }
 
-/* 下一首按钮不旋转 */
-.aplayer .aplayer-icon-forward:hover {
-  transform: scale(1.1) !important;
+/* 下一首按钮不旋转 — 保留图标方向，只禁止动画 */
+.aplayer .aplayer-icon-forward {
   animation: none !important;
 }
-.aplayer .aplayer-icon-forward {
-  transform: none !important;
+.aplayer .aplayer-icon-forward:hover {
+  fill: #ff6b8a !important;
   animation: none !important;
 }
 
