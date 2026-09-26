@@ -74,7 +74,6 @@
 .about-page .about-motto {
   text-align: center !important;
   color: #C97080 !important;
-  font-style: italic !important;
   font-size: .95em !important;
   margin: 0 0 20px !important;
   padding: 0 20px !important;
@@ -233,7 +232,6 @@
   padding: 20px 24px !important;
   margin: 24px 0 !important;
   color: #888 !important;
-  font-style: italic !important;
   position: relative !important;
 }
 .about-page .about-quote::before {
