@@ -24,13 +24,15 @@
   transform: scale(1.1) !important;
 }
 
-/* 下一首按钮不旋转 — 保留图标方向，只禁止动画 */
+/* 下一首按钮不旋转 — transition 只过渡颜色，不过渡 transform */
 .aplayer .aplayer-icon-forward {
   animation: none !important;
+  transition: fill .3s ease !important;
 }
 .aplayer .aplayer-icon-forward:hover {
   fill: #ff6b8a !important;
   animation: none !important;
+  transform: scale(1.1) !important;
 }
 
 /* 进度条 */
