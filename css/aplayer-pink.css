@@ -24,6 +24,11 @@
   transform: scale(1.1) !important;
 }
 
+/* 下一首按钮不旋转 */
+.aplayer .aplayer-icon-forward:hover {
+  transform: scale(1.1) !important;
+}
+
 /* 进度条 */
 .aplayer .aplayer-bar-wrap {
   margin: 0 !important;
