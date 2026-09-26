@@ -4180,14 +4180,14 @@ pre code {
   transform: scale(1.1) !important;
 }
 
-/* 下一首按钮 — hover 无变化，保持向右方向 */
+/* 下一首按钮 — 保留 APlayer 的 rotate(180deg) 方向，hover 时同时缩放 */
 .aplayer .aplayer-icon-forward {
   animation: none !important;
-  transition: none !important;
 }
 .aplayer .aplayer-icon-forward:hover {
+  fill: #ff6b8a !important;
+  transform: rotate(180deg) scale(1.1) !important;
   animation: none !important;
-  transition: none !important;
 }
 
 /* 进度条 */
