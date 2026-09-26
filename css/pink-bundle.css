@@ -4185,6 +4185,11 @@ pre code {
 /* 下一首按钮不旋转 */
 .aplayer .aplayer-icon-forward:hover {
   transform: scale(1.1) !important;
+  animation: none !important;
+}
+.aplayer .aplayer-icon-forward {
+  transform: none !important;
+  animation: none !important;
 }
 
 /* 进度条 */
