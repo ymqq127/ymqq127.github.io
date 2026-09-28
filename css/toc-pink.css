@@ -98,3 +98,13 @@
 [data-theme="dark"] .toc-expand:hover {
   color: #D06070 !important;
 }
+
+/* 移动端TOC默认折叠 — 覆盖Butterfly的 +maxWidth900 强制展开逻辑 */
+@media (max-width: 900px) {
+  .toc-content .toc-child {
+    display: none !important;
+  }
+  .toc-content .toc-item.active > .toc-child {
+    display: block !important;
+  }
+}
