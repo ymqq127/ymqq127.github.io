@@ -1,22 +1,33 @@
-/* 粉色可爱404页面 */
-#error-wrap {
+/* 粉色可爱404页面 — 匹配Butterfly实际DOM结构 .type-404 */
+.type-404 .error-content {
   background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EC 50%, #FFD6E0 100%) !important;
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(255,133,162,.15) !important;
+  overflow: hidden;
+  position: relative;
 }
-[data-theme="dark"] #error-wrap {
+[data-theme="dark"] .type-404 .error-content {
   background: linear-gradient(135deg, #1a1215 0%, #231a1e 50%, #2a1f23 100%) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,.3) !important;
 }
-#error-wrap .error-content {
-  text-align: center;
-}
-#error-wrap .error-img {
+
+/* 隐藏默认左侧图片，文字居中 */
+.type-404 .error-img {
   display: none !important;
 }
-#error-wrap .error-info {
-  margin: 0 auto;
-  padding: 40px 20px;
-  max-width: 600px;
+.type-404 .error-info {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 40px 20px !important;
 }
-#error-wrap .error-info h1 {
+
+/* 404大字 — 粉色渐变 + 弹跳动画 */
+.type-404 .error_title {
   font-size: 120px !important;
   font-weight: 900 !important;
   background: linear-gradient(135deg, #FF85A2, #FFB6C1, #FF6B8A) !important;
@@ -27,58 +38,65 @@
   margin-bottom: 10px !important;
   animation: bounce404 2s ease-in-out infinite;
 }
+[data-theme="dark"] .type-404 .error_title {
+  background: linear-gradient(135deg, #E8899A, #D06070, #FF85A2) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
 @keyframes bounce404 {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
-#error-wrap .error-info .error_subtitle {
+
+/* 副标题 */
+.type-404 .error_subtitle {
   font-size: 18px !important;
   color: #FF85A2 !important;
+  margin-top: -1em !important;
   margin-bottom: 20px !important;
 }
-[data-theme="dark"] #error-wrap .error-info .error_subtitle {
+[data-theme="dark"] .type-404 .error_subtitle {
   color: #E8899A !important;
 }
-#error-wrap .error-info p {
-  color: #C97080 !important;
-  font-size: 15px;
-  margin-bottom: 30px;
-}
-#error-wrap .error-info a {
-  display: inline-block;
-  padding: 12px 32px;
-  background: linear-gradient(135deg, #FFB6C1, #FF85A2) !important;
-  color: #fff !important;
-  border-radius: 25px !important;
-  font-size: 15px;
-  transition: all .3s ease;
-  box-shadow: 0 4px 15px rgba(255,133,162,.3);
-}
-#error-wrap .error-info a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255,133,162,.4);
-  background: linear-gradient(135deg, #FF85A2, #FF6B8A) !important;
-}
-/* 404页面装饰爱心 */
-#error-wrap::before {
+
+/* 返回首页按钮由JS动态插入，见_config.butterfly.yml inject */
+
+/* 404页面装饰 — 浮动爱心和樱花 */
+.type-404 .error-content::before {
   content: '💕';
   font-size: 40px;
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 10%;
+  left: 8%;
   animation: floatHeart 3s ease-in-out infinite;
   opacity: .4;
+  pointer-events: none;
 }
-#error-wrap::after {
+.type-404 .error-content::after {
   content: '🌸';
   font-size: 35px;
   position: absolute;
-  bottom: 15%;
-  right: 10%;
+  bottom: 10%;
+  right: 8%;
   animation: floatHeart 4s ease-in-out infinite;
   opacity: .4;
+  pointer-events: none;
 }
 @keyframes floatHeart {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .type-404 .error_title {
+    font-size: 80px !important;
+  }
+  .type-404 .error_subtitle {
+    font-size: 16px !important;
+  }
+  .type-404 .error-content::before,
+  .type-404 .error-content::after {
+    font-size: 25px;
+  }
 }
