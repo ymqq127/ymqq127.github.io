@@ -99,12 +99,12 @@
   color: #D06070 !important;
 }
 
-/* 移动端TOC默认折叠 — 覆盖Butterfly的 +maxWidth900 强制展开逻辑 */
+/* 移动端TOC默认折叠 — 用 #card-toc 提升特异性覆盖 Butterfly 的强制展开逻辑 */
 @media (max-width: 900px) {
-  .toc-content .toc-child {
+  #card-toc .toc-content .toc-child {
     display: none !important;
   }
-  .toc-content .toc-item.active > .toc-child {
+  #card-toc .toc-content .toc-item.active > .toc-child {
     display: block !important;
   }
 }
