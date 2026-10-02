@@ -99,9 +99,14 @@
   color: #D06070 !important;
 }
 
-/* 移动端TOC面板高度限制 — JS(mobile-toc.js)负责移除is-expand使子目录折叠 */
+/* 移动端TOC面板 — 确保初始隐藏，按钮切换开合 */
 @media (max-width: 900px) {
+  #card-toc {
+    transform: scale(0) !important;
+    transition: transform 0.3s ease-in-out !important;
+  }
   #card-toc.open {
+    transform: scale(1) !important;
     max-height: 60vh !important;
   }
   #card-toc.open .toc-content {
