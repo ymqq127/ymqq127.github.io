@@ -76,8 +76,8 @@
     function bindNav() {
       var prev = card.querySelector('.cal-prev');
       var next = card.querySelector('.cal-next');
-      if (prev) prev.onclick = function() { vm--; if (vm < 0) { vm = 11; vy--; } draw(); };
-      if (next) next.onclick = function() { vm++; if (vm > 11) { vm = 0; vy++; } draw(); };
+      if (prev) { prev.setAttribute('aria-label', '上个月'); prev.onclick = function() { vm--; if (vm < 0) { vm = 11; vy--; } draw(); }; }
+      if (next) { next.setAttribute('aria-label', '下个月'); next.onclick = function() { vm++; if (vm > 11) { vm = 0; vy++; } draw(); }; }
     }
   }
 

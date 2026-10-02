@@ -60,7 +60,10 @@
   if (!mask) {
     mask = document.createElement('div');
     mask.className = 'gamebox-modal-mask';
-    mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close">&times;</button><div id="gamebox-modal-content"></div></div>';
+    mask.setAttribute('role', 'dialog');
+    mask.setAttribute('aria-modal', 'true');
+    mask.setAttribute('aria-label', '游戏详情');
+    mask.innerHTML = '<div class="gamebox-modal"><button class="gamebox-modal-close" aria-label="关闭">&times;</button><div id="gamebox-modal-content"></div></div>';
     document.body.appendChild(mask);
   }
 

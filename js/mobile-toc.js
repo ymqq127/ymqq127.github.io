@@ -9,11 +9,12 @@
     if (!content) return;
     if (window.innerWidth <= 900) {
       content.classList.remove('is-expand');
+      toc.setAttribute('aria-expanded', 'false');
     } else {
-      // 桌面端恢复展开
       if (!content.classList.contains('is-expand')) {
         content.classList.add('is-expand');
       }
+      toc.setAttribute('aria-expanded', 'true');
     }
   }
 
@@ -26,6 +27,9 @@
     if (toc.classList.contains('open') && window.innerWidth <= 900) {
       var content = toc.querySelector('.toc-content');
       if (content) content.classList.remove('is-expand');
+      toc.setAttribute('aria-expanded', 'true');
+    } else if (!toc.classList.contains('open')) {
+      toc.setAttribute('aria-expanded', 'false');
     }
   });
   observer.observe(toc, { attributes: true, attributeFilter: ['class'] });
@@ -37,5 +41,6 @@
     if (toc.contains(e.target)) return;
     if (e.target.closest('#mobile-toc-button')) return;
     toc.classList.remove('open');
+    toc.setAttribute('aria-expanded', 'false');
   });
 })();
