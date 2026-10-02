@@ -84,8 +84,57 @@
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
   color: #e8557a !important;
   font-weight: 600 !important;
+  max-width: 180px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  text-overflow: ellipsis !important;
 }
-
+/* 长标题自动滚动 — JS检测溢出后添加 .aplayer-title-scroll 类 */
+.aplayer .aplayer-info .aplayer-music .aplayer-title.aplayer-title-scroll {
+  text-overflow: clip !important;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title.aplayer-title-scroll .scroll-inner {
+  display: inline-block !important;
+  padding-right: 30px !important;
+  animation: aplayerMarquee 8s linear infinite !important;
+}
+@keyframes aplayerMarquee {
+  0%, 10% { transform: translateX(0); }
+  90%, 100% { transform: translateX(-100%); }
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  color: #FF85A2 !important;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  color: #e8557a !important;
+  font-weight: 600 !important;
+  max-width: 180px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+/* 长标题滚动 — 仅当文本溢出时触发 */
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  text-overflow: ellipsis !important;
+}
+@supports (animation: ticker 1s linear) {
+  .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    text-overflow: clip !important;
+  }
+  .aplayer .aplayer-info .aplayer-music .aplayer-title:hover {
+    animation: ticker 6s linear infinite !important;
+    text-overflow: clip !important;
+  }
+}
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+  90% { transform: translateX(-100%); }
+  100% { transform: translateX(-100%); }
+}
 .aplayer .aplayer-info .aplayer-music .aplayer-author {
   color: #FF85A2 !important;
 }

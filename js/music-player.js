@@ -44,7 +44,7 @@
     document.body.appendChild(container);
 
     try {
-      new APlayer({
+      var player = new APlayer({
         container: container,
         fixed: true,
         autoplay: false,
@@ -59,6 +59,25 @@
         audio: playlist
       });
       console.log('[PinkPlayer] APlayer initialized successfully');
+
+      // 長标题滚动检测
+      function checkTitleScroll() {
+        var titleEl = container.querySelector('.aplayer-title');
+        if (!titleEl) return;
+        if (titleEl.scrollWidth > titleEl.clientWidth + 2) {
+          titleEl.classList.add('aplayer-title-scroll');
+          if (!titleEl.querySelector('.scroll-inner')) {
+            var txt = titleEl.textContent;
+            titleEl.innerHTML = '<span class="scroll-inner">' + txt + '</span>';
+          }
+        } else {
+          titleEl.classList.remove('aplayer-title-scroll');
+          var inner = titleEl.querySelector('.scroll-inner');
+          if (inner) titleEl.textContent = inner.textContent;
+        }
+      }
+      setTimeout(checkTitleScroll, 500);
+      player.on('switchaudio', function () { setTimeout(checkTitleScroll, 300); });
     } catch (e) {
       console.warn('[PinkPlayer] Init error:', e);
     }

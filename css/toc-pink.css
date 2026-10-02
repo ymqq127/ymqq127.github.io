@@ -99,12 +99,28 @@
   color: #D06070 !important;
 }
 
-/* 移动端TOC默认折叠 — 用 #card-toc 提升特异性覆盖 Butterfly 的强制展开逻辑 */
+/* 移动端TOC面板高度限制 — JS(mobile-toc.js)负责移除is-expand使子目录折叠 */
 @media (max-width: 900px) {
-  #card-toc .toc-content .toc-child {
+  #card-toc.open {
+    max-height: 60vh !important;
+  }
+  #card-toc.open .toc-content {
+    max-height: calc(60vh - 50px) !important;
+    overflow-y: auto !important;
+  }
+}
+@media (max-width: 900px) {
+  #card-toc .toc-content.is-expand .toc-child {
     display: none !important;
   }
-  #card-toc .toc-content .toc-item.active > .toc-child {
+  #card-toc .toc-content.is-expand .toc-item.active > .toc-child {
     display: block !important;
+  }
+  /* 移动端TOC面板展开时限制最大高度，避免占满屏幕 */
+  #card-toc.open {
+    max-height: 60vh !important;
+  }
+  #card-toc.open .toc-content {
+    max-height: calc(60vh - 50px) !important;
   }
 }

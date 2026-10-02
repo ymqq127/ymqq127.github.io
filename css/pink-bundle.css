@@ -1391,7 +1391,16 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   color: #D06070 !important;
 }
 
-/* 移动端TOC默认折叠 — 用 #card-toc 提升特异性覆盖 Butterfly 的强制展开逻辑 */
+/* 移动端TOC面板高度限制 — JS(mobile-toc.js)负责移除is-expand使子目录折叠 */
+@media (max-width: 900px) {
+  #card-toc.open {
+    max-height: 60vh !important;
+  }
+  #card-toc.open .toc-content {
+    max-height: calc(60vh - 50px) !important;
+    overflow-y: auto !important;
+  }
+}
 @media (max-width: 900px) {
   #card-toc .toc-content .toc-child {
     display: none !important;
@@ -4265,6 +4274,32 @@ pre code {
 }
 
 /* 歌曲信息 */
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  color: #e8557a !important;
+  font-weight: 600 !important;
+  max-width: 180px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  text-overflow: ellipsis !important;
+}
+/* 长标题自动滚动 — JS检测溢出后添加 .aplayer-title-scroll 类 */
+.aplayer .aplayer-info .aplayer-music .aplayer-title.aplayer-title-scroll {
+  text-overflow: clip !important;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title.aplayer-title-scroll .scroll-inner {
+  display: inline-block !important;
+  padding-right: 30px !important;
+  animation: aplayerMarquee 8s linear infinite !important;
+}
+@keyframes aplayerMarquee {
+  0%, 10% { transform: translateX(0); }
+  90%, 100% { transform: translateX(-100%); }
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  color: #FF85A2 !important;
+}
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
   color: #e8557a !important;
   font-weight: 600 !important;
