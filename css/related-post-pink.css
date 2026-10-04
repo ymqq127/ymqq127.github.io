@@ -1,0 +1,122 @@
+/* 相关文章推荐 — 粉色美化 */
+/* 标题 */
+.relatedPosts .headline {
+  color: #FF85A2 !important;
+  border-bottom: 2px solid #FFD6E0 !important;
+  padding-bottom: 8px !important;
+}
+.relatedPosts .headline i {
+  color: #FF85A2 !important;
+}
+/* 推荐卡片 */
+.relatedPosts .relatedPosts-list a {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transition: transform .3s ease, box-shadow .3s ease !important;
+  box-shadow: 0 2px 8px rgba(255,133,162,.1) !important;
+}
+.relatedPosts .relatedPosts-list a:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(255,133,162,.2) !important;
+}
+/* 卡片信息层 */
+.relatedPosts .relatedPosts-list .info {
+  background: linear-gradient(to top, rgba(255,133,162,.85), rgba(255,182,193,.6)) !important;
+}
+.relatedPosts .relatedPosts-list .info .info-item-1 {
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2) !important;
+}
+.relatedPosts .relatedPosts-list .info .info-item-2 {
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3) !important;
+}
+.relatedPosts .relatedPosts-list .info .info-item-1 i {
+  color: #FFD6E0 !important;
+}
+/* 深色模式 */
+[data-theme="dark"] .relatedPosts .headline {
+  color: #E8899A !important;
+  border-bottom-color: #3a2a30 !important;
+}
+[data-theme="dark"] .relatedPosts .headline i {
+  color: #E8899A !important;
+}
+[data-theme="dark"] .relatedPosts .relatedPosts-list a {
+  box-shadow: 0 2px 8px rgba(0,0,0,.2) !important;
+}
+[data-theme="dark"] .relatedPosts .relatedPosts-list a:hover {
+  box-shadow: 0 8px 24px rgba(232,137,154,.15) !important;
+}
+[data-theme="dark"] .relatedPosts .relatedPosts-list .info {
+  background: linear-gradient(to top, rgba(30,21,25,.9), rgba(42,31,35,.7)) !important;
+}
+[data-theme="dark"] .relatedPosts .relatedPosts-list .info .info-item-1,
+[data-theme="dark"] .relatedPosts .relatedPosts-list .info .info-item-2 {
+  color: #E8899A !important;
+  text-shadow: none !important;
+}
+
+/* 文章内手动推荐阅读区块 */
+.recommend-links {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(255,182,193,.12), rgba(255,133,162,.06));
+  border-left: 4px solid #FF85A2;
+  border-radius: 0 12px 12px 0;
+}
+.recommend-links .recommend-title {
+  color: #FF85A2;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.recommend-links .recommend-title i {
+  color: #FF85A2;
+}
+.recommend-links ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+.recommend-links ul li {
+  padding: 4px 0;
+}
+.recommend-links ul li::before {
+  content: '🌸';
+  margin-right: 6px;
+  font-size: .85em;
+}
+.recommend-links ul li a {
+  color: #C97080;
+  text-decoration: none;
+  border-bottom: 1px dashed #FFB6C1;
+  transition: all .3s ease;
+}
+.recommend-links ul li a:hover {
+  color: #FF85A2;
+  border-bottom-color: #FF85A2;
+}
+/* 深色模式 */
+[data-theme="dark"] .recommend-links {
+  background: linear-gradient(135deg, rgba(232,137,154,.08), rgba(232,137,154,.03));
+  border-left-color: #E8899A;
+}
+[data-theme="dark"] .recommend-links .recommend-title {
+  color: #E8899A;
+}
+[data-theme="dark"] .recommend-links .recommend-title i {
+  color: #E8899A;
+}
+[data-theme="dark"] .recommend-links ul li a {
+  color: #E8899A;
+  border-bottom-color: #3a2a30;
+}
+[data-theme="dark"] .recommend-links ul li a:hover {
+  color: #D06070;
+  border-bottom-color: #D06070;
+}
