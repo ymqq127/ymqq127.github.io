@@ -132,3 +132,11 @@
   color: #D06070 !important;
   background: rgba(232,137,154,.08) !important;
 }
+/* 导航栏始终可见 — 不随滚动隐藏 */
+#page-header.nav-fixed #nav {
+  top: 0 !important;
+  transform: none !important;
+}
+#page-header.nav-visible:not(.fixed) #nav {
+  transform: none !important;
+}
