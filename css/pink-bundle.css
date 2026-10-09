@@ -3668,7 +3668,7 @@ pre code {
   box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
 }
 /* === post-nav-pink.css === */
-/* 文章上下篇导航 — 优雅渐变卡片 */
+/* 文章上下篇导航 — 毛玻璃磨砂卡片 */
 
 /* === 容器 === */
 .pagination-post {
@@ -3677,6 +3677,7 @@ pre code {
   margin-top: 40px !important;
   width: 100% !important;
   display: flex !important;
+  gap: 0 !important;
 }
 
 /* === 单个导航卡片 === */
@@ -3687,35 +3688,31 @@ pre code {
   height: 150px !important;
   flex: 1 !important;
   min-width: 0 !important;
-  transition: all .35s ease !important;
+  transition: all .3s ease !important;
 }
 
-/* 深色暖调遮罩 — 封面图若隐若现，白字高对比 */
+/* 毛玻璃遮罩 — 半透白+模糊，封面图若隐若现 */
 .pagination-related::before {
   content: '' !important;
   position: absolute !important;
   top: 0 !important; left: 0 !important;
   width: 100% !important; height: 100% !important;
-  background: linear-gradient(135deg,
-    rgba(75,22,42,.75) 0%,
-    rgba(95,30,52,.80) 50%,
-    rgba(110,38,60,.82) 100%) !important;
+  background: rgba(255,255,255,.65) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
   z-index: 1 !important;
-  transition: all .35s ease !important;
+  transition: all .3s ease !important;
 }
 
-/* hover — 遮罩微亮 + 粉调浮现 */
+/* hover — 遮罩更透+微粉色 */
 .pagination-related:hover::before {
-  background: linear-gradient(135deg,
-    rgba(95,30,52,.72) 0%,
-    rgba(120,42,65,.76) 50%,
-    rgba(140,50,75,.78) 100%) !important;
+  background: rgba(255,240,245,.58) !important;
 }
 
 /* hover — 微浮起 + 柔光 */
 .pagination-related:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 24px rgba(140,50,75,.3) !important;
+  box-shadow: 0 8px 25px rgba(255,133,162,.25) !important;
 }
 
 /* === 文字信息层 === */
@@ -3726,26 +3723,25 @@ pre code {
 
 /* === 用 #pagination ID 选择器覆盖冲突 === */
 
-/* "上一篇"/"下一篇" 标签 — 柔白 */
+/* "上一篇"/"下一篇" 标签 — 柔粉色 */
 #pagination.pagination-post .info-item-1,
 .pagination-related .info .info-item-1 {
-  color: rgba(255,220,230,.8) !important;
+  color: #C86080 !important;
   font-size: .8em !important;
-  letter-spacing: 3px !important;
+  letter-spacing: 2px !important;
   text-transform: uppercase !important;
 }
 
-/* 文章标题 — 纯白 + 阴影，确保可见 */
+/* 文章标题 — 深色，清晰可读 */
 #pagination.pagination-post .info-item-2,
 .pagination-related .info .info-item-2 {
   display: -webkit-box !important;
   opacity: 1 !important;
   visibility: visible !important;
-  color: #fff !important;
+  color: #3D1520 !important;
   font-weight: 600 !important;
   font-size: 1.05em !important;
   margin-top: 6px !important;
-  text-shadow: 0 1px 4px rgba(0,0,0,.3) !important;
   -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
@@ -3787,12 +3783,12 @@ pre code {
   visibility: hidden !important;
 }
 
-/* === 无封面图 — 暖粉渐变背景 === */
+/* === 无封面图 — 柔粉渐变背景 === */
 .pagination-related.no-desc {
-  background: linear-gradient(135deg, #8B3A5E, #A0456A) !important;
+  background: linear-gradient(135deg, #F8DDE6, #FCEEF3) !important;
 }
 .pagination-related.no-desc::before {
-  display: none !important;
+  background: rgba(255,255,255,.3) !important;
 }
 
 /* === 单篇时占满宽度 === */
@@ -3803,7 +3799,7 @@ pre code {
 
 /* === 中间分隔线 === */
 .pagination-post .pagination-related + .pagination-related {
-  border-left: 1px solid rgba(255,255,255,.12) !important;
+  border-left: 1px solid rgba(200,100,130,.15) !important;
 }
 
 /* === 移动端 === */
@@ -3813,36 +3809,35 @@ pre code {
   }
   .pagination-post .pagination-related + .pagination-related {
     border-left: none !important;
-    border-top: 1px solid rgba(255,255,255,.12) !important;
+    border-top: 1px solid rgba(200,100,130,.15) !important;
   }
 }
 
 /* === 深色模式 === */
 [data-theme="dark"] .pagination-related::before {
-  background: linear-gradient(135deg,
-    rgba(40,12,22,.82) 0%,
-    rgba(55,18,30,.85) 50%,
-    rgba(65,22,35,.88) 100%) !important;
+  background: rgba(60,30,40,.75) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
 }
 [data-theme="dark"] .pagination-related:hover::before {
-  background: linear-gradient(135deg,
-    rgba(55,18,30,.78) 0%,
-    rgba(70,25,40,.82) 50%,
-    rgba(85,32,48,.84) 100%) !important;
+  background: rgba(80,40,55,.68) !important;
 }
 [data-theme="dark"] .pagination-related:hover {
-  box-shadow: 0 6px 24px rgba(85,32,48,.25) !important;
+  box-shadow: 0 8px 25px rgba(200,100,130,.2) !important;
 }
 [data-theme="dark"] #pagination.pagination-post .info-item-1,
 [data-theme="dark"] .pagination-related .info .info-item-1 {
-  color: rgba(255,200,215,.7) !important;
+  color: #E8A0B8 !important;
 }
 [data-theme="dark"] #pagination.pagination-post .info-item-2,
 [data-theme="dark"] .pagination-related .info .info-item-2 {
-  color: rgba(255,230,238,.95) !important;
+  color: #F0DDE5 !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
-  background: linear-gradient(135deg, #5A2040, #6E2850) !important;
+  background: linear-gradient(135deg, #3A1828, #4E2238) !important;
+}
+[data-theme="dark"] .pagination-related.no-desc::before {
+  background: rgba(60,30,40,.4) !important;
 }
 [data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
   border-left-color: rgba(255,255,255,.08) !important;
