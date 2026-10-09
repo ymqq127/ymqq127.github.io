@@ -3719,30 +3719,55 @@ pre code {
   z-index: 2 !important;
 }
 
-/* === 覆盖所有可能的 info-item 选择器，确保颜色生效 === */
+/* === 完全匹配Butterfly选择器链，覆盖所有层级的颜色 === */
+
+/* info-1 容器 — 深色文字 */
+.pagination-related .info .info-1,
+#pagination .pagination-related .info-1 {
+  color: #3D1520 !important;
+  opacity: 1 !important;
+  transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+  -moz-transform: translate(0, -50%) !important;
+  -o-transform: translate(0, -50%) !important;
+  -ms-transform: translate(0, -50%) !important;
+  transition: none !important;
+  padding: 20px 30px !important;
+  -ms-filter: none !important;
+  filter: none !important;
+}
+
+/* hover时info-1保持可见 */
+.pagination-related:not(.no-desc):hover .info-1,
+#pagination .pagination-related:hover .info-1 {
+  opacity: 1 !important;
+  transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+  -ms-filter: none !important;
+  filter: none !important;
+}
 
 /* "上一篇"/"下一篇" 标签 — 深玫红 */
-.info-item-1,
-.pagination-related .info .info-item-1,
 .pagination-related .info .info-1 .info-item-1,
-#pagination .pagination-related .info .info-item-1,
-#pagination.pagination-post .info-item-1 {
+#pagination .pagination-related .info-1 .info-item-1,
+#pagination.pagination-post .info-item-1,
+.info-item-1 {
   color: #B84060 !important;
   font-size: .8em !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
 }
 
-/* 文章标题 — 深色，大字，清晰可读 */
-.info-item-2,
-.pagination-related .info .info-item-2,
+/* 文章标题 — 深色，大字，清晰可读，覆盖所有选择器 */
 .pagination-related .info .info-1 .info-item-2,
-#pagination .pagination-related .info .info-item-2,
-#pagination.pagination-post .info-item-2 {
+#pagination .pagination-related .info-1 .info-item-2,
+#pagination.pagination-post .info-item-2,
+.info-item-2 {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
   color: #3D1520 !important;
+  background: none !important;
   font-weight: 700 !important;
   font-size: 1.1em !important;
   line-height: 1.4 !important;
@@ -3752,33 +3777,14 @@ pre code {
   text-overflow: ellipsis !important;
   -webkit-line-clamp: unset !important;
   -webkit-box-orient: unset !important;
-}
-
-/* === 强制info-1始终可见，保持居中transform === */
-.pagination-related .info-1 {
-  opacity: 1 !important;
-  transform: translate(0, -50%) !important;
-  -webkit-transform: translate(0, -50%) !important;
-  -moz-transform: translate(0, -50%) !important;
-  -o-transform: translate(0, -50%) !important;
-  -ms-transform: translate(0, -50%) !important;
-  transition: none !important;
-  padding: 20px 30px !important;
-  color: #3D1520 !important;
-}
-
-.pagination-related:not(.no-desc):hover .info-1 {
-  opacity: 1 !important;
-  transform: translate(0, -50%) !important;
-  -webkit-transform: translate(0, -50%) !important;
-  -moz-transform: translate(0, -50%) !important;
-  -o-transform: translate(0, -50%) !important;
-  -ms-transform: translate(0, -50%) !important;
+  -webkit-box-flex: unset !important;
 }
 
 /* === 强制info-2始终隐藏 === */
 .pagination-related .info-2,
-.pagination-related:hover .info-2 {
+.pagination-related:hover .info-2,
+#pagination .pagination-related .info-2,
+#pagination .pagination-related:hover .info-2 {
   display: none !important;
   opacity: 0 !important;
   pointer-events: none !important;
@@ -3825,17 +3831,19 @@ pre code {
 [data-theme="dark"] .pagination-related:hover {
   box-shadow: 0 8px 25px rgba(200,100,130,.2) !important;
 }
-[data-theme="dark"] .info-item-1,
-[data-theme="dark"] .pagination-related .info .info-item-1,
+[data-theme="dark"] .pagination-related .info .info-1,
+[data-theme="dark"] #pagination .pagination-related .info-1 {
+  color: #F5E0E8 !important;
+}
+[data-theme="dark"] .pagination-related .info .info-1 .info-item-1,
+[data-theme="dark"] #pagination .pagination-related .info-1 .info-item-1,
 [data-theme="dark"] #pagination.pagination-post .info-item-1 {
   color: #E8A0B8 !important;
 }
-[data-theme="dark"] .info-item-2,
-[data-theme="dark"] .pagination-related .info .info-item-2,
-[data-theme="dark"] #pagination.pagination-post .info-item-2 {
-  color: #F5E0E8 !important;
-}
-[data-theme="dark"] .pagination-related .info-1 {
+[data-theme="dark"] .pagination-related .info .info-1 .info-item-2,
+[data-theme="dark"] #pagination .pagination-related .info-1 .info-item-2,
+[data-theme="dark"] #pagination.pagination-post .info-item-2,
+[data-theme="dark"] .info-item-2 {
   color: #F5E0E8 !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
