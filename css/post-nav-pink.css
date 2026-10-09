@@ -47,7 +47,7 @@
 
 /* "上一篇"/"下一篇" 标签 */
 .pagination-related .info .info-item-1 {
-  color: rgba(255,255,255,.85) !important;
+  color: rgba(120,30,60,.7) !important;
   font-size: .85em !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
@@ -55,9 +55,9 @@
 
 /* 文章标题 */
 .pagination-related .info .info-item-2 {
-  color: #fff !important;
+  color: #7A1E3E !important;
   font-weight: 600 !important;
-  text-shadow: 0 1px 4px rgba(0,0,0,.1) !important;
+  text-shadow: none !important;
 }
 
 /* === 核心修复：强制info-1始终可见，保持居中transform === */
@@ -136,10 +136,10 @@
   box-shadow: 0 8px 30px rgba(201,112,128,.25) !important;
 }
 [data-theme="dark"] .pagination-related .info .info-item-1 {
-  color: rgba(255,255,255,.8) !important;
+  color: rgba(255,220,230,.7) !important;
 }
 [data-theme="dark"] .pagination-related .info .info-item-2 {
-  color: #fff !important;
+  color: #FFD6E0 !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
   background: linear-gradient(135deg, #D08098, #B06078) !important;
