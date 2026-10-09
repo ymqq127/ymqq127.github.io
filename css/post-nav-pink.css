@@ -15,7 +15,7 @@
   transition: all .4s cubic-bezier(.4,0,.2,1) !important;
 }
 
-/* 粉色渐变遮罩 — 更亮更实，底图不透 */
+/* 粉色渐变遮罩 — 更亮更实 */
 .pagination-related::before {
   content: '' !important;
   position: absolute !important;
@@ -60,38 +60,39 @@
   text-shadow: 0 1px 4px rgba(0,0,0,.1) !important;
 }
 
-/* === 修复hover时标题消失问题：覆盖所有浏览器前缀 === */
+/* === 核心修复：强制info-1始终可见，保持居中transform === */
+.pagination-related .info-1 {
+  opacity: 1 !important;
+  transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+  -moz-transform: translate(0, -50%) !important;
+  -o-transform: translate(0, -50%) !important;
+  -ms-transform: translate(0, -50%) !important;
+  transition: none !important;
+}
+
 .pagination-related:not(.no-desc):hover .info-1 {
   opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -o-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
+  transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+  -moz-transform: translate(0, -50%) !important;
+  -o-transform: translate(0, -50%) !important;
+  -ms-transform: translate(0, -50%) !important;
 }
 
-/* 隐藏超长摘要info-2，覆盖所有浏览器前缀 */
-.pagination-related .info-2,
-.pagination-related:hover .info-2 {
-  opacity: 0 !important;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
-  filter: alpha(opacity=0) !important;
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -o-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
+/* === 核心修复：强制info-2始终隐藏 === */
+.pagination-related .info-2 {
   display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
 
-/* hover标题微动 */
-.pagination-related:hover .info .info-item-2 {
-  transform: translateX(4px) !important;
-}
-.pagination-related.next-post:hover .info .info-item-2 {
-  transform: translateX(-4px) !important;
+.pagination-related:hover .info-2 {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
 
 /* === 无封面图时的默认背景 — 更亮 === */
