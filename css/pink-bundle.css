@@ -3735,12 +3735,20 @@ pre code {
   text-transform: uppercase !important;
 }
 
-/* 文章标题 — 纯白 + 阴影 */
+/* 文章标题 — 纯白 + 阴影，确保可见 */
 #pagination.pagination-post .info-item-2,
 .pagination-related .info .info-item-2 {
+  display: -webkit-box !important;
+  opacity: 1 !important;
+  visibility: visible !important;
   color: #fff !important;
   font-weight: 600 !important;
-  text-shadow: 0 1px 4px rgba(0,0,0,.25) !important;
+  font-size: 1.05em !important;
+  margin-top: 6px !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,.3) !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
 }
 
 /* === 强制info-1始终可见，保持居中transform === */
@@ -3752,6 +3760,7 @@ pre code {
   -o-transform: translate(0, -50%) !important;
   -ms-transform: translate(0, -50%) !important;
   transition: none !important;
+  padding: 20px 30px !important;
 }
 
 .pagination-related:not(.no-desc):hover .info-1 {
