@@ -1499,16 +1499,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   box-shadow: 0 4px 16px rgba(255,133,162,.2) !important;
 }
 
-/* 上一篇/下一篇标签文字 */
-#pagination.pagination-post .info-item-1 {
-  color: #FFB6C1 !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-}
-
-#pagination.pagination-post .info-item-2 {
-  color: #fff !important;
-}
+/* 上一篇/下一篇标签文字 — 由 post-nav-pink.css 统一控制 */
 
 /* === 搜索结果分页器 === */
 .ais-Pagination-list .ais-Pagination-item .ais-Pagination-link {
@@ -3684,13 +3675,18 @@ pre code {
   border-radius: 16px !important;
   overflow: hidden !important;
   margin-top: 40px !important;
+  width: 100% !important;
+  display: flex !important;
 }
 
-/* === 单个导航卡片 === */
+/* === 单个导航卡片 — 保证宽度不变窄 === */
 .pagination-related {
   position: relative !important;
   border-radius: 16px !important;
   overflow: hidden !important;
+  height: 150px !important;
+  flex: 1 !important;
+  min-width: 0 !important;
   transition: all .4s cubic-bezier(.4,0,.2,1) !important;
 }
 
@@ -3698,10 +3694,8 @@ pre code {
 .pagination-related::before {
   content: '' !important;
   position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  top: 0 !important; left: 0 !important;
+  width: 100% !important; height: 100% !important;
   background: linear-gradient(135deg, rgba(255,160,185,.92), rgba(255,210,225,.88)) !important;
   z-index: 1 !important;
   transition: all .4s ease !important;
@@ -3712,7 +3706,7 @@ pre code {
   background: linear-gradient(135deg, rgba(255,130,165,.95), rgba(255,190,210,.92)) !important;
 }
 
-/* hover卡片浮起 */
+/* hover卡片浮起 — 不缩窄 */
 .pagination-related:hover {
   transform: translateY(-3px) !important;
   box-shadow: 0 8px 30px rgba(255,133,162,.3) !important;
@@ -3724,7 +3718,10 @@ pre code {
   z-index: 2 !important;
 }
 
-/* "上一篇"/"下一篇" 标签 */
+/* === 用 #pagination ID 选择器覆盖 pagination-pink.css 的冲突样式 === */
+
+/* "上一篇"/"下一篇" 标签 — 深色确保可读 */
+#pagination.pagination-post .info-item-1,
 .pagination-related .info .info-item-1 {
   color: rgba(120,30,60,.7) !important;
   font-size: .85em !important;
@@ -3732,7 +3729,8 @@ pre code {
   text-transform: uppercase !important;
 }
 
-/* 文章标题 */
+/* 文章标题 — 深酒红 */
+#pagination.pagination-post .info-item-2,
 .pagination-related .info .info-item-2 {
   color: #7A1E3E !important;
   font-weight: 600 !important;
@@ -3785,6 +3783,7 @@ pre code {
 /* === 单篇时占满宽度 === */
 .pagination-post .full-width {
   border-radius: 16px !important;
+  width: 100% !important;
 }
 
 /* === 中间分隔线 === */
@@ -3794,6 +3793,9 @@ pre code {
 
 /* === 移动端 === */
 @media (max-width: 768px) {
+  .pagination-post {
+    flex-direction: column !important;
+  }
   .pagination-post .pagination-related + .pagination-related {
     border-left: none !important;
     border-top: 2px solid rgba(255,255,255,.3) !important;
@@ -3814,9 +3816,11 @@ pre code {
 [data-theme="dark"] .pagination-related:hover {
   box-shadow: 0 8px 30px rgba(201,112,128,.25) !important;
 }
+[data-theme="dark"] #pagination.pagination-post .info-item-1,
 [data-theme="dark"] .pagination-related .info .info-item-1 {
   color: rgba(255,220,230,.7) !important;
 }
+[data-theme="dark"] #pagination.pagination-post .info-item-2,
 [data-theme="dark"] .pagination-related .info .info-item-2 {
   color: #FFD6E0 !important;
 }
