@@ -47,7 +47,7 @@
 
 /* "上一篇"/"下一篇" 标签 */
 .pagination-related .info .info-item-1 {
-  color: rgba(255,255,255,.8) !important;
+  color: rgba(255,255,255,.85) !important;
   font-size: .85em !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
@@ -60,21 +60,26 @@
   text-shadow: 0 1px 4px rgba(0,0,0,.1) !important;
 }
 
+/* === 修复hover时标题消失问题：保持info-1可见 === */
+.pagination-related:not(.no-desc):hover .info-1 {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 隐藏超长摘要info-2，hover时也不显示 */
+.pagination-related .info-2,
+.pagination-related:hover .info-2 {
+  opacity: 0 !important;
+  transform: none !important;
+  display: none !important;
+}
+
 /* hover标题微动 */
 .pagination-related:hover .info .info-item-2 {
   transform: translateX(4px) !important;
 }
 .pagination-related.next-post:hover .info .info-item-2 {
   transform: translateX(-4px) !important;
-}
-
-/* info-2 揭示效果 */
-.pagination-related .info .info-2 {
-  color: #fff !important;
-}
-.pagination-related:hover .info .info-2 {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
 }
 
 /* === 无封面图时的默认背景 === */
