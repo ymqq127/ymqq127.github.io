@@ -15,7 +15,7 @@
   transition: all .4s cubic-bezier(.4,0,.2,1) !important;
 }
 
-/* 粉色渐变遮罩覆盖原图暗色背景 */
+/* 粉色渐变遮罩 — 更亮更实，底图不透 */
 .pagination-related::before {
   content: '' !important;
   position: absolute !important;
@@ -23,14 +23,14 @@
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: linear-gradient(135deg, rgba(255,133,162,.75), rgba(255,182,193,.65)) !important;
+  background: linear-gradient(135deg, rgba(255,160,185,.92), rgba(255,210,225,.88)) !important;
   z-index: 1 !important;
   transition: all .4s ease !important;
 }
 
-/* hover遮罩加深 */
+/* hover遮罩微深 */
 .pagination-related:hover::before {
-  background: linear-gradient(135deg, rgba(255,100,140,.85), rgba(255,160,180,.75)) !important;
+  background: linear-gradient(135deg, rgba(255,130,165,.95), rgba(255,190,210,.92)) !important;
 }
 
 /* hover卡片浮起 */
@@ -82,9 +82,9 @@
   transform: translateX(-4px) !important;
 }
 
-/* === 无封面图时的默认背景 === */
+/* === 无封面图时的默认背景 — 更亮 === */
 .pagination-related.no-desc {
-  background: linear-gradient(135deg, #FF85A2, #FFB6C1) !important;
+  background: linear-gradient(135deg, #FFA0BC, #FFD0DD) !important;
 }
 .pagination-related.no-desc::before {
   display: none !important;
@@ -112,24 +112,24 @@
   }
 }
 
-/* === 深色模式 === */
+/* === 深色模式 — 也调亮 === */
 [data-theme="dark"] .pagination-related::before {
-  background: linear-gradient(135deg, rgba(160,80,96,.8), rgba(100,50,60,.7)) !important;
+  background: linear-gradient(135deg, rgba(200,110,130,.88), rgba(160,80,100,.82)) !important;
 }
 [data-theme="dark"] .pagination-related:hover::before {
-  background: linear-gradient(135deg, rgba(180,90,110,.9), rgba(120,60,70,.8)) !important;
+  background: linear-gradient(135deg, rgba(220,120,140,.92), rgba(180,90,110,.88)) !important;
 }
 [data-theme="dark"] .pagination-related:hover {
   box-shadow: 0 8px 30px rgba(201,112,128,.25) !important;
 }
 [data-theme="dark"] .pagination-related .info .info-item-1 {
-  color: rgba(255,255,255,.7) !important;
+  color: rgba(255,255,255,.8) !important;
 }
 [data-theme="dark"] .pagination-related .info .info-item-2 {
-  color: rgba(255,240,245,.95) !important;
+  color: #fff !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
-  background: linear-gradient(135deg, #C97080, #A05060) !important;
+  background: linear-gradient(135deg, #D08098, #B06078) !important;
 }
 [data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
   border-left-color: rgba(255,255,255,.15) !important;
