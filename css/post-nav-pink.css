@@ -60,16 +60,28 @@
   text-shadow: 0 1px 4px rgba(0,0,0,.1) !important;
 }
 
-/* === 修复hover时标题消失问题：保持info-1可见 === */
+/* === 修复hover时标题消失问题：覆盖所有浏览器前缀 === */
 .pagination-related:not(.no-desc):hover .info-1 {
   opacity: 1 !important;
+  -ms-filter: none !important;
+  filter: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
   transform: none !important;
 }
 
-/* 隐藏超长摘要info-2，hover时也不显示 */
+/* 隐藏超长摘要info-2，覆盖所有浏览器前缀 */
 .pagination-related .info-2,
 .pagination-related:hover .info-2 {
   opacity: 0 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
+  filter: alpha(opacity=0) !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
   transform: none !important;
   display: none !important;
 }
