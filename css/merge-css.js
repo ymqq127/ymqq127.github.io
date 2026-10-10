@@ -48,7 +48,7 @@ let merged = `/*! Pink Theme Bundle — merged from ${files.length} CSS files */
 for (const f of files) {
   const fp = path.join(cssDir, f);
   if (fs.existsSync(fp)) {
-    merged += `\n/* === ${f} === */\n`;
+    merged += `\n/* >>> ${f} <<< */\n`;
     merged += fs.readFileSync(fp, 'utf8');
   } else {
     console.warn('Missing: ' + f);

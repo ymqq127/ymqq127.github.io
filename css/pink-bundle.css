@@ -1,6 +1,6 @@
 /*! Pink Theme Bundle — merged from 36 CSS files */
 
-/* === reading-progress.css === */
+/* >>> reading-progress.css <<< */
 /* 阅读进度条 — 粉色增强版 */
 #reading-progress {
   position: fixed !important;
@@ -47,7 +47,7 @@
   background: #E8899A !important;
   box-shadow: 0 0 6px rgba(232,137,154,.7), 0 0 12px rgba(201,112,128,.4) !important;
 }
-/* === bg-overlay.css === */
+/* >>> bg-overlay.css <<< */
 #page-header.full_page::before {
   content: "";
   position: absolute;
@@ -107,7 +107,7 @@
     background: rgba(0, 0, 0, 0.5);
   }
 }
-/* === twikoo-pink.css === */
+/* >>> twikoo-pink.css <<< */
 /* Twikoo 粉色主题 */
 /* 评论区浅粉背景 */
 #twikoo {
@@ -290,7 +290,7 @@
 [data-theme="dark"] #twikoo .tk-content a:hover {
   color: #D06070 !important;
 }
-/* === cursor.css === */
+/* >>> cursor.css <<< */
 /* 粉色爱心鼠标 - 尖端朝左上角 */
 body {
   cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='20' height='20'><path transform='rotate(135 12 12)' fill='%23FF85A2' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>") 5 5, auto;
@@ -312,7 +312,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] [onclick] {
   cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path transform='rotate(135 12 12)' fill='%23D06070' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/><circle cx='12' cy='9' r='2' fill='%23C97080' opacity='.5'/></svg>") 6 6, pointer;
 }
-/* === loading.css === */
+/* >>> loading.css <<< */
 /* 页面加载动画 */
 #loading-screen {
   position: fixed;
@@ -377,7 +377,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] .loader-text {
   color: #E8899A;
 }
-/* === dark-pink.css === */
+/* >>> dark-pink.css <<< */
 /* 浅色模式 - 浅粉色背景 */
 :root {
   --global-bg: #fff8fa;
@@ -419,7 +419,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] #card-toc {
   background: #251c20;
 }
-/* === dark-glass.css === */
+/* >>> dark-glass.css <<< */
 /* 深色模式封面光滑玻璃质感 + 反光 */
 /* 封面遮罩层 */
 [data-theme="dark"] #page-header.full_page::before {
@@ -680,7 +680,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] #search-mask {
   background: rgba(10, 5, 8, .5) !important;
 }
-/* === 404-pink.css === */
+/* >>> 404-pink.css <<< */
 /* 粉色可爱404页面 — 匹配Butterfly实际DOM结构 .type-404 */
 .type-404 .error-content {
   background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EC 50%, #FFD6E0 100%) !important;
@@ -783,7 +783,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
     font-size: 25px;
   }
 }
-/* === sidebar-pink.css === */
+/* >>> sidebar-pink.css <<< */
 /* 粉色侧边栏美化 */
 /* 卡片圆角 + 柔和阴影 */
 .card-widget {
@@ -949,7 +949,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] .card-category .category-list a:hover {
   background: rgba(232,137,154,.08);
 }
-/* === footer-pink.css === */
+/* >>> footer-pink.css <<< */
 /* 粉色页脚美化 */
 /* 页脚整体 */
 #footer {
@@ -1037,7 +1037,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] .footer-flex-content a:hover {
   color: #D06070 !important;
 }
-/* === nav-pink.css === */
+/* >>> nav-pink.css <<< */
 /* 粉色导航栏美化 */
 /* 导航栏过渡 */
 #nav {
@@ -1180,7 +1180,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 #page-header.nav-visible:not(.fixed) #nav {
   transform: none !important;
 }
-/* === search-pink.css === */
+/* >>> search-pink.css <<< */
 /* 粉色搜索框美化 */
 /* 搜索遮罩 */
 #search-mask {
@@ -1297,7 +1297,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   color: #D06070 !important;
   background: rgba(232,137,154,.1) !important;
 }
-/* === toc-pink.css === */
+/* >>> toc-pink.css <<< */
 /* 粉色文章目录(TOC)美化 */
 /* TOC卡片 */
 #card-toc {
@@ -1441,7 +1441,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
     max-height: calc(60vh - 50px) !important;
   }
 }
-/* === pagination-pink.css === */
+/* >>> pagination-pink.css <<< */
 /* 分页器粉色圆角胶囊美化 */
 
 /* === 页码分页器（首页/归档/标签/分类） === */
@@ -1572,7 +1572,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   background: linear-gradient(135deg, #a05060, #8a4050) !important;
   color: #fff !important;
 }
-/* === archive-pink.css === */
+/* >>> archive-pink.css <<< */
 /* 标签云 + 归档页面 粉色时间线风格 */
 
 /* ===========================
@@ -1814,7 +1814,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   color: #c97a8a !important;
   background: rgba(160,80,96,.15) !important;
 }
-/* === runtime.css === */
+/* >>> runtime.css <<< */
 /* 网站运行时间 - 粉色风格 */
 .site-runtime-wrap {
   margin-top: 8px;
@@ -1862,7 +1862,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] #site-runtime {
   color: #c97a8a;
 }
-/* === card-pink.css === */
+/* >>> card-pink.css <<< */
 /* 文章卡片 hover 粉色美化 */
 
 /* === 面页文章卡片 === */
@@ -1954,7 +1954,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   border-color: rgba(160,80,96,.35) !important;
   box-shadow: 0 6px 18px rgba(160,80,96,.15) !important;
 }
-/* === scrollbar-pink.css === */
+/* >>> scrollbar-pink.css <<< */
 /* 滚动条粉色美化 */
 
 /* 浅色模式 - 粉色滚动条 */
@@ -2011,7 +2011,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] * {
   scrollbar-color: #a05060 rgba(160,80,96,.1) !important;
 }
-/* === title-pink.css === */
+/* >>> title-pink.css <<< */
 /* 文章标题粉色左侧竖线装饰 */
 
 /* === 面页文章卡片标题 === */
@@ -2111,7 +2111,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
 [data-theme="dark"] .article-sort-item.year {
   border-left-color: #a05060 !important;
 }
-/* === flink-pink.css === */
+/* >>> flink-pink.css <<< */
 /* 友链页面粉色卡片风格 */
 
 /* === 友链卡片 === */
@@ -2223,7 +2223,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   color: #d4a0a0 !important;
   border-left-color: #a05060 !important;
 }
-/* === categories-pink.css === */
+/* >>> categories-pink.css <<< */
 /* 分类页面粉色胶囊美化 */
 
 /* === 分类页面 === */
@@ -2367,7 +2367,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   border-color: rgba(160,80,96,.3) !important;
   color: #c97a8a !important;
 }
-/* === copyright-pink.css === */
+/* >>> copyright-pink.css <<< */
 /* 文章版权声明粉色卡片 */
 
 .post-copyright {
@@ -2454,7 +2454,7 @@ a, button, .tk-btn, .tk-actions-btn, .flink-list-item, .card-widget, #nav a, .po
   color: #c97a8a !important;
   border-bottom-color: #c97a8a !important;
 }
-/* === note-pink.css === */
+/* >>> note-pink.css <<< */
 /* Note引用块 + blockquote 粉色装饰 */
 
 /* === blockquote 粉色左侧竖线 === */
@@ -2587,7 +2587,7 @@ blockquote footer cite {
 [data-theme="dark"] .note.danger:not(.no-icon)::before {
   color: #c97a8a !important;
 }
-/* === code-pink.css === */
+/* >>> code-pink.css <<< */
 /* 代码块粉色美化 - mac按钮 + 背景 + 高亮 */
 
 /* === Mac按钮粉色化 === */
@@ -2743,7 +2743,7 @@ pre code {
 :root:not([data-theme="dark"]) figure.highlight {
   box-shadow: 0 4px 20px rgba(255,133,162,.08) !important;
 }
-/* === cover-pink.css === */
+/* >>> cover-pink.css <<< */
 /* 文章封面 hover 粉色遮罩 + 标题浮现 */
 
 /* === 封面粉色遮罩 === */
@@ -2852,7 +2852,7 @@ pre code {
     transform: translateX(3px) !important;
   }
 }
-/* === about-pink.css === */
+/* >>> about-pink.css <<< */
 /* 关于页面 — 粉色个性化排版 */
 
 /* ========== 页面容器 ========== */
@@ -3264,7 +3264,7 @@ pre code {
 [data-theme="dark"] .about-page .about-tech-value {
   color: #aaa !important;
 }
-/* === rightside-pink.css === */
+/* >>> rightside-pink.css <<< */
 /* 另下角工具栏 — 粉色圆形+hover发光 */
 
 /* === 整体容器 === */
@@ -3411,7 +3411,7 @@ pre code {
 [data-theme="dark"] #go-up .scroll-percent {
   color: #E8899A !important;
 }
-/* === meta-pink.css === */
+/* >>> meta-pink.css <<< */
 /* 文章meta信息 — 日期/分类/标签粉色胶囊 */
 
 /* === 首页卡片meta === */
@@ -3667,10 +3667,10 @@ pre code {
   color: #E8899A !important;
   box-shadow: 0 2px 8px rgba(201,112,128,.1) !important;
 }
-/* === post-nav-pink.css === */
+/* >>> post-nav-pink.css <<< */
 /* 文章上下篇导航 — 柔粉渐变卡片 */
 
-/* === 容器 === */
+/* --- 容器 --- */
 .pagination-post {
   border-radius: 16px !important;
   overflow: hidden !important;
@@ -3680,7 +3680,7 @@ pre code {
   gap: 0 !important;
 }
 
-/* === 单个导航卡片 === */
+/* --- 单个导航卡片 --- */
 .pagination-related {
   position: relative !important;
   border-radius: 16px !important;
@@ -3713,7 +3713,7 @@ pre code {
   box-shadow: 0 8px 25px rgba(255,133,162,.25) !important;
 }
 
-/* === 覆盖主题 .limit-more-line 对标题的截断 === */
+/* --- 覆盖主题 .limit-more-line 对标题的截断 --- */
 #pagination.pagination-post .limit-more-line,
 #pagination.pagination-post .pagination-related .info .info-1 .info-item-2 {
   display: block !important;
@@ -3722,13 +3722,13 @@ pre code {
   -webkit-line-clamp: unset !important;
 }
 
-/* === 文字信息层 === */
+/* --- 文字信息层 --- */
 .pagination-related .info {
   position: relative !important;
   z-index: 2 !important;
 }
 
-/* === 完全匹配Butterfly选择器链，覆盖所有层级的颜色 === */
+/* --- 完全匹配Butterfly选择器链，覆盖所有层级的颜色 --- */
 
 /* info-1 容器 — 深色文字 */
 .pagination-related .info .info-1,
@@ -3792,7 +3792,7 @@ pre code {
   height: auto !important;
 }
 
-/* === 强制info-2始终隐藏 === */
+/* --- 强制info-2始终隐藏 --- */
 .pagination-related .info-2,
 .pagination-related:hover .info-2,
 #pagination .pagination-related .info-2,
@@ -3803,7 +3803,7 @@ pre code {
   visibility: hidden !important;
 }
 
-/* === 无封面图 — 柔粉渐变背景 === */
+/* --- 无封面图 — 柔粉渐变背景 --- */
 .pagination-related.no-desc {
   background: linear-gradient(135deg, #F8DDE6, #FCEEF3) !important;
 }
@@ -3811,18 +3811,18 @@ pre code {
   display: none !important;
 }
 
-/* === 单篇时占满宽度 === */
+/* --- 单篇时占满宽度 --- */
 .pagination-post .full-width {
   border-radius: 16px !important;
   width: 100% !important;
 }
 
-/* === 中间分隔线 === */
+/* --- 中间分隔线 --- */
 .pagination-post .pagination-related + .pagination-related {
   border-left: 1px solid rgba(200,100,130,.15) !important;
 }
 
-/* === 移动端 === */
+/* --- 移动端 --- */
 @media (max-width: 768px) {
   .pagination-post {
     flex-direction: column !important;
@@ -3833,7 +3833,7 @@ pre code {
   }
 }
 
-/* === 深色模式 === */
+/* --- 深色模式 --- */
 [data-theme="dark"] .pagination-related::before {
   background: linear-gradient(135deg, rgba(80,30,50,.88), rgba(60,22,38,.82)) !important;
 }
@@ -3872,7 +3872,7 @@ pre code {
     border-top-color: rgba(255,255,255,.08) !important;
   }
 }
-/* === selection-pink.css === */
+/* >>> selection-pink.css <<< */
 /* 全局文字选中 — 粉色高亮背景 */
 ::selection {
   background: rgba(255,133,162,.3) !important;
@@ -3892,7 +3892,7 @@ pre code {
   background: rgba(232,137,154,.3) !important;
   color: #E8899A !important;
 }
-/* === transition-pink.css === */
+/* >>> transition-pink.css <<< */
 /* 页面加载过渡 — 粉色淡入动画（纯CSS，无JS依赖） */
 
 /* === 桌面端：完整动画（含transform） === */
@@ -3954,7 +3954,7 @@ pre code {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-/* === encrypt-pink.css === */
+/* >>> encrypt-pink.css <<< */
 /* 文章加密页面 — 粉色密码输入框 */
 
 /* === 加密内容容器 === */
@@ -4105,7 +4105,7 @@ pre code {
   background: rgba(201,112,128,.08) !important;
   border-color: rgba(201,112,128,.15) !important;
 }
-/* === calendar-pink.css === */
+/* >>> calendar-pink.css <<< */
 /* 日历组件 — 粉色风格 */
 
 /* === 日历卡片容器 === */
@@ -4281,7 +4281,7 @@ pre code {
   background: rgba(201,112,128,.2) !important;
   border-color: #C97080 !important;
 }
-/* === aplayer-pink.css === */
+/* >>> aplayer-pink.css <<< */
 /* APlayer 粉色吸底播放器样式 */
 /* 吸底播放器主体 */
 .aplayer.aplayer-fixed .aplayer-body {
@@ -4538,7 +4538,7 @@ pre code {
 [data-theme="dark"] .aplayer .aplayer-lrc p.aplayer-lrc-current {
   color: #FFB6C1 !important;
 }
-/* === gamebox-pink.css === */
+/* >>> gamebox-pink.css <<< */
 /* 花璃匣 — 游戏展示（竖向自动滚动 + 启匣按钮） */
 .card-gamebox {
   margin-top: 0 !important;
@@ -4850,7 +4850,7 @@ pre code {
   background: #E8899A;
   color: #1e1519;
 }
-/* === mobile-sidebar-pink.css === */
+/* >>> mobile-sidebar-pink.css <<< */
 /* 手机侧边栏粉色美化 */
 
 /* 遮罩层 */

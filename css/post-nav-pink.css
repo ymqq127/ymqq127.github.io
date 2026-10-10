@@ -1,6 +1,6 @@
 /* 文章上下篇导航 — 柔粉渐变卡片 */
 
-/* === 容器 === */
+/* --- 容器 --- */
 .pagination-post {
   border-radius: 16px !important;
   overflow: hidden !important;
@@ -10,7 +10,7 @@
   gap: 0 !important;
 }
 
-/* === 单个导航卡片 === */
+/* --- 单个导航卡片 --- */
 .pagination-related {
   position: relative !important;
   border-radius: 16px !important;
@@ -43,7 +43,7 @@
   box-shadow: 0 8px 25px rgba(255,133,162,.25) !important;
 }
 
-/* === 覆盖主题 .limit-more-line 对标题的截断 === */
+/* --- 覆盖主题 .limit-more-line 对标题的截断 --- */
 #pagination.pagination-post .limit-more-line,
 #pagination.pagination-post .pagination-related .info .info-1 .info-item-2 {
   display: block !important;
@@ -52,13 +52,13 @@
   -webkit-line-clamp: unset !important;
 }
 
-/* === 文字信息层 === */
+/* --- 文字信息层 --- */
 .pagination-related .info {
   position: relative !important;
   z-index: 2 !important;
 }
 
-/* === 完全匹配Butterfly选择器链，覆盖所有层级的颜色 === */
+/* --- 完全匹配Butterfly选择器链，覆盖所有层级的颜色 --- */
 
 /* info-1 容器 — 深色文字 */
 .pagination-related .info .info-1,
@@ -122,7 +122,7 @@
   height: auto !important;
 }
 
-/* === 强制info-2始终隐藏 === */
+/* --- 强制info-2始终隐藏 --- */
 .pagination-related .info-2,
 .pagination-related:hover .info-2,
 #pagination .pagination-related .info-2,
@@ -133,7 +133,7 @@
   visibility: hidden !important;
 }
 
-/* === 无封面图 — 柔粉渐变背景 === */
+/* --- 无封面图 — 柔粉渐变背景 --- */
 .pagination-related.no-desc {
   background: linear-gradient(135deg, #F8DDE6, #FCEEF3) !important;
 }
@@ -141,18 +141,18 @@
   display: none !important;
 }
 
-/* === 单篇时占满宽度 === */
+/* --- 单篇时占满宽度 --- */
 .pagination-post .full-width {
   border-radius: 16px !important;
   width: 100% !important;
 }
 
-/* === 中间分隔线 === */
+/* --- 中间分隔线 --- */
 .pagination-post .pagination-related + .pagination-related {
   border-left: 1px solid rgba(200,100,130,.15) !important;
 }
 
-/* === 移动端 === */
+/* --- 移动端 --- */
 @media (max-width: 768px) {
   .pagination-post {
     flex-direction: column !important;
@@ -163,7 +163,7 @@
   }
 }
 
-/* === 深色模式 === */
+/* --- 深色模式 --- */
 [data-theme="dark"] .pagination-related::before {
   background: linear-gradient(135deg, rgba(80,30,50,.88), rgba(60,22,38,.82)) !important;
 }
