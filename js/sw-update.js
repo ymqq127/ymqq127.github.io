@@ -47,31 +47,29 @@
   })
 
   // 版本兜底检查：对比 version.json 判断是否需要强制清缓存
-  // 使用 setTimeout 延迟执行，避免阻塞首屏渲染
-  setTimeout(function () {
-    fetch('/version.json', { cache: 'no-store' })
-      .then(function (res) { return res.json() })
-      .then(function (data) {
-        if (!data || !data.version) return
-        var local = localStorage.getItem('site_version')
-        if (local && local !== data.version) {
-          // 版本不一致 → 清除所有缓存并刷新
-          localStorage.setItem('site_version', data.version)
-          if ('caches' in window) {
-            caches.keys().then(function (keys) {
-              Promise.all(keys.map(function (k) { return caches.delete(k) })).then(function () {
-                window.location.reload()
-              })
+  // 立即执行（不延迟），确保 SW 缓存的旧 HTML 不会持续生效
+  fetch('/version.json', { cache: 'no-store' })
+    .then(function (res) { return res.json() })
+    .then(function (data) {
+      if (!data || !data.version) return
+      var local = localStorage.getItem('site_version')
+      if (local && local !== data.version) {
+        // 版本不一致 → 清除所有缓存并刷新
+        localStorage.setItem('site_version', data.version)
+        if ('caches' in window) {
+          caches.keys().then(function (keys) {
+            Promise.all(keys.map(function (k) { return caches.delete(k) })).then(function () {
+              window.location.reload()
             })
-          } else {
-            window.location.reload()
-          }
-        } else if (!local) {
-          localStorage.setItem('site_version', data.version)
+          })
+        } else {
+          window.location.reload()
         }
-      })
-      .catch(function () { /* 离线或请求失败，静默 */ })
-  }, 3000)
+      } else if (!local) {
+        localStorage.setItem('site_version', data.version)
+      }
+    })
+    .catch(function () { /* 离线或请求失败，静默 */ })
 
   // 拦截 PWA "添加到桌面" 提示
   window.addEventListener('beforeinstallprompt', function (e) {
