@@ -34,6 +34,7 @@ const files = [
   'rightside-pink.css',
   'meta-pink.css',
   'post-nav-pink.css',
+  'related-post-pink.css',
   'selection-pink.css',
   'transition-pink.css',
   'encrypt-pink.css',
