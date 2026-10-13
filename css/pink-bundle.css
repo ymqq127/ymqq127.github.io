@@ -3780,7 +3780,8 @@ pre code {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
-  color: #3D1520 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3) !important;
   background: none !important;
   font-weight: 700 !important;
   font-size: 1.1em !important;
@@ -3860,7 +3861,8 @@ pre code {
 [data-theme="dark"] #pagination .pagination-related .info-1 .info-item-2,
 [data-theme="dark"] #pagination.pagination-post .info-item-2,
 [data-theme="dark"] .info-item-2 {
-  color: #F5E0E8 !important;
+  color: #E8899A !important;
+  text-shadow: none !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
   background: linear-gradient(135deg, #3A1828, #4E2238) !important;
