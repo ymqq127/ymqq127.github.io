@@ -3697,20 +3697,17 @@ pre code {
   position: absolute !important;
   top: 0 !important; left: 0 !important;
   width: 100% !important; height: 100% !important;
-  background: linear-gradient(135deg, rgba(255,182,200,.88), rgba(255,220,230,.82)) !important;
+  background: linear-gradient(to top, rgba(255,133,162,.85), rgba(255,182,193,.6)) !important;
   z-index: 1 !important;
   transition: all .3s ease !important;
 }
 
-/* hover — 遮罩微深 */
-.pagination-related:hover::before {
-  background: linear-gradient(135deg, rgba(255,160,185,.92), rgba(255,200,218,.86)) !important;
-}
+/* hover 不改变渐变（与相关推荐一致，仅阴影/位移变化） */
 
-/* hover — 微浮起 + 柔光 */
+/* hover — 微浮起 + 柔光（阴影与相关推荐一致） */
 .pagination-related:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(255,133,162,.25) !important;
+  box-shadow: 0 8px 24px rgba(255,133,162,.2) !important;
 }
 
 /* --- 覆盖主题 .limit-more-line 对标题的截断 --- */
@@ -3734,10 +3731,10 @@ pre code {
 
 /* --- 完全匹配Butterfly选择器链，覆盖所有层级的颜色 --- */
 
-/* info-1 容器 — 深色文字 */
+/* info-1 容器 — 白色文字（与相关推荐一致） */
 .pagination-related .info .info-1,
 #pagination .pagination-related .info-1 {
-  color: #3D1520 !important;
+  color: #fff !important;
   opacity: 1 !important;
   transform: translate(0, -50%) !important;
   -webkit-transform: translate(0, -50%) !important;
@@ -3760,12 +3757,13 @@ pre code {
   filter: none !important;
 }
 
-/* "上一篇"/"下一篇" 标签 — 深玫红 */
+/* "上一篇"/"下一篇" 标签 — 白色（与相关推荐一致） */
 .pagination-related .info .info-1 .info-item-1,
 #pagination .pagination-related .info-1 .info-item-1,
 #pagination.pagination-post .info-item-1,
 .info-item-1 {
-  color: #B84060 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2) !important;
   font-size: .8em !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
@@ -3808,9 +3806,9 @@ pre code {
   visibility: hidden !important;
 }
 
-/* --- 无封面图 — 柔粉渐变背景 --- */
+/* --- 无封面图 — 与相关推荐一致的渐变背景 --- */
 .pagination-related.no-desc {
-  background: linear-gradient(135deg, #F8DDE6, #FCEEF3) !important;
+  background: linear-gradient(to top, rgba(255,133,162,.85), rgba(255,182,193,.6)) !important;
 }
 .pagination-related.no-desc::before {
   display: none !important;
@@ -3840,22 +3838,20 @@ pre code {
 
 /* --- 深色模式 --- */
 [data-theme="dark"] .pagination-related::before {
-  background: linear-gradient(135deg, rgba(80,30,50,.88), rgba(60,22,38,.82)) !important;
-}
-[data-theme="dark"] .pagination-related:hover::before {
-  background: linear-gradient(135deg, rgba(100,40,60,.92), rgba(80,30,48,.86)) !important;
+  background: linear-gradient(to top, rgba(30,21,25,.9), rgba(42,31,35,.7)) !important;
 }
 [data-theme="dark"] .pagination-related:hover {
-  box-shadow: 0 8px 25px rgba(200,100,130,.2) !important;
+  box-shadow: 0 8px 24px rgba(232,137,154,.15) !important;
 }
 [data-theme="dark"] .pagination-related .info .info-1,
 [data-theme="dark"] #pagination .pagination-related .info-1 {
-  color: #F5E0E8 !important;
+  color: #E8899A !important;
 }
 [data-theme="dark"] .pagination-related .info .info-1 .info-item-1,
 [data-theme="dark"] #pagination .pagination-related .info-1 .info-item-1,
 [data-theme="dark"] #pagination.pagination-post .info-item-1 {
-  color: #E8A0B8 !important;
+  color: #E8899A !important;
+  text-shadow: none !important;
 }
 [data-theme="dark"] .pagination-related .info .info-1 .info-item-2,
 [data-theme="dark"] #pagination .pagination-related .info-1 .info-item-2,
@@ -3865,7 +3861,7 @@ pre code {
   text-shadow: none !important;
 }
 [data-theme="dark"] .pagination-related.no-desc {
-  background: linear-gradient(135deg, #3A1828, #4E2238) !important;
+  background: linear-gradient(to top, rgba(30,21,25,.9), rgba(42,31,35,.7)) !important;
 }
 [data-theme="dark"] .pagination-related.no-desc::before {
   display: none !important;
