@@ -3820,19 +3820,10 @@ pre code {
   width: 100% !important;
 }
 
-/* --- 中间分隔线 --- */
-.pagination-post .pagination-related + .pagination-related {
-  border-left: 1px solid rgba(200,100,130,.15) !important;
-}
-
 /* --- 移动端 --- */
 @media (max-width: 768px) {
   .pagination-post {
     flex-direction: column !important;
-  }
-  .pagination-post .pagination-related + .pagination-related {
-    border-left: none !important;
-    border-top: 1px solid rgba(200,100,130,.15) !important;
   }
 }
 
@@ -3865,14 +3856,6 @@ pre code {
 }
 [data-theme="dark"] .pagination-related.no-desc::before {
   display: none !important;
-}
-[data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
-  border-left-color: rgba(255,255,255,.08) !important;
-}
-@media (max-width: 768px) {
-  [data-theme="dark"] .pagination-post .pagination-related + .pagination-related {
-    border-top-color: rgba(255,255,255,.08) !important;
-  }
 }
 /* >>> related-post-pink.css <<< */
 /* 相关文章推荐 — 粉色美化 */
