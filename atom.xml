@@ -10,7 +10,31 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-10T14:52:29.635Z</updated>
+  <updated>2026-10-15T14:58:43.229Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
+    <content>
+      <![CDATA[<blockquote><p>本教程教大家在手机上通过模拟器运行《Lucky dog1 + bad egg》。</p></blockquote><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>首先建一个 exagear 文件夹，到时候就是模拟器内的 E 盘。</p><p>然后安装模拟器，这是我的模拟器的参数。图形驱动那里，楼主的手机上骁龙处理器，选的就是骁龙的。</p><p><img src="/img/luckydog/image1.jpeg" alt="模拟器参数"><br><img src="/img/luckydog/image2.jpeg" alt="模拟器参数"></p><p>如果打开 E 盘里面没有文件，就在「编辑容器」里的设置文件夹 E 那里选择 exagear 文件夹。</p><blockquote><p>注：模拟器参数都设置好后记得打右下角的 ✓ 保存。</p></blockquote><h2 id="二、解压游戏"><a href="#二、解压游戏" class="headerlink" title="二、解压游戏"></a>二、解压游戏</h2><p>然后返回点 ▶️ 进入模拟器，E 盘 &#x2F;exagear，找到游戏压缩包，解压 part1。</p><p>这里会显示要你进行安装，直接安装，在安装好后解压 part1，解压路径选 E 盘。</p><p>解压好后要刷新，到时候就能看到解压好的文件夹。</p><p><img src="/img/luckydog/image3.jpeg" alt="解压游戏"><br><img src="/img/luckydog/image4.jpeg" alt="解压游戏"><br><img src="/img/luckydog/image5.jpeg" alt="解压游戏"></p><p>解压好之后用解压软件解压汉化补丁和 ISO 文件。</p><blockquote><p>注：不要用手机自带的功能解压。</p></blockquote><p><img src="/img/luckydog/image6.jpeg" alt="解压汉化补丁和 ISO 文件"></p><h2 id="三、安装游戏"><a href="#三、安装游戏" class="headerlink" title="三、安装游戏"></a>三、安装游戏</h2><p>然后再回到模拟器 E 盘 &#x2F;Luckydog1+badegg 文件夹，点击 setup 打开。</p><p>安装路径就用默认的 C 盘安装。安装会很慢，要等一会。</p><p>进度条到快要安装完成、但是还差一点的时候，其实已经安装完了，需要退出模拟器重新进入（这一步有的人不会卡住，会显示直接安装完成）。</p><p><img src="/img/luckydog/image7.jpeg" alt="安装游戏"><br><img src="/img/luckydog/image8.jpeg" alt="安装游戏"><br><img src="/img/luckydog/image9.jpeg" alt="安装游戏"></p><h2 id="四、重命名文件夹"><a href="#四、重命名文件夹" class="headerlink" title="四、重命名文件夹"></a>四、重命名文件夹</h2><p>安装完成之后点开 C 盘 woga 文件夹，将 badegg 文件夹前面的字都删掉。</p><p>按手机返回键后选择手机键盘，删除 badegg 前面的字。</p><p><img src="/img/luckydog/image10.jpeg" alt="重命名文件夹"><br><img src="/img/luckydog/image11.jpeg" alt="重命名文件夹"></p><h2 id="五、打汉化补丁"><a href="#五、打汉化补丁" class="headerlink" title="五、打汉化补丁"></a>五、打汉化补丁</h2><p>然后退出容器，不退出汉化补丁可能打不成功。</p><p>找到汉化补丁文件夹，将 unity.3d 复制到 C 盘 woga&#x2F;badegg&#x2F;badegg data 文件夹粘贴并替换。</p><p>将 csharp 复制到 badegg data&#x2F;managed 粘贴并替换。</p><p>将 scriptdatas 和 scriptpoints 复制到 badegg data&#x2F;streamin&#x2F;package 并替换。</p><blockquote><p>打补丁粘贴的时候必须跳出替换提示，没跳出代表没打成功。</p></blockquote><p><img src="/img/luckydog/image12.jpeg" alt="打汉化补丁"></p><h2 id="六、开始游戏"><a href="#六、开始游戏" class="headerlink" title="六、开始游戏"></a>六、开始游戏</h2><p>最后点击 C 盘 &#x2F;woga&#x2F;badegg 里的 badegg，点击打开运行即可。</p><p><img src="/img/luckydog/image13.jpeg" alt="运行游戏"></p><p>OP 也能正常播放。</p><p><img src="/img/luckydog/image14.jpeg" alt="OP 播放"></p><hr><p>QQ 同好群：<strong>1042560345</strong>，如有疑问欢迎加群咨询，模拟器资源群内有。</p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/a4f22720.html</id>
+    <link href="https://ymqq127.github.io/posts/a4f22720.html"/>
+    <published>2026-10-15T14:00:00.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>本教程教大家在手机上通过模拟器运行《Lucky dog1 + bad egg》。</p>
+</blockquote>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>首先建一个 exagear 文件夹，到时候就是模拟器内的 E 盘。</p>
+<]]>
+    </summary>
+    <title>手机运行Lucky dog1+bad egg教程</title>
+    <updated>2026-10-15T14:58:43.229Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
