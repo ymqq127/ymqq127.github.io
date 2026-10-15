@@ -5,7 +5,7 @@
  * 1. 页面加载时主动检查 SW 更新 (reg.update())
  * 2. 用户切回标签页时再次检查 (visibilitychange)
  * 3. 新 SW 激活后自动刷新页面 (controllerchange)
- * 4. 版本文件兜底：若本地版本落后则清缓存并刷新
+ * 4. 版本文件兜底：若本地版本落后则触发一次 SW 更新检查（交由 1-3 的流程刷新）
  * 5. 拦截 PWA "添加到桌面" 提示
  */
 ;(function () {
@@ -46,25 +46,21 @@
     }
   })
 
-  // 版本兜底检查：对比 version.json 判断是否需要强制清缓存
-  // 立即执行（不延迟），确保 SW 缓存的旧 HTML 不会持续生效
+  // 版本兜底检查：对比 version.json 判断是否需要刷新
+  // 不直接清空缓存——那会在页面加载中与图片等请求抢缓存，导致
+  // Firefox 报 "ServiceWorker intercepted the request and encountered an unknown error"。
+  // 改为触发一次 SW 更新检查，交给上面的 skipWaiting → controllerchange → 自动 reload 流程。
   fetch('/version.json', { cache: 'no-store' })
     .then(function (res) { return res.json() })
     .then(function (data) {
       if (!data || !data.version) return
       var local = localStorage.getItem('site_version')
       if (local && local !== data.version) {
-        // 版本不一致 → 清除所有缓存并刷新
+        // 版本不一致 → 记录新版本，并请求 SW 检查更新（由 SW 自身决定何时接管刷新）
         localStorage.setItem('site_version', data.version)
-        if ('caches' in window) {
-          caches.keys().then(function (keys) {
-            Promise.all(keys.map(function (k) { return caches.delete(k) })).then(function () {
-              window.location.reload()
-            })
-          })
-        } else {
-          window.location.reload()
-        }
+        navigator.serviceWorker.getRegistration().then(function (reg) {
+          if (reg) reg.update()
+        })
       } else if (!local) {
         localStorage.setItem('site_version', data.version)
       }
