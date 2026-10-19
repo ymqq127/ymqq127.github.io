@@ -10,7 +10,31 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-17T14:38:37.790Z</updated>
+  <updated>2026-10-19T15:16:40.346Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
+    <content>
+      <![CDATA[<blockquote><p>本教程教大家在手机上通过模拟器运行《Slow Damage》中文版。</p><p>注：需要搭载 Luna 使用，安装的时候要转区，就是将语言环境等转成日文的，安装完成之后再转回去。</p></blockquote><h2 id="一、安装游戏"><a href="#一、安装游戏" class="headerlink" title="一、安装游戏"></a>一、安装游戏</h2><p><img src="/img/slowdamage/image1.webp" alt="安装设置"></p><p><img src="/img/slowdamage/image2.webp" alt="安装设置"></p><h2 id="二、模拟器设置"><a href="#二、模拟器设置" class="headerlink" title="二、模拟器设置"></a>二、模拟器设置</h2><p>手机是骁龙的推荐用 winlator，win 版本选 9.21 那个，系统服务选正常。</p><p><img src="/img/slowdamage/image3.webp" alt="winlator 版本选择"></p><p><img src="/img/slowdamage/image4.webp" alt="模拟器参数设置"></p><h2 id="三、补丁获取方式"><a href="#三、补丁获取方式" class="headerlink" title="三、补丁获取方式"></a>三、补丁获取方式</h2><p><img src="/img/slowdamage/image5.webp" alt="补丁获取方式"></p><h2 id="教程参考"><a href="#教程参考" class="headerlink" title="教程参考"></a>教程参考</h2><p><a href="https://ymqq127.github.io/posts/131fd887.html">咎狗の血 True Blood</a></p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/5921c594.html</id>
+    <link href="https://ymqq127.github.io/posts/5921c594.html"/>
+    <published>2026-10-19T15:20:00.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>本教程教大家在手机上通过模拟器运行《Slow Damage》中文版。</p>
+<p>注：需要搭载 Luna 使用，安装的时候要转区，就是将语言环境等转成日文的，安装完成之后再转回去。</p>
+</blockquote>
+<h2 id="一、安装游戏"><a href="#一、安装游戏" class="headerlink" title="一、安装游戏"></a>一、]]>
+    </summary>
+    <title>手机运行［CN］Slow damage教程</title>
+    <updated>2026-10-19T15:16:40.346Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>

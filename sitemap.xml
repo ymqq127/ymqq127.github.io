@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ymqq127.github.io/posts/131fd887.html</loc>
+    <loc>https://ymqq127.github.io/posts/5921c594.html</loc>
     
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,16 @@
   <url>
     <loc>https://ymqq127.github.io/version.json</loc>
     
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/posts/131fd887.html</loc>
+    
+    <lastmod>2026-10-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,50 +112,50 @@
 
   <url>
     <loc>https://ymqq127.github.io/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://ymqq127.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ymqq127.github.io/tags/%E5%8E%8B%E7%BC%A9%E5%8C%85/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ymqq127.github.io/tags/AI/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -154,15 +163,15 @@
 
   
   <url>
-    <loc>https://ymqq127.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <loc>https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <loc>https://ymqq127.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
