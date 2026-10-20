@@ -10,7 +10,30 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-19T15:16:40.346Z</updated>
+  <updated>2026-10-20T10:51:20.449Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
+    <content>
+      <![CDATA[<blockquote><p>此教程亲测手机是骁龙和天玑的都可以用（麒麟不清楚，楼主没有麒麟的设备）。</p></blockquote><h2 id="一、骁龙配置"><a href="#一、骁龙配置" class="headerlink" title="一、骁龙配置"></a>一、骁龙配置</h2><p>Wine 版本那里选 win-9.13。显卡驱动骁龙的选 Turnip，图形驱动选 DXVK。驱动器那里的 E 盘定位到你解压好的游戏资源的文件夹。做完这些之后点 ✓ 保存。</p><p><img src="/img/roomno9/image1.webp" alt="骁龙配置1"></p><p><img src="/img/roomno9/image2.webp" alt="骁龙配置2"></p><p>双击完之后点手机导航栏的返回键，点左边的任务管理器，查看 room_no9_105_cn 的进度，这时候需要等待 5 分钟左右，当 room_no9_105_cn 内存占用从 60 几 MB 和 70 几 MB 变成一百多 MB 的时候点确定。</p><p><img src="/img/roomno9/image3.webp" alt="任务管理器进度1"></p><p><img src="/img/roomno9/image4.webp" alt="任务管理器进度2"></p><p>另外，是骁龙的图形驱动那里就选 Turnip，不是就选 VirGL。</p><h2 id="二、启动游戏"><a href="#二、启动游戏" class="headerlink" title="二、启动游戏"></a>二、启动游戏</h2><p>这时会弹出两个报错，一个 D3D 报错，一个 GPU 报错，这两个报错我们都点 OK，然后等待一会，游戏就会出来了。这个游戏用手机玩有点卡，所以需要多多等待，游戏进去的时候会黑屏一段时间，等一会就好了。</p><p>如果觉得玩的时候双击屏幕的方式他们对话太慢了，可以双击屏幕下方的自动模式。以及这个游戏存档的时候也有点卡，但是没有卡死，耐心等待一会就能存档了。</p><p><img src="/img/roomno9/image5.webp" alt="游戏画面"></p><h2 id="三、天玑配置"><a href="#三、天玑配置" class="headerlink" title="三、天玑配置"></a>三、天玑配置</h2><p>天玑配置：Win 版本还是选 9.13 那个，图形加速选 WinD3D，音频驱动选背景音乐那个，不然会爆音。然后其他的不变，运行教程跟骁龙的一样。</p><p><img src="/img/roomno9/image6.webp" alt="天玑配置1"></p><p><img src="/img/roomno9/image7.webp" alt="天玑配置2"></p><h2 id="教程参考"><a href="#教程参考" class="headerlink" title="教程参考"></a>教程参考</h2><ul><li><a href="https://ymqq127.github.io/posts/131fd887.html">手机啃机翻玩咎狗の血True Blood教程</a></li><li><a href="https://ymqq127.github.io/posts/5921c594.html">手机运行［CN］Slow damage教程</a></li></ul>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/30666ee5.html</id>
+    <link href="https://ymqq127.github.io/posts/30666ee5.html"/>
+    <published>2026-10-19T16:30:00.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>此教程亲测手机是骁龙和天玑的都可以用（麒麟不清楚，楼主没有麒麟的设备）。</p>
+</blockquote>
+<h2 id="一、骁龙配置"><a href="#一、骁龙配置" class="headerlink" title="一、骁龙配置"></a>一、骁龙配置</h2><p>Wine 版本那里选 win-9.13。显卡驱动骁龙的选 Turnip，图形驱动选 D]]>
+    </summary>
+    <title>手机运行［CN］Room No.9教程</title>
+    <updated>2026-10-20T10:51:20.449Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -33,7 +56,7 @@
 <h2 id="一、安装游戏"><a href="#一、安装游戏" class="headerlink" title="一、安装游戏"></a>一、]]>
     </summary>
     <title>手机运行［CN］Slow damage教程</title>
-    <updated>2026-10-19T15:16:40.346Z</updated>
+    <updated>2026-10-19T15:21:17.959Z</updated>
   </entry>
   <entry>
     <author>
