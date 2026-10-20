@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ymqq127.github.io/posts/3c370aaa.html</loc>
+    
+    <lastmod>2026-10-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ymqq127.github.io/posts/30666ee5.html</loc>
     
     <lastmod>2026-10-20</lastmod>
@@ -11,16 +20,16 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/posts/5921c594.html</loc>
+    <loc>https://ymqq127.github.io/version.json</loc>
     
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/version.json</loc>
+    <loc>https://ymqq127.github.io/posts/5921c594.html</loc>
     
     <lastmod>2026-10-19</lastmod>
     
