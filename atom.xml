@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-26T13:22:31.552Z</updated>
+  <updated>2026-10-26T13:23:50.760Z</updated>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -26,7 +26,24 @@
     <published>2026-10-26T04:00:00.000Z</published>
     <summary>Windows系统电脑（Win10/Win11）安装运行exe报错的解决方法，含关闭杀软建议与兼容性调试。</summary>
     <title>Windows系统电脑（Win10/Win11）报错解决教程</title>
-    <updated>2026-10-26T13:22:31.552Z</updated>
+    <updated>2026-10-26T13:23:50.760Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <content>
+      <![CDATA[<p>对于 JASTUSA &#x2F; Steam + JASTUSA dlc 而言，80% 的情况可以顺利解决”没有肉”的 bug。</p><h2 id="设置独立显卡运行游戏"><a href="#设置独立显卡运行游戏" class="headerlink" title="设置独立显卡运行游戏"></a>设置独立显卡运行游戏</h2><p>教程：<a href="https://mq.mbd.baidu.com/r/1TC3hg9Rngs?f=cp&rs=3746768600&ruk=lel5XGHib8IR_nHh98ktXA&u=159b6553cdfb183c&urlext=%7B%22cuid%22:%22gi288_iKS80HP2840aSr8_a8Halt82f_YuBDi08kHa_y8SuUg8v6i_is1OlI8HRbr9-mA%22%7D&sid_for_share=214160_3&_client_version=">Win 10怎么设置独显运行游戏？按照这个方法操作，就可以做到啦</a></p><h2 id="搭配-DirectX-修复工具一同调试"><a href="#搭配-DirectX-修复工具一同调试" class="headerlink" title="搭配 DirectX 修复工具一同调试"></a>搭配 DirectX 修复工具一同调试</h2><p>请搭配 DX 修复工具一同调试（先用 DX 修复工具自动检索修复，再设独立显卡）：<a href="https://tieba.baidu.com/p/10586252590">【PC工具】DirectX修复工具DirectX Repair</a></p><h2 id="以兼容模式运行"><a href="#以兼容模式运行" class="headerlink" title="以兼容模式运行"></a>以兼容模式运行</h2><p>并建议在运行 exe 时右键 exe 运行程式图标 -【属性】-【兼容性】-勾选【✓以兼容模式运行此程序】-【Windows 8（或 Windows 10）】，参考教程：<a href="https://pre.wx.lenovo.com.cn/wordpress/?p=7107">Windows 以兼容模式运行软件的方法</a></p><p><img src="/img/avg-settings/image1.webp" alt="兼容性设置示意"></p><h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>因为 JAST &#x2F; Steam 端（尤其是 nc 社的作品）（但也并不是说所有 Win11 皆如此）（另外 Steam 打 dlc 补丁会比一体版更容易触发此类 bug，所以更建议 Win11 用户选择一体完整版），故 Win11 用户尤其推荐参考此教程完成此优化设置。</p><p>另附先前写过的 DMMd 专属 Win11 解疑帖，AVG 均可通用参考：<a href="https://tieba.baidu.com/p/8315014869">【解疑】JASTUSA★Steam国际版DMMd·Win11专栏</a></p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/8986cf9b.html</id>
+    <link href="https://ymqq127.github.io/posts/8986cf9b.html"/>
+    <published>2026-10-26T04:00:00.000Z</published>
+    <summary>面向JASTUSA/Steam用户的AVG通用教程，通过设置独立显卡、搭配DirectX修复工具与兼容模式运行，解决游戏&quot;没有肉&quot;等运行bug。</summary>
+    <title>AVG通用设置独立显卡与调试兼容性运行游戏教程</title>
+    <updated>2026-10-26T13:35:20.071Z</updated>
   </entry>
   <entry>
     <author>
