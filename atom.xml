@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-26T13:23:50.760Z</updated>
+  <updated>2026-10-26T13:51:17.894Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <content>
+      <![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>此帖将记载汇总一些会致使AVG（blg等）bug的Win11系统更新补丁，若运行游戏遇到问题，可尝试卸载此处记载的更新补丁。</p><p>（ps.系统都是会不断更新的，所以此贴具有一定的时效局限性，仅供参考。）</p><p><img src="/img/win11patch/image1.webp" alt="补丁记载汇总"></p><h2 id="卸载方法"><a href="#卸载方法" class="headerlink" title="卸载方法"></a>卸载方法</h2><p>具体如何卸载可自行百度搜索“win11怎样卸载更新补丁”。</p><h2 id="问题更新补丁列表"><a href="#问题更新补丁列表" class="headerlink" title="问题更新补丁列表"></a>问题更新补丁列表</h2><ul><li>KB5074109</li><li>KB5072033</li><li>KB5065426</li><li>KB5064081</li><li>KB5086672 <a href="https://tieba.baidu.com/p/10638335625">DMMd吧吧友分享</a></li></ul>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/128bde77.html</id>
+    <link href="https://ymqq127.github.io/posts/128bde77.html"/>
+    <published>2026-10-26T07:00:00.000Z</published>
+    <summary>汇总会致使 AVG（blg 等）出现 bug 的 Win11 系统更新补丁，运行游戏遇到问题可尝试卸载对应补丁。</summary>
+    <title>【Win11专用】Windows 11 问题更新补丁记载汇总</title>
+    <updated>2026-10-26T13:51:17.894Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -43,7 +60,7 @@
     <published>2026-10-26T04:00:00.000Z</published>
     <summary>面向JASTUSA/Steam用户的AVG通用教程，通过设置独立显卡、搭配DirectX修复工具与兼容模式运行，解决游戏&quot;没有肉&quot;等运行bug。</summary>
     <title>AVG通用设置独立显卡与调试兼容性运行游戏教程</title>
-    <updated>2026-10-26T13:35:20.071Z</updated>
+    <updated>2026-10-26T13:35:42.950Z</updated>
   </entry>
   <entry>
     <author>
