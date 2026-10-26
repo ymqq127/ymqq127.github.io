@@ -10,7 +10,25 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-26T13:51:17.894Z</updated>
+  <updated>2026-10-26T14:02:12.470Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
+    <content>
+      <![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>JASTUSA★Steam平台的Nitro+CHiRAL社作品均通用。</p><p>由于目前JAST★Steam平台N+C社的作品普遍都是Win7&#x2F;8.1&#x2F;10对应，入了新的普及版sd之后想了想决定把Win11相关的问题单独再开一个帖。</p><p>经实践Win11也不一定就是必遇bug、运行不了，大部分Win11用户不需要任何多余的调试也可以正常运行；但因为存在种种个体差异，如果你的Win11系统电脑不慎“中奖”遇到bug无法正常运行，请仔细阅读本帖内容。</p><p>镇楼图是通用的出问题必看总指南，若遇问题请先自查；其他详细说明解疑请查阅本帖正文。</p><p>另附JAST★Steam国际版DMMd常见问题汇总解疑（不断更新中，建议收藏）：<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a></p><p>苹果电脑Mac OS系统无需顾及此帖，请直接跳转专帖说明：<a href="https://tieba.baidu.com/p/7418503602">【教程】Steam版正版DMMd本篇·苹果电脑端追加说明</a></p><p><img src="/img/dmmd-win11/image1.webp" alt="出问题必看总指南（镇楼图）"></p><p>【Win11专用】新·解疑教学帖：<a href="https://tieba.baidu.com/p/10588463177">【教程】DMMd本篇Steam+JASTUSA版Win11教程</a></p><h2 id="【一】Win11的最常见问题综述"><a href="#【一】Win11的最常见问题综述" class="headerlink" title="【一】Win11的最常见问题综述"></a>【一】Win11的最常见问题综述</h2><p>在国际版常见问题解疑帖<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中我已经列举Win11目前可能遇到的全部问题+对应的解决方法了，这边再把最常见的几个单独强调一下：</p><ul><li>▶游戏无法正常运行（包括直接运行不了游戏、点了STRAT无反应、点了START又返回标题画面、闪退、游戏黑屏无内容⋯⋯等等等等）</li><li>▶CG无法正常展示（确定自己有按教程处理好补丁，但肉的CG无法正常展示、在EXTRA的CG LIBRARY中点击CG出现报错弹窗等等）</li><li>▶运行时直接有乱码报错弹窗、致命错误报错弹窗，或是其他各类报错弹窗。</li></ul><p><a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中目前有关Win11系统运行相关问题的内容：11楼、29楼、30楼、43楼、47楼、48楼、51楼、★55楼（必看）</p><p>*将来如果还有相关更新或补充内容，我会加更在本楼楼中楼，请留意查看。</p><h2 id="【二】Win11必看的总指南"><a href="#【二】Win11必看的总指南" class="headerlink" title="【二】Win11必看的总指南"></a>【二】Win11必看的总指南</h2><p>也就是上面说的常见问题汇总帖里面的55楼内容，如图所示：</p><p><img src="/img/dmmd-win11/image2.webp" alt="Win11必看总指南（常见问题汇总帖55楼内容）"></p><h2 id="【三】现有的针对Win11问题的解决方法汇总"><a href="#【三】现有的针对Win11问题的解决方法汇总" class="headerlink" title="【三】现有的针对Win11问题的解决方法汇总"></a>【三】现有的针对Win11问题的解决方法汇总</h2><p>跟官方人员确认过，短时间内不会出针对Win11的升级插件，所以遇到问题请按<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中介绍的方法自行调试；</p><p>这里再系统地罗列一下解决方法：</p><h3 id="重下重解压重新处理"><a href="#重下重解压重新处理" class="headerlink" title="重下重解压重新处理"></a>重下重解压重新处理</h3><p>另请注意，JAST完整版游戏存放安装时，存放地址的路径不要有中文；Steam的路径同理。</p><p>Steam版处理补丁时务必按照教程一步一步照做：</p><ul><li><a href="https://tieba.baidu.com/p/7305508811">【教程3.0】Steam正版DMMd·完整CG补丁处理教程</a></li><li><a href="https://tieba.baidu.com/p/7991060617">【教程】DMMd国际中文版·补丁使用教程</a></li></ul><p>▶如果先前有下过英文语言的游戏，切换中文语言前建议删除现有的所有数据（在删除之前可以选择备份自己的数据&#x2F;存档等等）直接重下重装；</p><p>▶补丁与游戏语言一定要相对应，如果不慎处理错误，同样请删除所有现有数据重下重处理；</p><p>▶有dll相关的报错窗口弹出也一样直接重下（此项针对Steam版游戏本体，官方有更新升级插件，重下重装即可解决）；</p><p>▶致命错误报错弹窗、乱码报错弹窗同理。</p><p>*另外，在出现形形色色的报错弹窗后，各位大可先按照报错编码或报错内容自行百度——相关教程、修复工具基本可以说是一应俱全，比问我或是单开帖问别人都要快捷便利得多；且现在这些教程的步骤都很清晰明了，除非不认字&#x2F;没有耐心伸手伸惯了，否则就算是电脑小白也都可以理解并跟着操作，新人&#x2F;小白无罪但请不要为自己的懒惰找借口(ㅍ_ㅍ)</p><h3 id="其他通用解决方法"><a href="#其他通用解决方法" class="headerlink" title="其他通用解决方法"></a>其他通用解决方法</h3><ul><li>安装运行时全程关闭杀毒软件、电脑管家一类的软件，也不要在沙箱中隔离运行，防止误删文件或阻碍程序正常运行。</li><li>检查内存、硬件配置。</li><li>非Unicode设置为中文中区。</li><li>检查路径、文件完整性、文件属性。</li><li>修复、升级DirectX：安装DirectX修复工具，相关教程直接百度，此处不再赘述。</li><li>以兼容模式运行、调试兼容性：推荐以兼容Win10&#x2F;Win7的模式运行。</li><li>安装虚拟机。</li></ul><p>↑ 以上6项通用民间汉化版的常见问题解疑【7楼】<a href="https://tieba.baidu.com/p/8242576683">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</a>请自行移步查看详细说明。</p><ul><li>用U盘或硬盘等移动设备，把游戏安装在移动设备中尝试运行。</li><li>换系统：如果方便的话可以考虑换回最通用的Win10系统或兼容性最好的Win7系统。</li><li>等待官方更新Win11对应的升级插件&#x2F;补丁</li></ul><p>若有相关情报我也会及时搬运，可关注一下官方动态或是我&#x2F;本吧内的动态。</p><p>*将来如果有相关更新或补充内容，我会加更在本楼楼中楼，请留意查看</p><p><img src="/img/dmmd-win11/image3.webp" alt="Win11问题解决方法相关"></p><h2 id="【四】以上方法均无果——本吧可申请的辅助工具"><a href="#【四】以上方法均无果——本吧可申请的辅助工具" class="headerlink" title="【四】以上方法均无果——本吧可申请的辅助工具"></a>【四】以上方法均无果——本吧可申请的辅助工具</h2><p>如果尝试遍了上述所有方法还是没办法正常运行游戏：</p><p>可凭借入正证明，申请本吧整理的早年民间汉化版DMMd本篇资料包进行欣赏+一并申请到JAST版的无码CG包</p><p>*已进行部分内测；DMMd本部的早年搬运授权许可【17楼】<a href="https://tieba.baidu.com/p/7823647969">【游戏】DMMd本篇+续篇fd·电脑版手机版·民间汉化版</a></p><p>补充：申请JAST的CG包仅限入手【Steam端游戏本体+JAST补丁】或【JAST完整版游戏】的玩家，只入了Steam游戏本体的话无CG包可申请。</p><p><img src="/img/dmmd-win11/image4.webp" alt="民间汉化版资料包与CG包（一）"></p><p><img src="/img/dmmd-win11/image5.webp" alt="民间汉化版资料包与CG包（二）"></p><h2 id="【五】申请格式"><a href="#【五】申请格式" class="headerlink" title="【五】申请格式"></a>【五】申请格式</h2><p>申请格式通用<a href="https://tieba.baidu.com/p/7996049326">【解疑】JAST补丁购入后下载不了请看</a></p><p>请按以下格式po出入正证明，并留下可用邮箱，等待我有空时清算（不要留谷歌邮箱，会自动拒收）</p><p>手写纸条入境，分别与steam端的游戏本体、JAST端的补丁购入界面合照；</p><p>纸条内容：【昵称（贴吧昵称）+时间+“steam补丁已入正”这句话】；如果入的是JAST完整版只po完整版购入界面一张合照即可，手写内容可简化为“已入正”；</p><p>示例：</p><p><img src="/img/dmmd-win11/image6.webp" alt="入正证明示例（一）"></p><p><img src="/img/dmmd-win11/image7.webp" alt="入正证明示例（二）"></p><p><img src="/img/dmmd-win11/image8.webp" alt="入正证明示例（三）"></p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上。若有新的、更好的解决方法，或是官网有相关更新，我也会在本吧再开帖说明并加更到这边。最后感谢所有支持正版、喜欢DMMd的吧友，喜欢本作和本社也欢迎常驻本吧。</p><p>强调一下调试兼容性是要右键exe（也就是苍叶像素小人的图标），再调试兼容性以兼容Win10的模式运行（可通用类比民间汉化版的不兼容问题解疑【7楼】：<a href="https://tieba.baidu.com/p/8242576683">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</a>）</p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/883ff3e2.html</id>
+    <link href="https://ymqq127.github.io/posts/883ff3e2.html"/>
+    <published>2026-10-26T14:00:00.000Z</published>
+    <summary>JASTUSA与Steam国际版DMMd在Win11系统下的常见问题解疑专栏，含必看总指南、解决方法汇总与入正辅助工具申请说明。</summary>
+    <title>JASTUSA与Steam国际版DMMd Win11问题解疑专栏</title>
+    <updated>2026-10-26T14:02:12.470Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -26,7 +44,7 @@
     <published>2026-10-26T07:00:00.000Z</published>
     <summary>汇总会致使 AVG（blg 等）出现 bug 的 Win11 系统更新补丁，运行游戏遇到问题可尝试卸载对应补丁。</summary>
     <title>【Win11专用】Windows 11 问题更新补丁记载汇总</title>
-    <updated>2026-10-26T13:51:17.894Z</updated>
+    <updated>2026-10-26T13:51:35.115Z</updated>
   </entry>
   <entry>
     <author>
