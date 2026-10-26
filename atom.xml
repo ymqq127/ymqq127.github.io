@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-10-24T13:33:04.534Z</updated>
+  <updated>2026-10-26T13:22:31.552Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <content>
+      <![CDATA[<h2 id="报错说明与操作"><a href="#报错说明与操作" class="headerlink" title="报错说明与操作"></a>报错说明与操作</h2><p>安装应用程序、运行exe时都有可能遇见如图①所示的报错——按照图①与图③的说明操作即可。</p><blockquote><p>一般都是系统误判，只要是正规&#x2F;正常的包就无需担心安全问题。</p></blockquote><p><img src="/img/win-error/image1.webp" alt="图① 系统报错提示"></p><p><img src="/img/win-error/image2.webp" alt="图② 报错处理操作说明"></p><p><img src="/img/win-error/image3.webp" alt="图③ 报错处理操作说明"></p><h2 id="关闭杀软与沙箱"><a href="#关闭杀软与沙箱" class="headerlink" title="关闭杀软与沙箱"></a>关闭杀软与沙箱</h2><p>安装运行全程都建议关闭杀软&#x2F;电脑管家一类的软件，也不要沙箱隔离运行。</p><blockquote><p>↑ 或许会误删必要&#x2F;重要文件。</p></blockquote><h2 id="兼容性调试与吧内资源"><a href="#兼容性调试与吧内资源" class="headerlink" title="兼容性调试与吧内资源"></a>兼容性调试与吧内资源</h2><p>若仍不能正常运行，可尝试调试兼容性等方法，吧内精品教学解疑都可按需查阅参考。</p><blockquote><p>若查询无果吧内也有答疑大楼，有问题可提出互相交流讨论。</p></blockquote>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/a558fd43.html</id>
+    <link href="https://ymqq127.github.io/posts/a558fd43.html"/>
+    <published>2026-10-26T04:00:00.000Z</published>
+    <summary>Windows系统电脑（Win10/Win11）安装运行exe报错的解决方法，含关闭杀软建议与兼容性调试。</summary>
+    <title>Windows系统电脑（Win10/Win11）报错解决教程</title>
+    <updated>2026-10-26T13:22:31.552Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
