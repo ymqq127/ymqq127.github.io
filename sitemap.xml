@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ymqq127.github.io/posts/cec69158.html</loc>
+    
+    <lastmod>2026-10-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ymqq127.github.io/posts/8c21dd6d.html</loc>
     
     <lastmod>2026-10-27</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/posts/8bb7d995.html</loc>
+    <loc>https://ymqq127.github.io/version.json</loc>
     
     <lastmod>2026-10-27</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/version.json</loc>
+    <loc>https://ymqq127.github.io/posts/8bb7d995.html</loc>
     
     <lastmod>2026-10-27</lastmod>
     
@@ -280,6 +289,27 @@
   
   <url>
     <loc>https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/tags/Slow-Damage/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/tags/%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/tags/%E6%94%BB%E7%95%A5/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
