@@ -20,22 +20,37 @@
     window.location.reload()
   })
 
-  // 注册 SW 并立即检查更新
-  navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
-    // 立即触发一次更新检查
-    reg.update()
+  // 注册 SW —— 推迟到首屏加载完成后再做。
+  // 首次访问时 SW 会预缓存站点资源，若与首屏资源并发下载会明显拖慢首屏
+  // （尤其是移动端弱网），因此等 load 事件 + 空闲时再注册。
+  function registerSW () {
+    navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
+      // 立即触发一次更新检查
+      reg.update()
 
-    // 有新 SW 进入 installing 状态
-    reg.addEventListener('updatefound', function () {
-      var newWorker = reg.installing
-      newWorker.addEventListener('statechange', function () {
-        // 新 SW 安装完毕且已有旧 SW 在控制页面 → 发送 SKIP_WAITING
-        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-          newWorker.postMessage({ type: 'SKIP_WAITING' })
-        }
+      // 有新 SW 进入 installing 状态
+      reg.addEventListener('updatefound', function () {
+        var newWorker = reg.installing
+        newWorker.addEventListener('statechange', function () {
+          // 新 SW 安装完毕且已有旧 SW 在控制页面 → 发送 SKIP_WAITING
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            newWorker.postMessage({ type: 'SKIP_WAITING' })
+          }
+        })
       })
+    }).catch(function () { /* SW 注册失败，静默 */ })
+  }
+
+  if (document.readyState === 'complete') {
+    // 已经加载完（如脚本被延迟执行）
+    if ('requestIdleCallback' in window) requestIdleCallback(registerSW, { timeout: 3000 })
+    else setTimeout(registerSW, 1500)
+  } else {
+    window.addEventListener('load', function () {
+      if ('requestIdleCallback' in window) requestIdleCallback(registerSW, { timeout: 3000 })
+      else setTimeout(registerSW, 1500)
     })
-  }).catch(function () { /* SW 注册失败，静默 */ })
+  }
 
   // 用户切回标签页时主动检查 SW 更新
   document.addEventListener('visibilitychange', function () {
