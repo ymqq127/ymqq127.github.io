@@ -9,13 +9,20 @@
   font-weight: 500;
   padding: 2px 6px;
   border-radius: 4px;
-  transition: color .2s ease, background .2s ease, transform .15s ease !important;
+}
+
+/* 不能给 transform 加 transition：JS 每帧都在改 transform，
+   带过渡会让标签滞后于球面位置，表现为乱飞/抖动。
+   缩放改由 JS 写入的 font-size 实现。
+   这里用 .tagcloud-3d 前缀 + !important 盖掉主题的
+   `.tag-cloud-list a { transition: .3s }`（特异性更高）。 */
+.tagcloud-3d .tagcloud-3d-item {
+  transition: color .2s ease, background .2s ease !important;
 }
 
 .tagcloud-3d-item:hover {
   color: #FF85A2 !important;
   background: rgba(255,182,193,.15);
-  transform: scale(1.15) !important;
 }
 
 /* 标签云页面标题 */
@@ -31,6 +38,12 @@
 [data-theme="dark"] .tagcloud-3d-item:hover {
   color: #E8899A !important;
   background: rgba(160,80,96,.15);
+}
+
+/* hover 时轻微放大，用独立的 transform 会覆盖 JS 定位，
+   这里改用 text-shadow 提示，不影响球面位置 */
+.tagcloud-3d-item:hover {
+  text-shadow: 0 0 8px rgba(255,133,162,.5);
 }
 
 [data-theme="dark"] .tag-cloud-title {
