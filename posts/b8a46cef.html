@@ -1,0 +1,709 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><meta name="referrer" content="strict-origin-when-cross-origin"><script>!function(){try{var d=Object.getOwnPropertyDescriptor(Document.prototype,"cookie")||Object.getOwnPropertyDescriptor(HTMLDocument.prototype,"cookie");if(d&&d.set){Object.defineProperty(document,"cookie",{get:function(){return d.get.call(document)},set:function(v){d.set.call(document,v.replace(/;\s*domain\s*=\s*[^;]+/gi,""))},configurable:!0})}}catch(e){}}();</script><title>【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总 | 花与玻璃的旅人</title><meta name="author" content="Li_Myu"><meta name="copyright" content="Li_Myu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="DMMd 戏剧性谋杀本篇与 FD 民间汉化版常见问题解疑汇总：硬件配置、闪退黑屏、全屏溢出、解压报错、苹果电脑运行、马赛克与阉割、像素小人、攻略顺序、存档与全开档等，N+C 社旧四作皆可类比通用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总">
+<meta property="og:url" content="https://ymqq127.github.io/posts/b8a46cef.html">
+<meta property="og:site_name" content="花与玻璃的旅人">
+<meta property="og:description" content="DMMd 戏剧性谋杀本篇与 FD 民间汉化版常见问题解疑汇总：硬件配置、闪退黑屏、全屏溢出、解压报错、苹果电脑运行、马赛克与阉割、像素小人、攻略顺序、存档与全开档等，N+C 社旧四作皆可类比通用。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ymqq127.github.io/img/bg.webp">
+<meta property="article:published_time" content="2026-11-03T12:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-02T16:37:18.090Z">
+<meta property="article:author" content="Li_Myu">
+<meta property="article:tag" content="DMMd">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="汉化">
+<meta property="article:tag" content="游戏">
+<meta property="article:tag" content="游戏教程">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ymqq127.github.io/img/bg.webp"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总",
+  "url": "https://ymqq127.github.io/posts/b8a46cef.html",
+  "image": "https://ymqq127.github.io/img/dmmd-faq/p07-cover.webp",
+  "datePublished": "2026-11-03T12:00:00.000Z",
+  "dateModified": "2026-11-02T16:37:18.090Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Li_Myu",
+      "url": "https://ymqq127.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.svg"><link rel="canonical" href="https://ymqq127.github.io/posts/b8a46cef.html"><link rel="preconnect" href="https://registry.npmmirror.com"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//www.clarity.ms"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.svg"/><link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.svg"/><link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.svg"/><link rel="stylesheet" href="/fonts/lxgw-regular.css"><link rel="stylesheet" href="/fonts/lxgw-bold.css"><link rel="stylesheet" href="https://registry.npmmirror.com/firacode/6.2.0/files/distr/fira_code.css"><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://registry.npmmirror.com/@fortawesome/fontawesome-free/6.5.1/files/css/all.min.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S5TRZMPTT8"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S5TRZMPTT8', {cookie_domain: 'none'})
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S5TRZMPTT8', {'page_path': window.location.pathname, cookie_domain: 'none'})
+}, 'google_analytics')
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yrfacjr311");
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: Li_Myu","link":"链接: ","source":"来源: 花与玻璃的旅人","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#FF85A2","bgDark":"#E8899A","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://registry.npmmirror.com/@egjs/infinitegrid/4.13.0/files/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="google-site-verification" content="6da9jlz7umOR8f1JuhxSVhG6g76peOClBTjMhsQG0eM" /><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="dns-prefetch" href="https://www.googletagmanager.com"><style>#pagination.pagination-post .pagination-related .info{position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;z-index:2!important}#pagination.pagination-post .pagination-related .info-1 .info-item-2,#pagination.pagination-post .info-item-2,.pagination-related .info .info-1 .info-item-2{display:block!important;opacity:1!important;visibility:visible!important;color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.3)!important;font-weight:700!important;font-size:1.1em!important;line-height:1.4!important;margin-top:8px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;-webkit-line-clamp:unset!important;-webkit-box-orient:unset!important;max-height:none!important;height:auto!important}#pagination.pagination-post .limit-more-line{display:block!important;-webkit-box-orient:unset!important;-webkit-line-clamp:unset!important}[data-theme=dark] #pagination.pagination-post .info-item-2,[data-theme=dark] .pagination-related .info .info-1 .info-item-2{color:#E8899A!important;text-shadow:none!important}.pagination-related .info .info-1,.pagination-related .info .info-2,#pagination .pagination-related .info-1{position:absolute!important;top:50%!important;width:100%!important;opacity:1!important;transform:translate(0,-50%)!important;transition:none!important}.pagination-related .info-2,.pagination-related:hover .info-2,#pagination .pagination-related .info-2,#pagination .pagination-related:hover .info-2{display:none!important;opacity:0!important;visibility:hidden!important}.pagination-related:not(.no-desc):hover .info-1,#pagination .pagination-related:hover .info-1{position:absolute!important;top:50%!important;width:100%!important;opacity:1!important;transform:translate(0,-50%)!important}.pagination-related .info .info-1 .info-item-1,#pagination .pagination-related .info-1 .info-item-1,#pagination.pagination-post .info-item-1{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.2)!important;font-size:.8em!important;letter-spacing:2px!important;text-transform:uppercase!important}[data-theme=dark] .pagination-related .info .info-1 .info-item-1,[data-theme=dark] #pagination .pagination-related .info-1 .info-item-1,[data-theme=dark] #pagination.pagination-post .info-item-1{color:#E8899A!important;text-shadow:none!important}</style><link rel="preconnect" href="https://registry.npmmirror.com" crossorigin><link rel="dns-prefetch" href="https://registry.npmmirror.com"><script>!function(){var a=["ymqq127.github.io","localhost","127.0.0.1"];function b(h){for(var i=0;i<a.length;i++)if(h===a[i]||h.endsWith("."+a[i]))return!0;return!1}window.location.hostname&&!b(window.location.hostname)&&window.location.replace("https://ymqq127.github.io"+window.location.pathname+window.location.search+window.location.hash),window.top!==window.self&&window.top.location.replace(window.self.location.href)}();</script><link rel="preload" as="image" href="/img/bg.webp"><style>#page-header{background-color:#ffe4ec}.full_page{background-color:#ffe4ec}body,header,main,aside,nav,.card-widget,.recent-post-item,.article-container,#page-header,#sidebar,#content-inner,.layout,#aside-content,.post-content,.article-meta-wrap,#site-info,#site-title,#site-subtitle,#nav,.menus_item,.search-dialog,.local-search-input,#local-search-results,#search-mask,.category-lists,.tag-cloud,.archive-container,.author-info-name,.author-info-description,.card-announcement,.announcement_content,.card-recent-post,.aside-list-item,.headline,.length-num,#card-info-btn,.social-icon,.scroll-down-effects,.article-title,.article-meta-wrap,.post-copyright,.post-reward,.post-pagination,.relatedPosts,.relatedPosts_headline,.relatedPosts_item,.relatedPosts_link,.relatedPosts_title,.relatedPosts_time,.relatedPosts_img{transition:background-color .4s ease,color .4s ease,border-color .4s ease,box-shadow .4s ease,opacity .4s ease!important}</style><style>::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#FFB6C1;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:#FF85A2}::-webkit-scrollbar-corner{background:transparent}[data-theme=dark] ::-webkit-scrollbar-thumb{background:#C97080}[data-theme=dark] ::-webkit-scrollbar-thumb:hover{background:#E8899A}</style><link rel="stylesheet" href="/css/pink-critical.min.css?v=20261011b"><link rel="preload" as="style" href="/css/pink-async.min.css?v=20261011b" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/pink-async.min.css?v=20261011b"></noscript><link rel="stylesheet" href="/css/tagcloud-3d-pink.css"><style>.card-announcement .item-headline i.fa-star{color:#FF85A2!important}[data-theme=dark] .card-announcement .item-headline i.fa-star{color:#E8899A!important}</style><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="花与玻璃的旅人" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/flink/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/dmmd-faq/p07-cover.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">花与玻璃的旅人</span></a><a class="nav-page-title" href="/"><span class="site-name">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/flink/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-11-03T12:00:00.000Z" title="发表于 2026-11-03 20:00:00">2026-11-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-11-02T16:37:18.090Z" title="更新于 2026-11-03 00:37:18">2026-11-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/">游戏教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">7.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>22分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="🌸-说明"><a href="#🌸-说明" class="headerlink" title="🌸 说明"></a>🌸 说明</h2><p>补档民间汉化版 DMMd 相关的常见问题解疑汇总，<strong>N+C 社旧四作皆可类比通用</strong>。</p>
+<p>本帖将罗列一系列古早的民间汉化版的常见问题，并附相对应的解决方法；若遇问题建议先自查本帖。</p>
+<p>请注意本帖仅针对古早的民间汉化版<strong>本篇与 FD</strong>。</p>
+<ul>
+<li>▶ 日文原版、日文普及版相关的说明与答疑请移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8219921418">【教程说明】DLsite端&#x2F;实体碟普及版DMMd fd（即re：connect）</a></li>
+<li>▶ JAST 与 Steam 版的常见问题与答疑请移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7999742957">【解疑】JAST国际中文版DMMd·出问题必看总指南</a>、<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a></li>
+</ul>
+<p>另外请注意——本帖仅做归纳总结，不是答疑楼，请非吧务组成员的吧友不要占用主楼，若有问题可在楼中楼提出或直接去综合答疑大楼。</p>
+<blockquote>
+<p>▶ 最后附综合答疑大楼：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7003603426">【答疑】DMMd&#x2F;N+C相关综合答疑大楼</a></p>
+</blockquote>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p07-cover.webp" alt="DMMd 民间汉化版解疑汇总"></p>
+<p>本吧汇总传送 &amp; 入正说明 &amp; 非正式版游戏相关（<strong>并不推荐非正式版!!!!!!</strong> 希望有能力的吧友都能支持 JAST 或 Steam 正版或日文原版正版）：</p>
+<ul>
+<li>▶ 本吧汇总：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001330306">【汇个总】该有的都有</a></li>
+<li>▶ 非正式版 &amp; 入正说明：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8235713739">【必看】＼(`Δ’)／</a></li>
+</ul>
+<p>接下来正式开始列举常见问题与解决方法。</p>
+<p>再次强调非吧务组成员请不要占用主楼，若有其他问题请在楼中楼提出或直接去综合答疑大楼：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7003603426">【答疑】DMMd&#x2F;N+C相关综合答疑大楼</a></p>
+<h2 id="💻-Q：运行游戏所需要的电脑硬件配置、操作环境"><a href="#💻-Q：运行游戏所需要的电脑硬件配置、操作环境" class="headerlink" title="💻 Q：运行游戏所需要的电脑硬件配置、操作环境"></a>💻 Q：运行游戏所需要的电脑硬件配置、操作环境</h2><p>✅ 处理器、内存、显卡、DirectX 此处直接以 Steam 和 JAST 版的硬件配置来要求，如图所示。另外因为民间汉化版的基础是 2012 年／2013 年发布的日文原版，所以以下也详细列举原版的必要操作环境：</p>
+<ul>
+<li>▶ <strong>OS</strong>：Windows XP home&#x2F;XP pro&#x2F;Vista&#x2F;7（Vista&#x2F;7-32bit、64bit 两版对应 ✓）</li>
+<li>▶ <strong>CPU</strong>：[必须] Pentium4 3GHz 以上 [推荐] Core2Duo 以上</li>
+<li>▶ <strong>HDD（硬盘）</strong>：3.3GB 以上</li>
+<li>▶ <strong>储存器</strong>：Windows XP [必须] 512MB 以上 [推荐] 1GB 以上；Windows Vista&#x2F;7 [必须] 1GB 以上 [推荐] 1.5GB 以上</li>
+<li>▶ <strong>显示器／分辨率</strong>：1024x768 32 位 TrueColor，游戏画面为广角 [1024x576] 规格</li>
+<li>▶ <strong>VGA</strong>：[必须] DirectX9.0c 对应 64MB video system [推荐] 外部 video system 64MB 以上</li>
+<li>▶ <strong>SOUND</strong>：支持 DirectSound 的 PCM 音源</li>
+<li>▶ <strong>DirectX</strong>：DirectX9.0c 以上</li>
+<li>▶ <strong>VOICE</strong>：全音</li>
+<li>▶ <strong>安装</strong>：需 Administrator 权限</li>
+</ul>
+<p>Win10 和 Win11 通常情况下均可正常运行，如果无法正常运行请看楼下的专项说明。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p26-hw-spec.webp" alt="Steam 与 JAST 版硬件配置要求"></p>
+<h2 id="⚠️-Tip：运行「汉化版游戏」前必须进行的基础自查（电脑端）"><a href="#⚠️-Tip：运行「汉化版游戏」前必须进行的基础自查（电脑端）" class="headerlink" title="⚠️ Tip：运行「汉化版游戏」前必须进行的基础自查（电脑端）"></a>⚠️ Tip：运行「汉化版游戏」前必须进行的基础自查（电脑端）</h2><p>✅ 此处直接以先前备份的图片教程来说明，如果电脑不是中文中区会直接导致各种 bug 出现，请特别注意：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p29-cn-locale.webp" alt="中文中区自查"></p>
+<h2 id="🩹-Q：游戏闪退、双击-exe-后没有反应、一直黑屏、无法正常运行"><a href="#🩹-Q：游戏闪退、双击-exe-后没有反应、一直黑屏、无法正常运行" class="headerlink" title="🩹 Q：游戏闪退、双击 exe 后没有反应、一直黑屏、无法正常运行"></a>🩹 Q：游戏闪退、双击 exe 后没有反应、一直黑屏、无法正常运行</h2><h2 id="🩹-Q：Win10-和-Win11-无法正常运行"><a href="#🩹-Q：Win10-和-Win11-无法正常运行" class="headerlink" title="🩹 Q：Win10 和 Win11 无法正常运行"></a>🩹 Q：Win10 和 Win11 无法正常运行</h2><p>* 这里仅先以 Windows 系统的电脑为主进行解疑说明，苹果电脑请移步楼下的专项。</p>
+<p>✅ 首先，请确保运行汉化版游戏需要电脑是【中文中区】——也就是本帖 ★〖6 楼〗所说的”运行前必须进行的基础自查”。</p>
+<p>当然，必备的前提条件是足够的内存、符合版本要求的 DirectX、处理器、显卡等——也就是本帖 ★〖5 楼〗所说的基础配置，请直接以 JAST 和 Steam 版所需的配置去要求。</p>
+<ul>
+<li>▶ 另外，民间汉化版本篇的程序较大，如果有 Win10 稳定修正相关的程序更是会需要一定的时间来启动（fd 程序虽然比本篇小，但也同理），<strong>正常情况下需要耐心等待黑屏画面 1~3 分钟</strong>。</li>
+<li>▶ 游戏压缩包需要解压，请使用专业的解压软件进行解压——如 WinRAR、360 解压等等（<strong>切忌不解压就直接点开运行</strong>）。</li>
+<li>▶ 一体的硬盘版压缩包直接解压后运行苍叶像素小人图标的 exe。</li>
+</ul>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p57-pixel-icon.webp" alt="苍叶像素小人图标"></p>
+<p>【本篇】／【fd 续篇】：*注：fd 的主目录一般会有 2 个 exe，请运行 cn</p>
+<p>通常情况下此文件的大小是 575KB，另一个 exe 打开会是乱码：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p62-exe-icon.webp" alt="fd 主目录的 exe 说明"></p>
+<p>（我整理优化的版本无需顾忌此项，入正者可跟我申领，详情可戳：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8218250528">【吧务】po入正证明x申请专用帖</a>）</p>
+<ul>
+<li>▶ <strong>多个压缩包的分卷版</strong>：将所有 part 放在同一个目录下面，再正常解压第一个 part，运行 exe。（通常情况下只需要解压第一 part，但一定要确保所有 part 都有完整下载、存放在一起；如果解压第一 p 无法正常运行，可尝试解压其他 p。）</li>
+<li>▶ 下载解压运行过程中，请<strong>全程关闭所有杀毒软件、电脑管家之类的程序</strong>，防止误删游戏文件，也不要沙箱隔离运行。</li>
+</ul>
+<p>✅ 如果检查过硬件配置、操作环境均符合要求，有全程关闭所有杀软电脑管家，有正常解压，但等待黑屏的时间超过了 5 分钟还是黑屏无内容，或是打开直接闪退、无法正常运行等等，请尝试以下方法解决：</p>
+<ul>
+<li><p>▶ 【前提】：非 Unicode 改为中文中区，清理出足够的内存，升级／修复 DirectX，全程关闭杀毒软件电脑管家，正常解压，尽量不要用快捷方式启动。</p>
+</li>
+<li><p>▶ 〖重下重解压〗：下载过程中如果有网络中断、解压过程中如果有中断或出错，都可能会导致游戏程序的缺失或损坏——如果闪退、无法正常运行，一律建议先删除现有的所有程序，重新下载、重新解压，务必确保是无中断无损坏的完全下载、正常解压。</p>
+</li>
+<li><p>▶ 〖检查路径〗：请尝试把游戏存放路径改为<strong>全英文</strong>，不要含有汉字或标点、字符等，示例：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p64-path.webp" alt="路径示例"></p>
+</li>
+<li><p>▶ 〖检查 exe 名称〗：exe 的名称如果有汉字、标点、字符等，也建议改为全英文，示例：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p65-exe-name.webp" alt="exe 名称示例 1"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p66-exe-name2.webp" alt="exe 名称示例 2"></p>
+</li>
+<li><p>▶ 〖变更存放游戏的设备〗：可尝试将游戏拷贝在移动硬盘或 U 盘中再运行。</p>
+</li>
+<li><p>▶ 〖保证文件完整〗：所有游戏程序不要随意移动、删除或变更属性。</p>
+</li>
+<li><p>▶ 〖检查文件属性〗：如果程序文件被电脑默认设置成了隐藏属性，请手动取消隐藏恢复正常——右键文件 → [属性] → 在 [常规] 栏目中排查：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p67-hidden-file.webp" alt="检查文件隐藏属性"></p>
+</li>
+<li><p>▶ 〖检查、升级／修复 DirectX〗：相关教程也请直接自行百度，此处传送一个<a target="_blank" rel="noopener" href="https://mr.mbd.baidu.com/r/UctjTlY4la?f=cp&u=f0a3342e0fd43a9f">教程</a>。</p>
+</li>
+<li><p>▶ 〖Win10、Win11 相关——调试兼容性〗：Win10 与 Win11 通常情况下均可正常运行，如果不行，请先尝试调试整机兼容性；运行游戏时，调试以兼容 Win7 的模式运行 exe：右键文件 → [属性] → 在 [兼容性] 栏目中更改并应用：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p68-compat.webp" alt="兼容性设置"></p>
+<p>详细教程直接自行百度”怎样以兼容模式运行程序”即可，此处传送一个<a target="_blank" rel="noopener" href="https://mbd.baidu.com/ma/s/JwVQZmyX">教程</a>。</p>
+<p>或是安装 Win7 虚拟机，教程也请直接自行百度，此处传送两个<a target="_blank" rel="noopener" href="http://www.zhuangjiba.com/soft/31061.html">教程</a>、<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_47260769/article/details/122991903">win7虚拟机安装</a>：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p69-win7-vm.webp" alt="Win7 虚拟机"></p>
+</li>
+<li><p>▶ 〖更换电脑〗：古早一点的系统或电脑虽然在理论上来讲适配性更好，但毕竟内存显卡处理器等等还是越新越好、内存也越充足越好，所以如果是硬件配置相关的问题，建议直接换电脑。</p>
+</li>
+<li><p>▶ 〖其他〗：如果以上方法尝试过都不行，有可能是游戏包压制或上传时本来就有缺漏损坏，请尝试更换别的游戏包。</p>
+</li>
+</ul>
+<p>最后，本篇的话当然最推荐入手 JAST 或 Steam 正版国际中文版、支持正版。</p>
+<p>FD 目前可支持新的日文普及版——DLsite 电子版正版、正版实体碟，入正者可申请完备的民间汉化版 FD 资料库，入正申请移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8218250528">【吧务】po入正证明x申请专用帖</a></p>
+<p>（相关教程说明、申请说明等等直接自行移步吧内的”吧主推荐区”）</p>
+<blockquote>
+<p>▷ 苹果电脑请看楼下的专项说明。</p>
+<p>▷ 手机运行理论上我不负责答疑且不那么了解，但是楼下也会顺带提一下。</p>
+</blockquote>
+<h2 id="🪟-Q：游戏画面尺寸太大溢出屏幕、画面溢出显示不全、鼠标错位无法操作"><a href="#🪟-Q：游戏画面尺寸太大溢出屏幕、画面溢出显示不全、鼠标错位无法操作" class="headerlink" title="🪟 Q：游戏画面尺寸太大溢出屏幕、画面溢出显示不全、鼠标错位无法操作"></a>🪟 Q：游戏画面尺寸太大溢出屏幕、画面溢出显示不全、鼠标错位无法操作</h2><h2 id="🪟-Q：想全屏运行游戏该怎么操作"><a href="#🪟-Q：想全屏运行游戏该怎么操作" class="headerlink" title="🪟 Q：想全屏运行游戏该怎么操作"></a>🪟 Q：想全屏运行游戏该怎么操作</h2><p>✅ 首先开篇的弹窗都是问<strong>是否全屏运行</strong>——<strong>通通选”否”</strong>，此处也以备份的图版教程来说明：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p79-fullscreen-popup.webp" alt="开篇弹窗说明"></p>
+<p>✅ 如果已经选了”是”导致画面溢出，除了上图介绍的快捷键切换：桌面直接右键 → 在【属性】／【显示设置】界面中</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p80-shortcut-key.webp" alt="快捷键切换窗口模式"></p>
+<p>将电脑本机属性里面的<strong>显示比设为 100%</strong>，这样就可以正常显示和操作了。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p81-display-scale.webp" alt="显示比设为 100%"></p>
+<p>✅ 显示比调试完后，也可继续在游戏首页的【CONFIG】中关闭全屏模式，选择窗口模式，再调回电脑适合的其他分辨率：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p82-config-window.webp" alt="CONFIG 窗口模式"></p>
+<p>✅ 想全屏运行游戏的话——除了调试显示比以外，也可先小窗运行游戏，再在游戏首页【CONFIG】里面设置尝试别的合适的显示模式：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p83-config-mode.webp" alt="CONFIG 显示模式"></p>
+<blockquote>
+<p><strong>吧友.Date 补充</strong>：我自己摸索了一下，FD 版全屏溢出也可以尝试在设置里 → 画面设置 → 全屏状态下自动设置显示比例 → off → 固定 → 双线过滤法，这样显示出来的是正常全屏。仅供参考，机型不一样可能情况也不一样，在这个设置区多试试就好了…</p>
+</blockquote>
+<blockquote>
+<p><strong>吧友 Twisy 补充</strong>：我也来补充一个，刚刚自己乱调的，想要系统缩放不变的情况下全屏，就是右键 exe 文件 → 属性 → 兼容性，勾选”禁用全屏优化”，再点开游戏选择全屏的话就是正常全屏了！（可能也和不同电脑型号有关，看到的宝宝可以试试但我不确定是不是都可行）</p>
+</blockquote>
+<h2 id="📦-Q：解压失败、不能解压、弹窗报错「压缩包损坏」等"><a href="#📦-Q：解压失败、不能解压、弹窗报错「压缩包损坏」等" class="headerlink" title="📦 Q：解压失败、不能解压、弹窗报错「压缩包损坏」等"></a>📦 Q：解压失败、不能解压、弹窗报错「压缩包损坏」等</h2><p>✅ <strong>本机调试方法</strong>：</p>
+<ul>
+<li><p>▶ <strong>简便排查</strong>（直接查看／打开，检查文件是否完好）：</p>
+<p>首先直接双击压缩包，看看能不能预览；</p>
+<p>如果不能正常预览，打开压缩包（不是解压，而是用 WinRAR 打开）——选中你要解压缩的文件，单击鼠标右键，在弹出的菜单里选择”无需确认直接解压缩”，或者使用快捷键 <strong>ALT+W</strong> 打开查看：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p98-unzip-alt-w.webp" alt="ALT+W 直接解压"></p>
+</li>
+<li><p>▶ 使用 <strong>WinRAR</strong> 的用户可尝试更新版本，或更换解压软件再尝试解压：尝试下载〖360解压〗、〖7zip〗，或是别的解压软件，再次尝试解压；此外也有可能是本机的 WinRAR 版本的问题，可进行升级，再尝试解压。</p>
+</li>
+<li><p>▶ 同理，使用 360 解压或其他解压软件的用户可尝试更换 WinRAR、或是升级版本。</p>
+</li>
+</ul>
+<p>✅ <strong>使用 WinRAR 解压的时候出错，提示没有找到压缩文件或者文件名、目录名或卷标语法不正确</strong>：</p>
+<ul>
+<li>▶ 提示没有找到压缩文件——可以重新安装 WinRAR 软件或者更新一下。</li>
+<li>▶ 也可顺便检查一下下载的文件名是否是乱码或者太长了，此时可以手动重命名一下，变更为任意简短字符的名称（英文字符），尝试再次解压。</li>
+<li>▶ 文件名目录名或卷标语法不正确——此时应该确认一下用户名，或者安装路径是否有中文名，存放地址最好为全英文目录。</li>
+<li>▶ DMMd 吧本部吧友推荐——压缩包数据损坏等报错可尝试使用〖7zip〗进行修复、解压。</li>
+</ul>
+<p>✅ 若以上方法均不能解决问题，请带详细的步骤截图与问题截图，于综合答疑大楼<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7003603426">【答疑】DMMd&#x2F;N+C相关综合答疑大楼</a>带图回帖说明情况。</p>
+<p>为防止回复在客户端被屏没有提示，也可以艾特我一下二次提醒，我看见之后会回复。*当然了单开帖问吧友我也没有意见 ╮(╯▽╰)╭</p>
+<h2 id="🔐-Q：有解压码的压缩包解压失败、不能解压、弹窗报错等"><a href="#🔐-Q：有解压码的压缩包解压失败、不能解压、弹窗报错等" class="headerlink" title="🔐 Q：有解压码的压缩包解压失败、不能解压、弹窗报错等"></a>🔐 Q：有解压码的压缩包解压失败、不能解压、弹窗报错等</h2><p>✅ （知道解压码的前提下）在解压界面点击”显示密码”——检查解压码是否完整无疏漏，并尝试重新手动输入。</p>
+<p>确认无误还是无法正常解压，可尝试更换解压软件（通用本帖 ★〖9 楼〗的内容）。</p>
+<p>另传送先前写的说明分帖，可类比参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7511449275">【通告】”解压码直接复制却报错”追加说明·电脑版手机版等均适用</a></li>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7458214059">【通告】关于部分用户反馈”FD解压码直接复制依旧不正确”的答疑</a></li>
+</ul>
+<blockquote>
+<p>*注：吧内随机随缘抓取的游戏包如果有解压码直接 pass 掉，因为是抓取的我也并不知道解压码，别来问我！（问也是白问）</p>
+</blockquote>
+<p>请自行更换别的抓取、移步其他吧友的分享、直接去 3DM／搜搜游戏／当游网之类的论坛找（看本帖 ★〖3 楼〗的汇总传送）。</p>
+<h2 id="🍎-Q：苹果电脑如何运行"><a href="#🍎-Q：苹果电脑如何运行" class="headerlink" title="🍎 Q：苹果电脑如何运行"></a>🍎 Q：苹果电脑如何运行</h2><p>✅ N+C 社目前的作品所对应的系统均为 Windows，所以苹果电脑（Mac OS 系统）需要模拟 Windows 环境才可以正常运行。</p>
+<p>方法基本上分为两种，以下分别传送吧内的教程，请根据自己的实际情况选择合适的方案：</p>
+<ul>
+<li>① 模拟器、虚拟机：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7270517632">【游戏】MacOS Big Sur版模拟器安装游玩教程</a></li>
+<li>② 安装双系统：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001767031">【教程向】苹果电脑Mac OS系统运行DMMd以及类似游戏方法</a>（也含虚拟机相关说明）</li>
+</ul>
+<p>相关教程与软件等等也可直接自行百度、去各种技术论坛软件论坛查资料，如果有更好的方法也欢迎分享至吧内。</p>
+<h2 id="🔞-Q：马赛克相关"><a href="#🔞-Q：马赛克相关" class="headerlink" title="🔞 Q：马赛克相关"></a>🔞 Q：马赛克相关</h2><p>✅ 首先，日文原版就是有码的——无码的作品在日本那边是违规的根本无法发售（这也就是日本的 IP 无法登入 JAST 官网的原因）。</p>
+<p>因此，以日文原版为基础的民间汉化版也都是有码的。</p>
+<p>✅ N+C 社的无码作品都是 JAST 平台的——目前有咎狗、甜池、DMMd 本篇和 sd，Lamento 待定中。</p>
+<p>DMMd fd 暂无计划，但也不是完全没有希望，所以希望大家都能多多支持正版或补票。</p>
+<p>除此之外没有无码的，且 JAST 版的程序文件跟民间汉化版、日文原版都不通用，想 get 无码畅享版游戏请直接支持 JAST 正版。</p>
+<p>（入正教程等直接看〖吧主推荐〗区我的相关帖子，保姆级教程库该有的不该有的全都有）</p>
+<blockquote>
+<p>‼️ 请一定注意：目前谁说有无码 fd 谁骗子，不要上当受骗。</p>
+</blockquote>
+<p>Steam-JAST 相关的内容直接移步<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8240760400">【教程】JASTUSA点数教学教程搬运</a></p>
+<h2 id="✂️-Q：剧情「阉割」相关，肉全不全"><a href="#✂️-Q：剧情「阉割」相关，肉全不全" class="headerlink" title="✂️ Q：剧情「阉割」相关，肉全不全"></a>✂️ Q：剧情「阉割」相关，肉全不全</h2><h2 id="✂️-Q：很多在动漫里的场景（例如库利亚的《水母之歌》）没看见有-CG，是怎么回事"><a href="#✂️-Q：很多在动漫里的场景（例如库利亚的《水母之歌》）没看见有-CG，是怎么回事" class="headerlink" title="✂️ Q：很多在动漫里的场景（例如库利亚的《水母之歌》）没看见有 CG，是怎么回事"></a>✂️ Q：很多在动漫里的场景（例如库利亚的《水母之歌》）没看见有 CG，是怎么回事</h2><p>✅ <strong>只有 Steam 端的是阉割全龄版</strong>——删减了成人向的肉戏、需要 JAST 补丁的辅助补全。</p>
+<ul>
+<li>▶ JAST 完整版（CG 无码）</li>
+<li>▶ 日文原版——包括初回限定版、普通旧版、新版普及版、DL 电子版（CG 有码）</li>
+<li>▶ 民间汉化版（CG 有码）</li>
+</ul>
+<p>剧情都是完整的，不需要任何额外的操作。</p>
+<blockquote>
+<p>* 民间汉化版也根本不需要什么补丁，它本来就是完整的！</p>
+</blockquote>
+<p>✅ 此外，像库利亚的水母之歌、椅苍争执 kiss 等等一系列的内容，在游戏里很多都是只有这样一个概念、这样一段剧情描述而已，游戏里并没有实际的歌、相对应的 CG——很多东西都是在 TV 动漫版中才首次出现、首次有完整画面的。</p>
+<p>所以先前看过动漫的吧友请不要先入为主地认为每段剧情都有 CG。</p>
+<p>✅ 如果还是担心阉割、无论如何都想核对 EXTRA 中全收集 ✓ 后的项目，请看楼下的专项说明。</p>
+<h2 id="📚-Tip：DMMd-系列作品、本篇与续篇（re：connect-fd）的区别说明、内容简介"><a href="#📚-Tip：DMMd-系列作品、本篇与续篇（re：connect-fd）的区别说明、内容简介" class="headerlink" title="📚 Tip：DMMd 系列作品、本篇与续篇（re：connect&#x2F;fd）的区别说明、内容简介"></a>📚 Tip：DMMd 系列作品、本篇与续篇（re：connect&#x2F;fd）的区别说明、内容简介</h2><p>✅ “DRAMAtical Murder” 系列的游戏作品，以剧情内容来分类的话，目前共有 2 部——『本篇』与『Fan Disc』，也就是一些人说的”续篇”。</p>
+<p>特别说明，”Fan Disc” 指游戏公司在推出成功作品后，为游戏爱好者所发行的扩充内容光碟，缩写为 FD。</p>
+<p>✅ <strong>作品列表、内容简介</strong>，以及对应的其他说明、推送：</p>
+<ul>
+<li><p>▶ <strong>本篇（PC 电脑端）</strong>：《DRAMAtical Murder》，主体剧情。</p>
+</li>
+<li><p>▶ <strong>续篇／fd（PC 电脑端）</strong>：《DRAMAtical Murder re：connect》，内容为本篇剧情的延续，或是补充。</p>
+</li>
+<li><p>▶ <strong>PSvita 端的移植</strong>：PSV-《DRAMAtical Murder re：code》，内容上也属于本篇，只是新增了水纪线，可攻略水纪；全生肉，无汉化无资源，需自行入手卡带与 PSV 掌机。</p>
+<p>关于 PSV 端移植版 DMMd 相关的说明、介绍、录屏推送、入正推送等等请直接移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7187696030">【资源+鉴赏】PSV版DMMd re：code 新增CG鉴赏</a></p>
+</li>
+<li><p>▶ <strong>手机 ONS 移植、手机端运行</strong>：”手机版DMMd”、”ONS移植版DMMd”，内容上是民间汉化版电脑端本篇的移植，属于 DMMd 吧本部早年『cb_buyer_001』太太的个人向兴趣移植，但 bug 很多，不推荐使用。</p>
+<p>〖安卓、苹果 iOS 系统均可-手机或平板电脑 √〗ONS 移植版 DMMd 相关下载、说明、教程、攻略推送等等请直接移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7824321257">【游戏教程】DMMd手机版&#x2F;戏剧性谋杀手机版·ONS移植版</a></p>
+</li>
+<li><p>▶ <strong>手机端运行补充</strong>：</p>
+<p>〖仅安卓系统-手机或平板电脑 √〗另外因为 bug 很多，且没有续篇／fd 的移植，所以想用手机运行 DMMd，推荐使用『ExaGear模拟器』，在手机上模拟电脑环境。</p>
+<ul>
+<li>○ 游戏 download 依旧看：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8235713739">【必看】＼(`Δ’)／</a>（失效的话都直接去看置顶汇总：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001330306">【汇个总】该有的都有</a>）</li>
+<li>○ 吧内原版教程推送：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7515185061">【教程】关于如何在手机上运行dmmd续篇与本篇解决立绘问题</a></li>
+<li>○ 视频教程推送：<a target="_blank" rel="noopener" href="http://t.cn/A66Rymca">手机上运行电脑版DMMD</a>（↑ 图中 DMMd 攻略说明帖传送：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001718270">【攻略+答疑】Dmmd全系列攻略说明</a>）</li>
+</ul>
+</li>
+</ul>
+<p>✅ 另外，<strong>民间汉化版本篇与 fd 的基础程序均为『日文旧版』游戏</strong>。</p>
+<p>目前 Nitro+CHiRAL 官网已推出了『日文新普及版』的本篇与 fd，普及版对 Win10 等新系统适配性更好（Win11 也可）——电子版可至 DLsite 入手，实体碟可前往官网或日亚等。</p>
+<p>Steam 与 JASTUSA 平台的『国际英文版』、『国际中文版』本篇也都属于对应新系统的”普及版”。</p>
+<p>○ 入正教程推送（3 楼）：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8235713739">【必看】＼(`Δ’)／</a></p>
+<p>民间汉化版的基础程序虽然是旧版游戏，但如本帖 ★〖5 楼〗所述，一般情况下 Windows 的新系统（Win10、Win11 等）也都可以正常运行。</p>
+<p>如果无法正常运行——包括闪退、打不开、按键点不动、点了”START”之后黑屏又返回标题画面、缺声音缺字幕、音画不同步、字幕乱码等等等等……请直接看本帖 ★〖7 楼〗。</p>
+<h2 id="🎮-Q：游戏怎么玩、怎么运行"><a href="#🎮-Q：游戏怎么玩、怎么运行" class="headerlink" title="🎮 Q：游戏怎么玩、怎么运行"></a>🎮 Q：游戏怎么玩、怎么运行</h2><h2 id="🎮-Q：像素小人相关的问题"><a href="#🎮-Q：像素小人相关的问题" class="headerlink" title="🎮 Q：像素小人相关的问题"></a>🎮 Q：像素小人相关的问题</h2><h2 id="📖-Tip：游戏的基础操作介绍、攻略说明推送"><a href="#📖-Tip：游戏的基础操作介绍、攻略说明推送" class="headerlink" title="📖 Tip：游戏的基础操作介绍、攻略说明推送"></a>📖 Tip：游戏的基础操作介绍、攻略说明推送</h2><p>✅ 本作属于 <strong>AVG 文字冒险游戏</strong>：</p>
+<blockquote>
+<p>[以下简介来自百度百科] 文字冒险游戏——电子小说，或交互式小说。</p>
+<p>文字冒险游戏，又名电子小说，也被称为交互式小说。以精彩的剧情为卖点的游戏。它以文字叙述为主，并以 CG 或动画为辅演出剧情，并设有分支和多个结局。此类型游戏以软件模拟情境，令玩家使用文字指令控制角色，以影响周边的情境。其运作方式可以理解成是用电脑游戏来做文学叙事。</p>
+</blockquote>
+<ul>
+<li>▶ <strong>本篇</strong>：点击首页的【START】，正常运行观赏即可（单击左键，推进进度观赏）。</li>
+<li>▶ <strong>续篇／fd</strong>：点进首页的漩涡窗口，并选择左侧彩色图标（本篇 HE 的后续或补充），或右侧黑白图标（本篇 BE 的后续或补充）进行观赏。</li>
+</ul>
+<blockquote>
+<p>*ps. 初始 6 窗口中，只有『伪双子 Virus&amp;Trip』的旋涡进入后只有一个图标。</p>
+</blockquote>
+<p>初始窗口如下图：*『库利亚 Clear』的比较特别，俩图标都是黑白的 orz——左侧白色雨伞为 HE、右侧黑色雨伞为 BE。</p>
+<p>在打通初始 6 窗口的所有线、所有剧情后，会出现 2 个新增窗口：</p>
+<ul>
+<li>『苍叶』：幼年苍叶与爸爸妈妈、多惠婆婆的童年回忆；</li>
+<li>『水纪』：清水友情向后续。</li>
+</ul>
+<blockquote>
+<p>*ps. 以上两项新增也是只有一个图标可选。</p>
+<p>*ps. 特别说明，这里的『水纪』后续并不是真正意义上的”水纪线”，只是清水友情向的补充剧情；真正意义上的”水纪线”在 PSV 端移植的 PSV 版《DRAMAtical Murder re：code》中，相关介绍推送等：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7187696030">【资源+鉴赏】PSV版DMMd re：code 新增CG鉴赏</a></p>
+</blockquote>
+<p>✅ 不管本篇还是 fd，<strong>像素小人都是需要打通该人物的所有结局、阅读完全部剧情才会出现的</strong>。</p>
+<p>特别说明：日文原版、JAST／Steam 国际版，以及玩家正常运行民间汉化版时，其实只要打通一个结局就可以了；只是在 DMMd 吧本部时有吧友反馈”打完全部线路、过完全部剧情后像素小人才出现”，所以统一要求大家打通全部线路、过完全部剧情——也方便最后全通 get 全通彩蛋 CG。</p>
+<ul>
+<li><p>▶ <strong>PC 本篇的像素小人</strong>——除了犬莲之外，其他人物的顺序与自己的攻略顺序一致：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p182-pixel-order.webp" alt="PC 本篇像素小人顺序"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p183-pixel-order2.webp" alt="像素小人 2"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p184-pixel-order3.webp" alt="像素小人 3"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p185-pixel-order4.webp" alt="像素小人 4"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p186-pixel-order5.webp" alt="像素小人 5"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p187-pixel-order6.webp" alt="像素小人 6"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p188-pixel-order7.webp" alt="像素小人 7"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p189-pixel-order8.webp" alt="像素小人 8"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p190-pixel-order9.webp" alt="像素小人 9"></p>
+</li>
+<li><p>▶ <strong>PC 续篇／fd 的像素小人</strong>——初始 6 人与新增 2 项读完剧情即可获得对应的像素小人。</p>
+<p>主体剧情，以及蚊香眼记忆卡牌小游戏【MINI GAME】全部全通后会出现苍叶的爸爸妈妈、多惠婆婆的像素小人。</p>
+</li>
+<li><p>▶ [加注说明] <strong>手机端 ONS 移植-手机版 DMMd 本篇</strong>——移植属于 PC 民间汉化电脑版本篇全线移植，因为需要靠【读取进度】（即”读档”）才能进入各个人物的支线，所以像素小人一开始就是全在的。</p>
+<p>另附手机版专属的攻略说明帖——手机版不依靠读取进度的话，共通线怎样选都只会进库利亚线：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7246682881">【手机版·攻略+答疑】手机版DMMd（ONS移植版）攻略答疑</a></li>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7002240739">【手机版·攻略+答疑】手机版DMMd（ONS移植版）攻略答疑</a></li>
+</ul>
+</li>
+<li><p>▶ [加注说明] <strong>PSVita 掌机端-PSV 版 DMMd re：code</strong>——相较于 PC 电脑端本篇还会多增加一个水纪的像素小人。</p>
+</li>
+</ul>
+<p>✅ 关于游戏的其他详细介绍、基础操作介绍、攻略说明等，请直接移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001718270">【攻略+答疑】Dmmd全系列攻略说明</a></p>
+<p>都已经写的很详细了，此处不再赘述；如果有攻略相关的疑问，也可在上帖提出。</p>
+<h2 id="🗺️-Q：推荐的攻略顺序"><a href="#🗺️-Q：推荐的攻略顺序" class="headerlink" title="🗺️ Q：推荐的攻略顺序"></a>🗺️ Q：推荐的攻略顺序</h2><h2 id="🗺️-Q：怎样进隐藏线、怎样攻略莲、怎样攻略伪双子"><a href="#🗺️-Q：怎样进隐藏线、怎样攻略莲、怎样攻略伪双子" class="headerlink" title="🗺️ Q：怎样进隐藏线、怎样攻略莲、怎样攻略伪双子"></a>🗺️ Q：怎样进隐藏线、怎样攻略莲、怎样攻略伪双子</h2><p>✅ <strong>先推本篇再推 fd</strong></p>
+<ul>
+<li><p>▶ <strong>本篇推荐攻略顺序</strong>：『红雀』→『诺伊兹』→『敏克』→『库利亚』→『隐藏线-伪双子』→『隐藏线-莲』</p>
+<p>以此顺序攻略推进的话可以循序渐进地了解游戏世界观，观感会比较好。</p>
+</li>
+<li><p>▶ <strong>fd 续篇</strong>在了解本篇剧情的基础上怎样选都行。</p>
+</li>
+<li><p>▶ [加注说明] 如果喜欢水纪、对水纪线感兴趣，可以在推完 PC 电脑端的本篇和 fd 后再入手 PSV 卡带攻略水纪，或是直接欣赏 PSV 端的《DRAMAtical Murder re：code》（PSV 端无肉，限制等级为 15+，全程很清水）。</p>
+<p>另外，在 PSV 版 DMMd re：code 中，『莲&amp;伪双子线』属于”小隐藏”，而『水纪线』属于”大隐藏”，因此攻略顺序推荐：</p>
+<p>『红雀』→『诺伊兹』→『敏克』→『库利亚』→『小隐藏线-伪双子』→『小隐藏线-莲』→『大隐藏线-水纪』</p>
+</li>
+<li><p>▶ [加注说明] 手机 ONS 移植版 DMMd 本篇与 PC 本篇同理，直接读取对应的进度即可；推荐顺序依旧是：『红雀』→『诺伊兹』→『敏克』→『库利亚』→『隐藏线-伪双子』→『隐藏线-莲』</p>
+<p>进度说明、攻略说明均看：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7246682881">【手机版·攻略+答疑】手机版DMMd（ONS移植版）攻略答疑</a></li>
+<li><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7002240739">【手机版·攻略+答疑】手机版DMMd（ONS移植版）攻略答疑</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>* 再次强调 ONS 移植版 DMMd 不依靠读取进度的话，共通线怎样选都只会进库利亚线。</p>
+</blockquote>
+<p>✅ <strong>隐藏线需打通所有初始剧情后才能进入</strong></p>
+<ul>
+<li>▶ 对于电脑端本篇——莲&amp;伪双子作为隐藏线，自然是需要打通初始剧情后才会出现的；详细攻略说明请直接移步：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7001718270">【攻略+答疑】Dmmd全系列攻略说明</a></li>
+<li>▶ fd 续篇可直接选择对应的旋涡窗口——本帖 ★〖16 楼〗已经说明的很详细了此处不再赘述，上面传送的攻略说明帖也包含 fd 相关内容，自行跳转查看即可。</li>
+<li>▶ [加注说明] 同理，PSV 版 DMMd re：code 需要把初始 4 人 + 莲&amp;伪双子全部打通后，才可以进水纪线。</li>
+<li>▶ [加注说明] 手机 ONS 移植版直接读取对应的进度。</li>
+</ul>
+<h2 id="💾-Q：游戏首页没有『DATA-LOAD』"><a href="#💾-Q：游戏首页没有『DATA-LOAD』" class="headerlink" title="💾 Q：游戏首页没有『DATA LOAD』"></a>💾 Q：游戏首页没有『DATA LOAD』</h2><h2 id="💾-Q：首页的『EXTRA』里面没有内容"><a href="#💾-Q：首页的『EXTRA』里面没有内容" class="headerlink" title="💾 Q：首页的『EXTRA』里面没有内容"></a>💾 Q：首页的『EXTRA』里面没有内容</h2><p>✅ 游戏需要<strong>至少运行一次</strong>，才能在 C 盘建立根目录、才会”开启”『DATA LOAD』和『EXTRA』的功能。</p>
+<p>另外如果运行后『EXTRA』里面还是没有内容，请至少打通一个结局后再查看。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p215-data-load.webp" alt="DATA LOAD 界面"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p216-extra.webp" alt="EXTRA 界面"></p>
+<h2 id="❓-Q：『EXTRA』中有「？？？？」的空缺项目"><a href="#❓-Q：『EXTRA』中有「？？？？」的空缺项目" class="headerlink" title="❓ Q：『EXTRA』中有「？？？？」的空缺项目"></a>❓ Q：『EXTRA』中有「？？？？」的空缺项目</h2><p>✅ 随着游戏剧情推进，会慢慢解锁各种 CG、BGM、专用名词等，有”？？？？”的地方就是玩家目前还没有遇到的内容，正常继续推进进度即可解锁。</p>
+<p>“no data” 的缺档也同理，都是因为剧情还没有进行到有此项目的地方。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p220-extra-empty.webp" alt="EXTRA 空缺项目"></p>
+<h2 id="💽-Q：「存档、读档」与「快速存档、读档」的区别"><a href="#💽-Q：「存档、读档」与「快速存档、读档」的区别" class="headerlink" title="💽 Q：「存档、读档」与「快速存档、读档」的区别"></a>💽 Q：「存档、读档」与「快速存档、读档」的区别</h2><p>✅ 正常的”存档、读档”需要玩家手动操作，可存档至指定的存档单元框、读取指定的存档。</p>
+<p>✅ “快速存档”为随机自动保存的进度，”快速读档”同理（读取的是”快速存档”的进度），<strong>因此不建议使用</strong>。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p224-quicksave-menu.webp" alt="快速存档菜单"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p225-save-menu.webp" alt="存档菜单 1"></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p226-save-menu2.webp" alt="存档菜单 2"></p>
+<h2 id="⌨️-Q：游戏中的快捷键怎么使用、按了快捷键游戏里面没有反应"><a href="#⌨️-Q：游戏中的快捷键怎么使用、按了快捷键游戏里面没有反应" class="headerlink" title="⌨️ Q：游戏中的快捷键怎么使用、按了快捷键游戏里面没有反应"></a>⌨️ Q：游戏中的快捷键怎么使用、按了快捷键游戏里面没有反应</h2><p>✅ 首先，快捷键列表如下，在游戏中右键打开菜单栏即可看见：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p233-shortcut-list.webp" alt="快捷键列表"></p>
+<p>在本帖 ★〖8 楼〗关于全屏的问题里面我已经讲过了——想使用这些快捷键的话：</p>
+<p>① 请开启【大写锁定】（按下键盘上的『caps lock』键）：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p234-capslock.webp" alt="开启大写锁定"></p>
+<blockquote>
+<p>*ps. 如果按下『caps lock』键还是没有切换为大写锁定模式，请检查是否变更过电脑键位设置，教程传送：<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1998127987053232827.html">如何解除大写锁定</a></p>
+</blockquote>
+<p>② 或把输入法、模式切换为系统默认输入法的英文模式：</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p235-ime.webp" alt="切换输入法英文模式"></p>
+<h2 id="🔒-Q：重要的存档想保护起来防止误删"><a href="#🔒-Q：重要的存档想保护起来防止误删" class="headerlink" title="🔒 Q：重要的存档想保护起来防止误删"></a>🔒 Q：重要的存档想保护起来防止误删</h2><p>✅ 在存档『DATA LOAD』界面 → 点击存档格右上角的叉号即可锁定，再点一下即可解锁。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p238-lock-save.webp" alt="锁定存档"></p>
+<h2 id="🔓-Q：「全开档」和「未开档」是什么意思？"><a href="#🔓-Q：「全开档」和「未开档」是什么意思？" class="headerlink" title="🔓 Q：「全开档」和「未开档」是什么意思？"></a>🔓 Q：「全开档」和「未开档」是什么意思？</h2><h2 id="🔓-Q：「全开档」游戏与「未开档」有什么区别？"><a href="#🔓-Q：「全开档」游戏与「未开档」有什么区别？" class="headerlink" title="🔓 Q：「全开档」游戏与「未开档」有什么区别？"></a>🔓 Q：「全开档」游戏与「未开档」有什么区别？</h2><p>✅ <strong>解释 &amp; 区别</strong>：</p>
+<ul>
+<li>▶ 〖全开档〗是指游戏已经全线打通、所有剧情均已推完、全部项目／成就均已开启／激活、相关特典小游戏之类的已全部通关⋯总结来讲就是游戏已经 all completed ✓ 全通关 ✓ 的状态。</li>
+<li>▶ 〖未开档〗是指游戏的初始状态。</li>
+</ul>
+<p>对于 DMMd 而言，遇到例如某些玩家先前已经玩过只是想重温某一特定线路／剧情、FD 的蚊香眼卡牌小游戏自己无法顺利通关、有线路／剧情不想打但是想 get 全通彩蛋 CG⋯⋯等等诸如此类的情况时，就可以考虑使用全开档。</p>
+<p>另外〖未开档〗游戏如果不设置”未读剧情也可跳过”的话则不能快进未读的剧情，〖全开档〗可直接随意跳跃。</p>
+<p>但如果单单是为了跳过剧情／速通剧情也不是非要使用全开档不可，关于〖速通〗请看楼下对应的专项说明。</p>
+<h2 id="🛠️-Q：「全开档」数据该如何使用？"><a href="#🛠️-Q：「全开档」数据该如何使用？" class="headerlink" title="🛠️ Q：「全开档」数据该如何使用？"></a>🛠️ Q：「全开档」数据该如何使用？</h2><h2 id="🛠️-Tip：本吧申领「全开档」数据的传送"><a href="#🛠️-Tip：本吧申领「全开档」数据的传送" class="headerlink" title="🛠️ Tip：本吧申领「全开档」数据的传送"></a>🛠️ Tip：本吧申领「全开档」数据的传送</h2><p>✅ 全开档使用教程（请看图片），另附原帖传送：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8244768907">【教程·全开档】DMMd戏剧性谋杀2部·民间汉化版全开存档使用教程</a>（如果有其他追加说明或重要补充会更新在原帖）</p>
+<p>另外因为现在大家的电脑普遍都是 Win10，所以把 Win10 的根目录路径特别强调了一下；Win11 或 Win8.1 也同理，Windows 新系统的目录均类比 Win10 即可。</p>
+<p>✅ <strong>DMMd 系列民间汉化版 2 部〖全开档数据〗申请</strong>：</p>
+<ul>
+<li>▶ 本篇：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8245469613">【存档】DMMd戏剧性谋杀本篇·民间汉化版全开存档</a></li>
+<li>▶ 续篇 fd：<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/8245470456">【存档】DMMd戏剧性谋杀续篇FD·民间汉化版全开存档</a></li>
+</ul>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p255-allopen-save.webp" alt="全开档使用教程"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://ymqq127.github.io">Li_Myu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://ymqq127.github.io/posts/b8a46cef.html">https://ymqq127.github.io/posts/b8a46cef.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://ymqq127.github.io" target="_blank">花与玻璃的旅人</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/">游戏教程</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="post-meta__tags" href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a><a class="post-meta__tags" href="/tags/%E6%B1%89%E5%8C%96/">汉化</a><a class="post-meta__tags" href="/tags/DMMd/">DMMd</a></div><div class="post-share"><div class="social-share" data-image="/img/dmmd-faq/p07-cover.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://registry.npmmirror.com/butterfly-extsrc/1.1.6/files/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://registry.npmmirror.com/butterfly-extsrc/1.1.6/files/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/30562eb6.html" title="【教程】DMMd fd DL日版正版入正教学-Вiть形式"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-fd-bitcash/bitcash.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">【教程】DMMd fd DL日版正版入正教学-Вiть形式</div></div><div class="info-2"><div class="info-item-1">🌸 教程来源✅ 教程来自 @離宵： 类比参考即可：DL 上购买 Lucky dog 系列作品教程，DLsite 端作品均可通用参考。 📌 附加说明NC 社游戏搜索须知：【解疑】JAST、Steam、DLsite 搜索不到 nc 社作品 DMMd fd 专用说明 + fd DL 链接直传专用（看 4 楼 @L默伯 的评论）：为什么搜不到 dmmd 的 fd 之前的 fd 入正说明教学（此旧帖包括 fd 实体碟的说明）也推荐一起参考：【教程说明】DLsite 端／实体碟普及版 DMMd fd（即 re：connect） 其他附加说明见楼内。  📖 简介fd 与本篇为两部不同而独立的作品，并不是本篇的补丁内容，本篇的 Jast dlc 补丁仅针对 Steam 阉割的 H 剧情与去 cg 的码。 DL 的『电子版／数字版／下载版』版本为正版日文版普及版——语音语言均为日文。cg 有码，只有 Jast 发行的作品才被允许无码，日本规定必须有码才可以出版发行，因此日版原版与以日版为基础的民间汉化版的 cg 均有码；所以也希望大家能够多多支持 JASTUSA &amp; Steam 正版...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/e1ad973f.html" title="【教程说明】DLsite端&#x2F;实体碟普及版DMMd fd（即re：connect）"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-fd/guide.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-11-02</div><div class="info-item-2">【教程说明】DLsite端&#x2F;实体碟普及版DMMd fd（即re：connect）</div></div><div class="info-2"><div class="info-item-1">🌸 说明《DRAMAtical Murder re：connect》即 DMMd fd，也就是一些人说的「续篇」。 本帖将说明一些普及版 fd 相关的注意事项或教程、推送，以及常见问题的解疑，后续衍生问题的答疑。 入正前后都建议阅读完本帖内容。  ✅ 入正首先，普及版 fd 可在 DLsite 入电子版／下载版，也可以入手实体碟。 DLsite 教程请直接百度，可通用：【购买教程】个人向 badegg dlsite 版购入及下载经验分享 实体碟可在 Nitro+CHiRAL 官网或日亚等地方入手全新盘，在海鲜市场／煤炉／雅虎日拍等等地方入手二手盘；煤炉、雅虎日拍等可用【魔法集市】或【任意门】这类的 APP，详细操作此处不再赘述。  ⚠️ 请注意：入手二手盘的话最好不要入旧版——旧版有 SD 动态认证码，很麻烦且有严格限制；要看清是新版的普及版。  关于旧版有空时也会开帖说明，到时候会把传送门列在楼中楼，如果不慎入成旧版请自行移步。  旧版 fd 更新补丁插件：【资源】DMMd 日文旧版正版实体碟 FD 篇·官网更新插件 （另加附）初回限定版／旧版本篇更新补丁插件：【资源】DMM...</div></div></div></a><a class="pagination-related" href="/posts/30562eb6.html" title="【教程】DMMd fd DL日版正版入正教学-Вiть形式"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-fd-bitcash/bitcash.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-11-02</div><div class="info-item-2">【教程】DMMd fd DL日版正版入正教学-Вiть形式</div></div><div class="info-2"><div class="info-item-1">🌸 教程来源✅ 教程来自 @離宵： 类比参考即可：DL 上购买 Lucky dog 系列作品教程，DLsite 端作品均可通用参考。 📌 附加说明NC 社游戏搜索须知：【解疑】JAST、Steam、DLsite 搜索不到 nc 社作品 DMMd fd 专用说明 + fd DL 链接直传专用（看 4 楼 @L默伯 的评论）：为什么搜不到 dmmd 的 fd 之前的 fd 入正说明教学（此旧帖包括 fd 实体碟的说明）也推荐一起参考：【教程说明】DLsite 端／实体碟普及版 DMMd fd（即 re：connect） 其他附加说明见楼内。  📖 简介fd 与本篇为两部不同而独立的作品，并不是本篇的补丁内容，本篇的 Jast dlc 补丁仅针对 Steam 阉割的 H 剧情与去 cg 的码。 DL 的『电子版／数字版／下载版』版本为正版日文版普及版——语音语言均为日文。cg 有码，只有 Jast 发行的作品才被允许无码，日本规定必须有码才可以出版发行，因此日版原版与以日版为基础的民间汉化版的 cg 均有码；所以也希望大家能够多多支持 JASTUSA &amp; Steam 正版...</div></div></div></a><a class="pagination-related" href="/posts/131fd887.html" title="手机啃机翻玩咎狗の血True Blood教程"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/juugou/image1.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-17</div><div class="info-item-2">手机啃机翻玩咎狗の血True Blood教程</div></div><div class="info-2"><div class="info-item-1"> 此教程所用破解补丁来自 B 站太太「双木葵的妹妹」制作，已授权。对此教程感兴趣想在手机上尝试的，需 po 入正记录来换取补丁。   注：此补丁和教程都仅限于 DL 版的咎狗の血 True Blood。  po 入正记录可以看这个帖：【吧务】「咎狗の血◆咎狗之血」入正证明+辅助资料申请大楼 此教程所用模拟器有两款：winlator 模拟器和盖世模拟器。手机是骁龙的推荐用 winlator 模拟器，手机是天玑和麒麟的推荐用盖世模拟器。 两款模拟器的区别：winlator 模拟器可以全屏，但是启动 Luna 有点麻烦，可能需要双击 Luna ×5 才能启动，以及不能播放 OP，需要有跳过 OP 的存档（po 入正记录会将存档、补丁、模拟器一起发给你）。盖世模拟器不能全屏，但是可以播放 OP（有声音无画面）。 一、winlator 模拟器1. 创建容器将游戏资源包和补丁都解压好后打开 winlator 模拟器，点右上的 + 号创建一个容器。  模拟器参数这里，分辨率可以根据游戏内分辨率自己选，我设定的是 1920×1080。  Wine 版本选 9.13。LC_ALL 选 ja_JP。...</div></div></div></a><a class="pagination-related" href="/posts/5921c594.html" title="手机运行［CN］Slow damage教程"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/slowdamage/image1.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-19</div><div class="info-item-2">手机运行［CN］Slow damage教程</div></div><div class="info-2"><div class="info-item-1"> 本教程教大家在手机上通过模拟器运行《Slow Damage》中文版。 注：需要搭载 Luna 使用，安装的时候要转区，就是将语言环境等转成日文的，安装完成之后再转回去。  一、安装游戏  二、模拟器设置手机是骁龙的推荐用 winlator，win 版本选 9.21 那个，系统服务选正常。   三、补丁获取方式 </div></div></div></a><a class="pagination-related" href="/posts/a4f22720.html" title="手机运行Lucky dog1+bad egg教程"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/luckydog/image1.webp" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-15</div><div class="info-item-2">手机运行Lucky dog1+bad egg教程</div></div><div class="info-2"><div class="info-item-1"> 本教程教大家在手机上通过模拟器运行《Lucky dog1 + bad egg》。  一、准备工作首先建一个 exagear 文件夹，到时候就是模拟器内的 E 盘。 然后安装模拟器，这是我的模拟器的参数。图形驱动那里，楼主的手机上骁龙处理器，选的就是骁龙的。  如果打开 E 盘里面没有文件，就在「编辑容器」里的设置文件夹 E 那里选择 exagear 文件夹。  注：模拟器参数都设置好后记得打右下角的 ✓ 保存。  二、解压游戏然后返回点 ▶️ 进入模拟器，E 盘 &#x2F;exagear，找到游戏压缩包，解压 part1。 这里会显示要你进行安装，直接安装，在安装好后解压 part1，解压路径选 E 盘。 解压好后要刷新，到时候就能看到解压好的文件夹。    解压好之后用解压软件解压汉化补丁和 ISO 文件。  注：不要用手机自带的功能解压。   三、安装游戏然后再回到模拟器 E 盘 &#x2F;Luckydog1+badegg 文件夹，点击 setup 打开。 安装路径就用默认的 C 盘安装。安装会很慢，要等一会。 进度条到快要安装完成、但是还差一点的时候，其实已经安装完了...</div></div></div></a><a class="pagination-related" href="/posts/a3f8c2d1.html" title="AI汉化版游戏制作教程"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-10</div><div class="info-item-2">AI汉化版游戏制作教程</div></div><div class="info-2"><div class="info-item-1">1. 下载软件打开JoyCode官网 https://joycode.jd.com/ ，点击免费下载，下载完成后双击进行安装即可，不需要额外设置什么就可以用（￣︶￣）↗ 2. 登录账号打开软件后看右侧需要登录，点击登录后会跳转到浏览器的登录界面，建议使用手机验证码进行登录（因为我扫了好多次码都没成功登上&#x2F;_ \），如果返回软件还没登录上的话，再点一次登录之后授权即可。 3. 选择文件夹在左侧选择打开一个文件夹，找好游戏所在的文件夹再选择即可。（最好将游戏备份一份） 比如我想要选择lucky dog1，找到D:\（自己创的文件夹）\Lucky dog1（游戏所在的文件夹）选择Lucky dog1这个文件夹即可。 4. 给AI下指令我还没有研究明白，大家可以参考我给AI的指令进行改良。 比如我想让AI汉化游戏，先让它”提取游戏中的文本，做成可用于汉化的文件”（可以确保它能专心提取文字，如果有破解失败的可能包含文本的文件就继续下指令让它破解，相信它可以做到o(*^▽^*)┛如果直接让它汉化可能会提取不全。） 之后让它”对文本进行汉化，做成可以直接玩的汉化版游戏”，AI可能会偷...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 旅人笺</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Li_Myu</div><div class="author-info-description">🌸 菠萝海存诗录 🌸</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ymqq127"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/ymqq127" target="_blank" title="Github"><i class="fab fa-github" style="color: #FF85A2;"></i></a><a class="social-icon" href="mailto:s88463617@outlook.com" target="_blank" title="邮箱"><i class="fas fa-envelope" style="color: #FF85A2;"></i></a><a class="social-icon" href="https://tieba.baidu.com/f?kw=blg%E8%8F%A0%E8%90%9D%E5%B9%B2&amp;fr=frs" target="_blank" title="贴吧"><i class="fas fa-fire" style="color: #FF85A2;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-star"></i><span>公告</span></div><div class="announcement_content">这一页故事刚好等到你。<br>欢迎来到「花与玻璃的旅人」，<br>小站正在建设中，<br>可以随意坐一坐，歇一歇。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8C%B8-%E8%AF%B4%E6%98%8E"><span class="toc-text">🌸 说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BB-Q%EF%BC%9A%E8%BF%90%E8%A1%8C%E6%B8%B8%E6%88%8F%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E3%80%81%E6%93%8D%E4%BD%9C%E7%8E%AF%E5%A2%83"><span class="toc-text">💻 Q：运行游戏所需要的电脑硬件配置、操作环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-Tip%EF%BC%9A%E8%BF%90%E8%A1%8C%E3%80%8C%E6%B1%89%E5%8C%96%E7%89%88%E6%B8%B8%E6%88%8F%E3%80%8D%E5%89%8D%E5%BF%85%E9%A1%BB%E8%BF%9B%E8%A1%8C%E7%9A%84%E5%9F%BA%E7%A1%80%E8%87%AA%E6%9F%A5%EF%BC%88%E7%94%B5%E8%84%91%E7%AB%AF%EF%BC%89"><span class="toc-text">⚠️ Tip：运行「汉化版游戏」前必须进行的基础自查（电脑端）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A9%B9-Q%EF%BC%9A%E6%B8%B8%E6%88%8F%E9%97%AA%E9%80%80%E3%80%81%E5%8F%8C%E5%87%BB-exe-%E5%90%8E%E6%B2%A1%E6%9C%89%E5%8F%8D%E5%BA%94%E3%80%81%E4%B8%80%E7%9B%B4%E9%BB%91%E5%B1%8F%E3%80%81%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C"><span class="toc-text">🩹 Q：游戏闪退、双击 exe 后没有反应、一直黑屏、无法正常运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%A9%B9-Q%EF%BC%9AWin10-%E5%92%8C-Win11-%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C"><span class="toc-text">🩹 Q：Win10 和 Win11 无法正常运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%AA%9F-Q%EF%BC%9A%E6%B8%B8%E6%88%8F%E7%94%BB%E9%9D%A2%E5%B0%BA%E5%AF%B8%E5%A4%AA%E5%A4%A7%E6%BA%A2%E5%87%BA%E5%B1%8F%E5%B9%95%E3%80%81%E7%94%BB%E9%9D%A2%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E3%80%81%E9%BC%A0%E6%A0%87%E9%94%99%E4%BD%8D%E6%97%A0%E6%B3%95%E6%93%8D%E4%BD%9C"><span class="toc-text">🪟 Q：游戏画面尺寸太大溢出屏幕、画面溢出显示不全、鼠标错位无法操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%AA%9F-Q%EF%BC%9A%E6%83%B3%E5%85%A8%E5%B1%8F%E8%BF%90%E8%A1%8C%E6%B8%B8%E6%88%8F%E8%AF%A5%E6%80%8E%E4%B9%88%E6%93%8D%E4%BD%9C"><span class="toc-text">🪟 Q：想全屏运行游戏该怎么操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%A6-Q%EF%BC%9A%E8%A7%A3%E5%8E%8B%E5%A4%B1%E8%B4%A5%E3%80%81%E4%B8%8D%E8%83%BD%E8%A7%A3%E5%8E%8B%E3%80%81%E5%BC%B9%E7%AA%97%E6%8A%A5%E9%94%99%E3%80%8C%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8D%9F%E5%9D%8F%E3%80%8D%E7%AD%89"><span class="toc-text">📦 Q：解压失败、不能解压、弹窗报错「压缩包损坏」等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%90-Q%EF%BC%9A%E6%9C%89%E8%A7%A3%E5%8E%8B%E7%A0%81%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85%E8%A7%A3%E5%8E%8B%E5%A4%B1%E8%B4%A5%E3%80%81%E4%B8%8D%E8%83%BD%E8%A7%A3%E5%8E%8B%E3%80%81%E5%BC%B9%E7%AA%97%E6%8A%A5%E9%94%99%E7%AD%89"><span class="toc-text">🔐 Q：有解压码的压缩包解压失败、不能解压、弹窗报错等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8D%8E-Q%EF%BC%9A%E8%8B%B9%E6%9E%9C%E7%94%B5%E8%84%91%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C"><span class="toc-text">🍎 Q：苹果电脑如何运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%9E-Q%EF%BC%9A%E9%A9%AC%E8%B5%9B%E5%85%8B%E7%9B%B8%E5%85%B3"><span class="toc-text">🔞 Q：马赛克相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%82%EF%B8%8F-Q%EF%BC%9A%E5%89%A7%E6%83%85%E3%80%8C%E9%98%89%E5%89%B2%E3%80%8D%E7%9B%B8%E5%85%B3%EF%BC%8C%E8%82%89%E5%85%A8%E4%B8%8D%E5%85%A8"><span class="toc-text">✂️ Q：剧情「阉割」相关，肉全不全</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%82%EF%B8%8F-Q%EF%BC%9A%E5%BE%88%E5%A4%9A%E5%9C%A8%E5%8A%A8%E6%BC%AB%E9%87%8C%E7%9A%84%E5%9C%BA%E6%99%AF%EF%BC%88%E4%BE%8B%E5%A6%82%E5%BA%93%E5%88%A9%E4%BA%9A%E7%9A%84%E3%80%8A%E6%B0%B4%E6%AF%8D%E4%B9%8B%E6%AD%8C%E3%80%8B%EF%BC%89%E6%B2%A1%E7%9C%8B%E8%A7%81%E6%9C%89-CG%EF%BC%8C%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B"><span class="toc-text">✂️ Q：很多在动漫里的场景（例如库利亚的《水母之歌》）没看见有 CG，是怎么回事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9A-Tip%EF%BC%9ADMMd-%E7%B3%BB%E5%88%97%E4%BD%9C%E5%93%81%E3%80%81%E6%9C%AC%E7%AF%87%E4%B8%8E%E7%BB%AD%E7%AF%87%EF%BC%88re%EF%BC%9Aconnect-fd%EF%BC%89%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%B4%E6%98%8E%E3%80%81%E5%86%85%E5%AE%B9%E7%AE%80%E4%BB%8B"><span class="toc-text">📚 Tip：DMMd 系列作品、本篇与续篇（re：connect&#x2F;fd）的区别说明、内容简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AE-Q%EF%BC%9A%E6%B8%B8%E6%88%8F%E6%80%8E%E4%B9%88%E7%8E%A9%E3%80%81%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C"><span class="toc-text">🎮 Q：游戏怎么玩、怎么运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AE-Q%EF%BC%9A%E5%83%8F%E7%B4%A0%E5%B0%8F%E4%BA%BA%E7%9B%B8%E5%85%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">🎮 Q：像素小人相关的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%96-Tip%EF%BC%9A%E6%B8%B8%E6%88%8F%E7%9A%84%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D%E3%80%81%E6%94%BB%E7%95%A5%E8%AF%B4%E6%98%8E%E6%8E%A8%E9%80%81"><span class="toc-text">📖 Tip：游戏的基础操作介绍、攻略说明推送</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%97%BA%EF%B8%8F-Q%EF%BC%9A%E6%8E%A8%E8%8D%90%E7%9A%84%E6%94%BB%E7%95%A5%E9%A1%BA%E5%BA%8F"><span class="toc-text">🗺️ Q：推荐的攻略顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%97%BA%EF%B8%8F-Q%EF%BC%9A%E6%80%8E%E6%A0%B7%E8%BF%9B%E9%9A%90%E8%97%8F%E7%BA%BF%E3%80%81%E6%80%8E%E6%A0%B7%E6%94%BB%E7%95%A5%E8%8E%B2%E3%80%81%E6%80%8E%E6%A0%B7%E6%94%BB%E7%95%A5%E4%BC%AA%E5%8F%8C%E5%AD%90"><span class="toc-text">🗺️ Q：怎样进隐藏线、怎样攻略莲、怎样攻略伪双子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BE-Q%EF%BC%9A%E6%B8%B8%E6%88%8F%E9%A6%96%E9%A1%B5%E6%B2%A1%E6%9C%89%E3%80%8EDATA-LOAD%E3%80%8F"><span class="toc-text">💾 Q：游戏首页没有『DATA LOAD』</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BE-Q%EF%BC%9A%E9%A6%96%E9%A1%B5%E7%9A%84%E3%80%8EEXTRA%E3%80%8F%E9%87%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E5%86%85%E5%AE%B9"><span class="toc-text">💾 Q：首页的『EXTRA』里面没有内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%93-Q%EF%BC%9A%E3%80%8EEXTRA%E3%80%8F%E4%B8%AD%E6%9C%89%E3%80%8C%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%E3%80%8D%E7%9A%84%E7%A9%BA%E7%BC%BA%E9%A1%B9%E7%9B%AE"><span class="toc-text">❓ Q：『EXTRA』中有「？？？？」的空缺项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%BD-Q%EF%BC%9A%E3%80%8C%E5%AD%98%E6%A1%A3%E3%80%81%E8%AF%BB%E6%A1%A3%E3%80%8D%E4%B8%8E%E3%80%8C%E5%BF%AB%E9%80%9F%E5%AD%98%E6%A1%A3%E3%80%81%E8%AF%BB%E6%A1%A3%E3%80%8D%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">💽 Q：「存档、读档」与「快速存档、读档」的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%8C%A8%EF%B8%8F-Q%EF%BC%9A%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%E3%80%81%E6%8C%89%E4%BA%86%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%B8%B8%E6%88%8F%E9%87%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E5%8F%8D%E5%BA%94"><span class="toc-text">⌨️ Q：游戏中的快捷键怎么使用、按了快捷键游戏里面没有反应</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%92-Q%EF%BC%9A%E9%87%8D%E8%A6%81%E7%9A%84%E5%AD%98%E6%A1%A3%E6%83%B3%E4%BF%9D%E6%8A%A4%E8%B5%B7%E6%9D%A5%E9%98%B2%E6%AD%A2%E8%AF%AF%E5%88%A0"><span class="toc-text">🔒 Q：重要的存档想保护起来防止误删</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%93-Q%EF%BC%9A%E3%80%8C%E5%85%A8%E5%BC%80%E6%A1%A3%E3%80%8D%E5%92%8C%E3%80%8C%E6%9C%AA%E5%BC%80%E6%A1%A3%E3%80%8D%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F"><span class="toc-text">🔓 Q：「全开档」和「未开档」是什么意思？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%93-Q%EF%BC%9A%E3%80%8C%E5%85%A8%E5%BC%80%E6%A1%A3%E3%80%8D%E6%B8%B8%E6%88%8F%E4%B8%8E%E3%80%8C%E6%9C%AA%E5%BC%80%E6%A1%A3%E3%80%8D%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">🔓 Q：「全开档」游戏与「未开档」有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-Q%EF%BC%9A%E3%80%8C%E5%85%A8%E5%BC%80%E6%A1%A3%E3%80%8D%E6%95%B0%E6%8D%AE%E8%AF%A5%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="toc-text">🛠️ Q：「全开档」数据该如何使用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-Tip%EF%BC%9A%E6%9C%AC%E5%90%A7%E7%94%B3%E9%A2%86%E3%80%8C%E5%85%A8%E5%BC%80%E6%A1%A3%E3%80%8D%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BC%A0%E9%80%81"><span class="toc-text">🛠️ Tip：本吧申领「全开档」数据的传送</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/b8a46cef.html" title="【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-faq/p07-cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总"/></a><div class="content"><a class="title" href="/posts/b8a46cef.html" title="【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</a><time datetime="2026-11-03T12:00:00.000Z" title="发表于 2026-11-03 20:00:00">2026-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/30562eb6.html" title="【教程】DMMd fd DL日版正版入正教学-Вiть形式"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-fd-bitcash/bitcash.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【教程】DMMd fd DL日版正版入正教学-Вiть形式"/></a><div class="content"><a class="title" href="/posts/30562eb6.html" title="【教程】DMMd fd DL日版正版入正教学-Вiть形式">【教程】DMMd fd DL日版正版入正教学-Вiть形式</a><time datetime="2026-11-02T13:00:00.000Z" title="发表于 2026-11-02 21:00:00">2026-11-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e1ad973f.html" title="【教程说明】DLsite端/实体碟普及版DMMd fd（即re：connect）"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dmmd-fd/guide.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【教程说明】DLsite端/实体碟普及版DMMd fd（即re：connect）"/></a><div class="content"><a class="title" href="/posts/e1ad973f.html" title="【教程说明】DLsite端/实体碟普及版DMMd fd（即re：connect）">【教程说明】DLsite端/实体碟普及版DMMd fd（即re：connect）</a><time datetime="2026-11-02T12:00:00.000Z" title="发表于 2026-11-02 20:00:00">2026-11-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/22da137.html" title="【补丁更新插件】仅针对日文版游戏·NC社游戏全包含"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/nc-patch/image1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【补丁更新插件】仅针对日文版游戏·NC社游戏全包含"/></a><div class="content"><a class="title" href="/posts/22da137.html" title="【补丁更新插件】仅针对日文版游戏·NC社游戏全包含">【补丁更新插件】仅针对日文版游戏·NC社游戏全包含</a><time datetime="2026-10-31T07:30:00.000Z" title="发表于 2026-10-31 15:30:00">2026-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/aadb6cd3.html" title="【补丁】Slow Damage 游戏强化补丁分享"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/sd-strengthen/image1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【补丁】Slow Damage 游戏强化补丁分享"/></a><div class="content"><a class="title" href="/posts/aadb6cd3.html" title="【补丁】Slow Damage 游戏强化补丁分享">【补丁】Slow Damage 游戏强化补丁分享</a><time datetime="2026-10-31T07:10:00.000Z" title="发表于 2026-10-31 15:10:00">2026-10-31</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Li_Myu</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://registry.npmmirror.com/medium-zoom/1.1.0/files/dist/medium-zoom.min.js"></script><script src="https://registry.npmmirror.com/instant.page/5.2.0/files/instantpage.js" type="module"></script><script src="https://registry.npmmirror.com/vanilla-lazyload/19.1.3/files/dist/lazyload.iife.min.js"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"lang":"zh-CN"}
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://sweet-kangaroo-71b5b8.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://sweet-kangaroo-71b5b8.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    GLOBAL_CONFIG_SITE.pageType === 'post' && getCount()
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://registry.npmmirror.com/twikoo/1.7.24/files/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'twikoo-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://sweet-kangaroo-71b5b8.netlify.app/.netlify/functions/twikoo',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(res => {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray, ele)
+      }).catch(err => {
+        console.error(err)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      btf.getScript('https://registry.npmmirror.com/twikoo/1.7.24/files/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  run(keyName, getComment)
+})</script><script defer src="/js/pink-bundle.min.js"></script><script defer src="/js/sw-update.js"></script><script>if(document.querySelector('.type-404 .error-info')){var a=document.createElement('a');a.href='/';a.style.cssText='display:inline-block;margin-top:16px;padding:12px 32px;background:linear-gradient(135deg,#FFB6C1,#FF85A2);color:#fff!important;border-radius:25px;font-size:15px;font-family:LXGW WenKai,sans-serif;box-shadow:0 4px 15px rgba(255,133,162,.3);transition:all .3s ease;text-decoration:none';a.textContent='回到首页 🌸';a.onmouseenter=function(){this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(255,133,162,.4)'};a.onmouseleave=function(){this.style.transform='';this.style.boxShadow='0 4px 15px rgba(255,133,162,.3)'};document.querySelector('.type-404 .error-info').appendChild(a)}</script><script defer src="/js/mobile-toc.js"></script><script defer src="/js/stats.js"></script><script src="https://registry.npmmirror.com/pjax/0.2.8/files/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
