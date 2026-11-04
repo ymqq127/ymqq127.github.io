@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ymqq127.github.io/about/index.html</loc>
+    <loc>https://ymqq127.github.io/version.json</loc>
     
     <lastmod>2026-11-04</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/version.json</loc>
+    <loc>https://ymqq127.github.io/about/index.html</loc>
     
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -369,6 +369,20 @@
   </url>
   
   <url>
+    <loc>https://ymqq127.github.io/tags/Slow-Damage/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ymqq127.github.io/tags/AI%E6%B1%89%E5%8C%96/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ymqq127.github.io/tags/Steal/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -390,7 +404,7 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/tags/Slow-Damage/</loc>
+    <loc>https://ymqq127.github.io/tags/%E8%A1%A5%E4%B8%81/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -404,21 +418,7 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/tags/AI%E6%B1%89%E5%8C%96/</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ymqq127.github.io/tags/%E8%A1%A5%E4%B8%81/</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ymqq127.github.io/tags/%E8%B5%84%E8%AE%AF/</loc>
+    <loc>https://ymqq127.github.io/tags/NC%E7%A4%BE/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -432,7 +432,7 @@
   </url>
   
   <url>
-    <loc>https://ymqq127.github.io/tags/NC%E7%A4%BE/</loc>
+    <loc>https://ymqq127.github.io/tags/%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
