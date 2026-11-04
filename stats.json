@@ -1,5 +1,9 @@
 {
-  "site_uv": 7,
-  "site_pv": 13,
-  "updated": "2026-11-03T22:51:34.639Z"
+  "site_uv": 9,
+  "site_pv": 16,
+  "pages": {
+    "/": 15,
+    "/posts/56950e97.html": 1
+  },
+  "updated": "2026-11-04T13:50:25.189Z"
 }

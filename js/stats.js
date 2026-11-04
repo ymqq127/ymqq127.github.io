@@ -43,9 +43,10 @@
     if (data.site_uv != null) setText('busuanzi_value_site_uv', data.site_uv)
     if (data.site_pv != null) setText('busuanzi_value_site_pv', data.site_pv)
 
+    // pages 存在但当前路径没有记录时显示 0，保证每篇文章都有浏览量
     var pageEl = document.getElementById('busuanzi_value_page_pv')
-    if (pageEl && data.pages && data.pages[location.pathname] != null) {
-      setText('busuanzi_value_page_pv', data.pages[location.pathname])
+    if (pageEl && data.pages && typeof data.pages === 'object') {
+      setText('busuanzi_value_page_pv', data.pages[location.pathname] || 0)
     }
   }
 
