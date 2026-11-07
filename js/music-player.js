@@ -77,7 +77,7 @@
         }
       }
       setTimeout(checkTitleScroll, 500);
-      player.on('switchaudio', function () { setTimeout(checkTitleScroll, 300); });
+      player.on('listswitch', function () { setTimeout(checkTitleScroll, 300); });
     } catch (e) {
       console.warn('[PinkPlayer] Init error:', e);
     }
