@@ -979,7 +979,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 處理 hexo-blog-encrypt 事件
   window.addEventListener('hexo-blog-decrypt', e => {
     forPostFn()
-    window.translateFn.translateInitialization()
+    // 未开启简繁转换（translate.enable=false）时 translateFn 不存在，需先判断
+    if (window.translateFn) window.translateFn.translateInitialization()
     Object.values(window.globalFn.encrypt).forEach(fn => {
       fn()
     })
