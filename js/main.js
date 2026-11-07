@@ -981,7 +981,8 @@ document.addEventListener('DOMContentLoaded', () => {
     forPostFn()
     // 未开启简繁转换（translate.enable=false）时 translateFn 不存在，需先判断
     if (window.translateFn) window.translateFn.translateInitialization()
-    Object.values(window.globalFn.encrypt).forEach(fn => {
+    // 没有插件注册 encrypt 全局函数时 globalFn.encrypt 为 undefined，需兜底
+    Object.values((window.globalFn && window.globalFn.encrypt) || {}).forEach(fn => {
       fn()
     })
   })
