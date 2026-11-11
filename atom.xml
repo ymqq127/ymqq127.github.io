@@ -10,7 +10,29 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-11-11T14:10:59.153Z</updated>
+  <updated>2026-11-11T14:22:33.289Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="工具" scheme="https://ymqq127.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="转区" scheme="https://ymqq127.github.io/tags/%E8%BD%AC%E5%8C%BA/"/>
+    <category term="Locale Emulator" scheme="https://ymqq127.github.io/tags/Locale-Emulator/"/>
+    <content>
+      <![CDATA[<p><img src="/img/locale-emulator/image1.webp" alt="【工具】转区工具『Locale Emulator』&amp;『AppLocale』"></p><p>本文整理自贴吧帖子 <a href="https://tieba.baidu.com/p/8357858297">【工具】转区工具『Locale Emulator』&amp;『AppLocale』</a>（原作者：L默伯）。阅读原帖时建议善用【只看楼主】功能，注意楼主所在的楼层。</p><h2 id="✅-转区工具能解决什么问题"><a href="#✅-转区工具能解决什么问题" class="headerlink" title="✅ 转区工具能解决什么问题"></a>✅ 转区工具能解决什么问题</h2><p>✅解决非Unicode、语言系统不兼容导致的日文原版游戏无法正常运行等问题（乱码、运行不了、闪退、显示不正常等等）</p><p>Nitro+CHiRAL日文原版正版游戏以及其他日文原版游戏均适用</p><p>中文中区的电脑在运行日文原版游戏时或许会出现乱码、文本无法正常显示、运行不了、闪退等问题，出现类似情况可使用转区工具转至日区运行。</p><h2 id="🔧-转区工具原理简介"><a href="#🔧-转区工具原理简介" class="headerlink" title="🔧 转区工具原理简介"></a>🔧 转区工具原理简介</h2><p>以下内容来自百度百科“AppLocale”词条介绍：基于 Unicode的平台可按以下方法模拟运行非 Unicode 应用程序所需的语言环境：使用通常称作“系统区域”的系统范围变量（或适用于非 Unicode 应用程序的语言）将应用程序的非 Unicode 文本数据在内部转换为 Unicode。</p><p>非 Unicode 应用程序的语言应与系统区域所定义语言的脚本或类型相同。不能达到此条件将导致在应用程序的用户界面中显示乱码。</p><h2 id="💡-两款常用转区工具"><a href="#💡-两款常用转区工具" class="headerlink" title="💡 两款常用转区工具"></a>💡 两款常用转区工具</h2><p>Windows系统常用的转区工具分为以下两种：</p><ul><li>💡『AppLocale』-WinXP、Win7或更古早的系统适用</li><li>💡『Locale Emulator』-Win10、Win11等新系统适用</li></ul><p>（*注：苹果电脑运行通常都需要借助模拟器、虚拟机或是安装双系统来实现Windows系统环境，所以原则上通用，请自行变通。）</p><h2 id="📖-使用教程传送"><a href="#📖-使用教程传送" class="headerlink" title="📖 使用教程传送"></a>📖 使用教程传送</h2><p>使用教程请自行百度，这里帖2个传送：</p><ul><li>💡『AppLocale』：<a href="https://www.bkqs.com.cn/content/1ple24lno.html">AppLocale 使用教程</a></li><li>💡『Locale Emulator』：<a href="https://my.mbd.baidu.com/r/XX90xSuL60?f=cp&rs=710533317&ruk=lel5XGHib8IR_nHh98ktXA&u=1aa05cb57ae581a7&urlext=%7B%22cuid%22:%22gi288_iKS80HP2840aSr8_a8Halt82f_YuBDi08kHa_y8SuUg8v6i_is1OlI8HRbr9-mA%22%7D">Locale Emulator 使用教程</a></li></ul><h2 id="🔍-如何选择与下载"><a href="#🔍-如何选择与下载" class="headerlink" title="🔍 如何选择与下载"></a>🔍 如何选择与下载</h2><p>💡『APPLocale』通常情况下win系统电脑都自带，在🔍搜索栏输入“AppLocale”搜索即可找到；对于AppLocale，WinXP系统最适用，Win10、Win11等新系统使用AppLocale不一定能正常解决乱码问题，建议安装Locale Emulator↓</p><p>💡因为现在的电脑普遍是Win10、Win11，所以建议安装『Locale Emulator』；Locale Emulator也有很多不同的版本，但基本都能正常使用，不必太纠结版本。</p><p>下载请直接自行百度，如果有软件管家之类的话在库里就能找到；</p><p>如果是在各类软件园&#x2F;论坛下载，请务必留意有没有默认勾选的流氓捆绑软件，不要下载捆绑软件。</p><p><img src="/img/locale-emulator/image2.webp" alt="Locale Emulator 下载与使用相关图示"></p><h2 id="✉️-关于安全安装包"><a href="#✉️-关于安全安装包" class="headerlink" title="✉️ 关于安全安装包"></a>✉️ 关于安全安装包</h2><p>另外——如果实在害怕自己下载到流氓捆绑软件，也可以向原作者索要安全安装包，在原帖留下可用邮箱即可（‼️不要留谷歌邮箱，会自动拒收）</p><p>↑ 通常情况下没必要特意来申请，自行去搜索安装便利又快捷，留心一下有没有捆绑软件勾掉即可。</p><p>若有其他转区工具相关的问题，可在原帖回复询问。</p><p>-以上-</p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/f2415f2d.html</id>
+    <link href="https://ymqq127.github.io/posts/f2415f2d.html"/>
+    <published>2026-11-11T07:00:00.000Z</published>
+    <summary>介绍 Windows 系统两款常用转区工具『Locale Emulator』与『AppLocale』，解决非 Unicode、 语言系统不兼容导致的日文原版游戏乱码、闪退、无法运行等问题，适用于 Nitro+CHiRAL 等日文原版游戏，附工具原理简介、新旧系统选择建议与使用教程传送。</summary>
+    <title>
+      <![CDATA[【工具】转区工具『Locale Emulator』&『AppLocale』]]>
+    </title>
+    <updated>2026-11-11T14:22:33.289Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -154,9 +176,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <content>
@@ -174,9 +196,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <category term="入正" scheme="https://ymqq127.github.io/tags/%E5%85%A5%E6%AD%A3/"/>
     <content>
@@ -194,9 +216,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <category term="入正" scheme="https://ymqq127.github.io/tags/%E5%85%A5%E6%AD%A3/"/>
     <content>
@@ -327,8 +349,8 @@
     <category term="资源汇总" scheme="https://ymqq127.github.io/tags/%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/"/>
     <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="入正" scheme="https://ymqq127.github.io/tags/%E5%85%A5%E6%AD%A3/"/>
-    <category term="翼梦汉化" scheme="https://ymqq127.github.io/tags/%E7%BF%BC%E6%A2%A6%E6%B1%89%E5%8C%96/"/>
     <category term="Slow Damage" scheme="https://ymqq127.github.io/tags/Slow-Damage/"/>
+    <category term="翼梦汉化" scheme="https://ymqq127.github.io/tags/%E7%BF%BC%E6%A2%A6%E6%B1%89%E5%8C%96/"/>
     <category term="攻略" scheme="https://ymqq127.github.io/tags/%E6%94%BB%E7%95%A5/"/>
     <content>
       <![CDATA[<p>✨游戏，资源，攻略，教程，答疑，情报，周边，分析，等等一切有价值内容的杂物收纳箱✨我会缓慢整理，也欢迎同好宝宝们一起参与或进行推荐。</p><p>因为是打算设置为置顶的，所以也再次说明：本吧与被坏人霸占的隔壁 slowdamage 吧不同，是积极正常运营的新吧，欢迎大家关注来玩，请先看 <a href="https://tieba.baidu.com/p/11113647450">【进吧必看】新slowdamage慢性伤害吧进吧必看</a>。到 2026&#x2F;10&#x2F;18 隔壁吧仍是被那坏人占据，寒了不少人的心，希望未来某天事情可以有所转机໒꒰ྀིっ˕ -｡꒱ྀི১</p><p><img src="/img/slow-resources/image1.webp" alt="贴吧置顶说明"></p><h2 id="入正：怎样购买、支持、补票正版？"><a href="#入正：怎样购买、支持、补票正版？" class="headerlink" title="入正：怎样购买、支持、补票正版？"></a>入正：怎样购买、支持、补票正版？</h2><p><strong>日版游戏</strong>：首先请看 slowdamage 微博超话的置顶，DL 版的教程请看 ld1 的案例类比学习 <a href="https://tieba.baidu.com/p/10419276265">【教程】DMMd fd DL日版正版入正教学-Вiть形式</a>。</p><p><strong>A 店</strong>：请类比菠萝干教程学习 <a href="https://tieba.baidu.com/p/10694197726">Animate，a店注册教程</a>。</p><p><strong>JAST 国际版游戏</strong>：推荐使用贝宝 PayPal，可以学习 dmmd，在 dramatical 吧精华区域可以找到相关教程，也可以用点数，点数问题（购物地址，购物流程）都可以问 JAST 官方微博客服，id 就是「JASTUSA」。</p><p><strong>公式书等等正版电子书、正版电子版 DRAMA 广播剧</strong>：请学习参考 <a href="https://tieba.baidu.com/p/10419276265">【教程】DMMd fd DL日版正版入正教学-Вiть形式</a>、<a href="https://tieba.baidu.com/p/8300854582">【教程】DMMd（N+C）电子版公式书入正教程传送汇总</a>。</p><p><strong>实体</strong>：建议使用可靠的日淘 APP，或是寻找可靠的日本采买，日淘经验可以去小红书搜索，有许多详细教程。</p><h2 id="游戏资源：暂时没有能力入正，可以去哪里获取？"><a href="#游戏资源：暂时没有能力入正，可以去哪里获取？" class="headerlink" title="游戏资源：暂时没有能力入正，可以去哪里获取？"></a>游戏资源：暂时没有能力入正，可以去哪里获取？</h2><p>推荐直接看 otoame：<a href="https://tieba.baidu.com/p/10848095651">【帮宣】♡OtoAme♡一站式乙女游戏文化社区</a>。搜索不到的话是因为需要设置，看这个老师 4 楼 <a href="https://tieba.baidu.com/p/10971112001">神学校资源汇总和手机游玩教程</a>。</p><h2 id="游戏攻略：日版、英版、汉化版，怎样操作游玩？"><a href="#游戏攻略：日版、英版、汉化版，怎样操作游玩？" class="headerlink" title="游戏攻略：日版、英版、汉化版，怎样操作游玩？"></a>游戏攻略：日版、英版、汉化版，怎样操作游玩？</h2><p>❤️ 具体攻略指路：</p><p><strong>日版攻略</strong>：请到微博超话搜索「攻略」，小红书上面也有。</p><p><img src="/img/slow-resources/image2.webp" alt="微博超话搜索攻略"></p><p><strong>JASTUSA 国际版攻略</strong>：<a href="https://tieba.baidu.com/p/8244142451">【攻略】JASTUSA英文版Slow Damage攻略</a>。</p><p><strong>汉化版攻略</strong>：翼梦的直接就有专门的特设攻略，以日文为基础的汉化请参考日文攻略（看不懂日语可以用机翻翻译一下），以国际欧美版为基础的汉化请参考英文攻略（看不懂英语可以用机翻翻译一下）。</p><h2 id="系列资源：玩完本篇之后想要了解更多拓展内容"><a href="#系列资源：玩完本篇之后想要了解更多拓展内容" class="headerlink" title="系列资源：玩完本篇之后想要了解更多拓展内容"></a>系列资源：玩完本篇之后想要了解更多拓展内容</h2><p>比如说公式设定、官方小说、OST 歌曲、前传漫画、系列漫画、DRAMA 广播剧～等等等等。</p><p><strong>畅吃场所</strong>：otoame（也就是上面游戏资源板块推荐的），微博超话精华区，B 站。</p><h2 id="入正辅助：购买正版游戏需要汉化补丁？"><a href="#入正辅助：购买正版游戏需要汉化补丁？" class="headerlink" title="入正辅助：购买正版游戏需要汉化补丁？"></a>入正辅助：购买正版游戏需要汉化补丁？</h2><p>汇总看：<a href="https://tieba.baidu.com/p/11070025989">【补丁资源+教学说明】slowdamage相关·所有版本大汇总</a>。</p><ul><li><strong>日版实体碟</strong>：Flamecho 老师的 Luna 预翻译</li><li><strong>日版 DL 版</strong>：小红书 okk 老师</li></ul><p><img src="/img/slow-resources/image3.webp" alt="日版DL版汉化补丁（小红书okk老师）"></p><ul><li><strong>JASTUSA 国际版</strong>：小红书 qzy 老师</li></ul><p><img src="/img/slow-resources/image4.webp" alt="JASTUSA国际版汉化补丁（小红书qzy老师）"></p><ul><li><strong>日版 DL 版（AI 补丁）</strong>：<a href="https://tieba.baidu.com/p/11121871683">【自制AI汉化补丁】适用于DL版本</a>，转换工具是「兽音翻译」～可以自己搜索也可以去看 dmmd 吧的工具汇总</li></ul><h2 id="入正辅助：购买其他的正版材料需要翻译等等辅助？"><a href="#入正辅助：购买其他的正版材料需要翻译等等辅助？" class="headerlink" title="入正辅助：购买其他的正版材料需要翻译等等辅助？"></a>入正辅助：购买其他的正版材料需要翻译等等辅助？</h2><p>BLG 菠萝干吧入正辅助：<a href="https://tieba.baidu.com/p/10623483353">【入正辅助】BLG相关「入正证明+辅助资料」申请大楼</a>。</p>]]>
@@ -376,23 +398,5 @@
     <summary>Steal！相关正版制品的入正经验分享，介绍入正的意义、可入正的制品类目与购买渠道。</summary>
     <title>Steal！相关正版制品入正推荐</title>
     <updated>2026-11-09T14:22:04.897Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Li_Myu</name>
-    </author>
-    <category term="教程" scheme="https://ymqq127.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
-    <content>
-      <![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>JASTUSA★Steam平台的Nitro+CHiRAL社作品均通用。</p><p>由于目前JAST★Steam平台N+C社的作品普遍都是Win7&#x2F;8.1&#x2F;10对应，入了新的普及版sd之后想了想决定把Win11相关的问题单独再开一个帖。</p><p>经实践Win11也不一定就是必遇bug、运行不了，大部分Win11用户不需要任何多余的调试也可以正常运行；但因为存在种种个体差异，如果你的Win11系统电脑不慎“中奖”遇到bug无法正常运行，请仔细阅读本帖内容。</p><p>镇楼图是通用的出问题必看总指南，若遇问题请先自查；其他详细说明解疑请查阅本帖正文。</p><p>另附JAST★Steam国际版DMMd常见问题汇总解疑（不断更新中，建议收藏）：<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a></p><p>苹果电脑Mac OS系统无需顾及此帖，请直接跳转专帖说明：<a href="https://tieba.baidu.com/p/7418503602">【教程】Steam版正版DMMd本篇·苹果电脑端追加说明</a></p><p><img src="/img/dmmd-win11/image1.webp" alt="出问题必看总指南（镇楼图）"></p><p>【Win11专用】新·解疑教学帖：<a href="https://tieba.baidu.com/p/10588463177">【教程】DMMd本篇Steam+JASTUSA版Win11教程</a></p><h2 id="【一】Win11的最常见问题综述"><a href="#【一】Win11的最常见问题综述" class="headerlink" title="【一】Win11的最常见问题综述"></a>【一】Win11的最常见问题综述</h2><p>在国际版常见问题解疑帖<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中我已经列举Win11目前可能遇到的全部问题+对应的解决方法了，这边再把最常见的几个单独强调一下：</p><ul><li>▶游戏无法正常运行（包括直接运行不了游戏、点了STRAT无反应、点了START又返回标题画面、闪退、游戏黑屏无内容⋯⋯等等等等）</li><li>▶CG无法正常展示（确定自己有按教程处理好补丁，但肉的CG无法正常展示、在EXTRA的CG LIBRARY中点击CG出现报错弹窗等等）</li><li>▶运行时直接有乱码报错弹窗、致命错误报错弹窗，或是其他各类报错弹窗。</li></ul><p><a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中目前有关Win11系统运行相关问题的内容：11楼、29楼、30楼、43楼、47楼、48楼、51楼、★55楼（必看）</p><p>*将来如果还有相关更新或补充内容，我会加更在本楼楼中楼，请留意查看。</p><h2 id="【二】Win11必看的总指南"><a href="#【二】Win11必看的总指南" class="headerlink" title="【二】Win11必看的总指南"></a>【二】Win11必看的总指南</h2><p>也就是上面说的常见问题汇总帖里面的55楼内容，如图所示：</p><p><img src="/img/dmmd-win11/image2.webp" alt="Win11必看总指南（常见问题汇总帖55楼内容）"></p><h2 id="【三】现有的针对Win11问题的解决方法汇总"><a href="#【三】现有的针对Win11问题的解决方法汇总" class="headerlink" title="【三】现有的针对Win11问题的解决方法汇总"></a>【三】现有的针对Win11问题的解决方法汇总</h2><p>跟官方人员确认过，短时间内不会出针对Win11的升级插件，所以遇到问题请按<a href="https://tieba.baidu.com/p/7991507021">【解疑】国际中文版DMMd·常见问题解疑汇总x答疑</a>中介绍的方法自行调试；</p><p>这里再系统地罗列一下解决方法：</p><h3 id="重下重解压重新处理"><a href="#重下重解压重新处理" class="headerlink" title="重下重解压重新处理"></a>重下重解压重新处理</h3><p>另请注意，JAST完整版游戏存放安装时，存放地址的路径不要有中文；Steam的路径同理。</p><p>Steam版处理补丁时务必按照教程一步一步照做：</p><ul><li><a href="https://tieba.baidu.com/p/7305508811">【教程3.0】Steam正版DMMd·完整CG补丁处理教程</a></li><li><a href="https://tieba.baidu.com/p/7991060617">【教程】DMMd国际中文版·补丁使用教程</a></li></ul><p>▶如果先前有下过英文语言的游戏，切换中文语言前建议删除现有的所有数据（在删除之前可以选择备份自己的数据&#x2F;存档等等）直接重下重装；</p><p>▶补丁与游戏语言一定要相对应，如果不慎处理错误，同样请删除所有现有数据重下重处理；</p><p>▶有dll相关的报错窗口弹出也一样直接重下（此项针对Steam版游戏本体，官方有更新升级插件，重下重装即可解决）；</p><p>▶致命错误报错弹窗、乱码报错弹窗同理。</p><p>*另外，在出现形形色色的报错弹窗后，各位大可先按照报错编码或报错内容自行百度——相关教程、修复工具基本可以说是一应俱全，比问我或是单开帖问别人都要快捷便利得多；且现在这些教程的步骤都很清晰明了，除非不认字&#x2F;没有耐心伸手伸惯了，否则就算是电脑小白也都可以理解并跟着操作，新人&#x2F;小白无罪但请不要为自己的懒惰找借口(ㅍ_ㅍ)</p><h3 id="其他通用解决方法"><a href="#其他通用解决方法" class="headerlink" title="其他通用解决方法"></a>其他通用解决方法</h3><ul><li>安装运行时全程关闭杀毒软件、电脑管家一类的软件，也不要在沙箱中隔离运行，防止误删文件或阻碍程序正常运行。</li><li>检查内存、硬件配置。</li><li>非Unicode设置为中文中区。</li><li>检查路径、文件完整性、文件属性。</li><li>修复、升级DirectX：安装DirectX修复工具，相关教程直接百度，此处不再赘述。</li><li>以兼容模式运行、调试兼容性：推荐以兼容Win10&#x2F;Win7的模式运行。</li><li>安装虚拟机。</li></ul><p>↑ 以上6项通用民间汉化版的常见问题解疑【7楼】<a href="https://tieba.baidu.com/p/8242576683">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</a>请自行移步查看详细说明。</p><ul><li>用U盘或硬盘等移动设备，把游戏安装在移动设备中尝试运行。</li><li>换系统：如果方便的话可以考虑换回最通用的Win10系统或兼容性最好的Win7系统。</li><li>等待官方更新Win11对应的升级插件&#x2F;补丁</li></ul><p>若有相关情报我也会及时搬运，可关注一下官方动态或是我&#x2F;本吧内的动态。</p><p>*将来如果有相关更新或补充内容，我会加更在本楼楼中楼，请留意查看</p><p><img src="/img/dmmd-win11/image3.webp" alt="Win11问题解决方法相关"></p><h2 id="【四】以上方法均无果——本吧可申请的辅助工具"><a href="#【四】以上方法均无果——本吧可申请的辅助工具" class="headerlink" title="【四】以上方法均无果——本吧可申请的辅助工具"></a>【四】以上方法均无果——本吧可申请的辅助工具</h2><p>如果尝试遍了上述所有方法还是没办法正常运行游戏：</p><p>可凭借入正证明，申请本吧整理的早年民间汉化版DMMd本篇资料包进行欣赏+一并申请到JAST版的无码CG包</p><p>*已进行部分内测；DMMd本部的早年搬运授权许可【17楼】<a href="https://tieba.baidu.com/p/7823647969">【游戏】DMMd本篇+续篇fd·电脑版手机版·民间汉化版</a></p><p>补充：申请JAST的CG包仅限入手【Steam端游戏本体+JAST补丁】或【JAST完整版游戏】的玩家，只入了Steam游戏本体的话无CG包可申请。</p><p><img src="/img/dmmd-win11/image4.webp" alt="民间汉化版资料包与CG包（一）"></p><p><img src="/img/dmmd-win11/image5.webp" alt="民间汉化版资料包与CG包（二）"></p><h2 id="【五】申请格式"><a href="#【五】申请格式" class="headerlink" title="【五】申请格式"></a>【五】申请格式</h2><p>申请格式通用<a href="https://tieba.baidu.com/p/7996049326">【解疑】JAST补丁购入后下载不了请看</a></p><p>请按以下格式po出入正证明，并留下可用邮箱，等待我有空时清算（不要留谷歌邮箱，会自动拒收）</p><p>手写纸条入境，分别与steam端的游戏本体、JAST端的补丁购入界面合照；</p><p>纸条内容：【昵称（贴吧昵称）+时间+“steam补丁已入正”这句话】；如果入的是JAST完整版只po完整版购入界面一张合照即可，手写内容可简化为“已入正”；</p><p>示例：</p><p><img src="/img/dmmd-win11/image6.webp" alt="入正证明示例（一）"></p><p><img src="/img/dmmd-win11/image7.webp" alt="入正证明示例（二）"></p><p><img src="/img/dmmd-win11/image8.webp" alt="入正证明示例（三）"></p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上。若有新的、更好的解决方法，或是官网有相关更新，我也会在本吧再开帖说明并加更到这边。最后感谢所有支持正版、喜欢DMMd的吧友，喜欢本作和本社也欢迎常驻本吧。</p><p>强调一下调试兼容性是要右键exe（也就是苍叶像素小人的图标），再调试兼容性以兼容Win10的模式运行（可通用类比民间汉化版的不兼容问题解疑【7楼】：<a href="https://tieba.baidu.com/p/8242576683">【常见问题+解决方法】DMMd戏剧性谋杀2部·民间汉化版解疑汇总</a>）</p>]]>
-    </content>
-    <id>https://ymqq127.github.io/posts/883ff3e2.html</id>
-    <link href="https://ymqq127.github.io/posts/883ff3e2.html"/>
-    <published>2026-10-26T14:00:00.000Z</published>
-    <summary>JASTUSA与Steam国际版DMMd在Win11系统下的常见问题解疑专栏，含必看总指南、解决方法汇总与入正辅助工具申请说明。</summary>
-    <title>JASTUSA与Steam国际版DMMd Win11问题解疑专栏</title>
-    <updated>2026-11-09T14:06:42.512Z</updated>
   </entry>
 </feed>
