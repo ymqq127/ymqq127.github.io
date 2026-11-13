@@ -10,7 +10,25 @@
   <rights>All rights reserved 2026, Li_Myu</rights>
   <subtitle>菠萝海存诗录</subtitle>
   <title>花与玻璃的旅人</title>
-  <updated>2026-11-12T13:34:32.543Z</updated>
+  <updated>2026-11-13T13:34:51.962Z</updated>
+  <entry>
+    <author>
+      <name>Li_Myu</name>
+    </author>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
+    <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
+    <content>
+      <![CDATA[<p><img src="/img/dmmd-fd-pixel/image1.webp" alt="【教程】DMMd fd（续篇）像素动画bug修复教程"></p><p>本文整理自贴吧帖子 <a href="https://tieba.baidu.com/p/8247124254">【教程】DMMd fd（续篇）像素动画bug修复教程</a>（原作者：L默伯）。运行民间汉化版 DMMd fd（续篇）时像素动画无法正常播放的 bug 修复教程。</p><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>🔴运行民间汉化版fd通常会存在像素动画无法正常播放的bug，需要手动调试修复才能正常播放。</p><p>🔴因为现在仅给入正的吧友分享完备的fd资料包来辅助欣赏，所以也统一单开一个帖子进行教程讲解教学+传送分享。</p><p>‼️此教程推荐收藏，只要运行民间汉化版fd基本上都会需要用到；修复工具download见下文。</p><p>✅原址：<a href="https://www.gamersky.com/handbook/201504/551420.shtml">游民星空修复教程</a></p><h2 id="修复工具下载"><a href="#修复工具下载" class="headerlink" title="修复工具下载"></a>修复工具下载</h2><p>✅修复工具download（如果失效会补充）</p><p>LAVFilters下载：<a href="https://pan.baidu.com/s/1o67NuDO">pan.baidu.com&#x2F;s&#x2F;1o67NuDO</a></p><h2 id="录屏参考"><a href="#录屏参考" class="headerlink" title="录屏参考"></a>录屏参考</h2><p>✅虽然修复过程非常简单，但如果实在懒得操作，也可以直接移步录屏：<a href="https://tieba.baidu.com/p/8245556082">【录屏】DMMd fd&#x2F;戏剧性谋杀续篇·像素动画bug修复</a></p><h2 id="相关资源与入正说明"><a href="#相关资源与入正说明" class="headerlink" title="相关资源与入正说明"></a>相关资源与入正说明</h2><p>⭐️最后附本吧汇总传送&amp;入正说明&amp;非正式版游戏相关（并不推荐提倡非正式版!!!!!!希望有能力的吧友都能支持JAST或Steam正版或日文原版正版）</p><p>▶本吧汇总：<a href="https://tieba.baidu.com/p/7001330306">【汇个总】该有的都有</a></p><p>▶非正式版游戏下载+入正说明：[【必看】＼(&#96;Δ’)／](<a href="https://tieba.baidu.com/p/8235713739">https://tieba.baidu.com/p/8235713739</a>)</p><p>▶Steam、JAST入正相关：<a href="https://tieba.baidu.com/p/8240760400">【教程】JASTUSA点数教学教程搬运</a></p><p>▶DLsite入正相关看：<a href="https://card.weibo.com/article/m/show/id/2309404304814015141577">微博文章</a> 可类比：<a href="https://tieba.baidu.com/p/7758634754">【购买教程】个人向badegg dlsite版购入</a></p><p>⭐️入手任意正版fd的吧友可跟我申请完备的fd资料包辅助欣赏，详情请戳：<a href="https://tieba.baidu.com/p/8218250528">【吧务】po入正证明x申请专用帖</a></p><p><img src="/img/dmmd-fd-pixel/image2.webp" alt="入正相关"></p><h2 id="答疑"><a href="#答疑" class="headerlink" title="答疑"></a>答疑</h2><p>若有其他问题，可在本帖或综合答疑大楼提出：</p><p><a href="https://tieba.baidu.com/p/7003603426">【答疑】DMMd&#x2F;N C相关综合答疑大楼</a></p>]]>
+    </content>
+    <id>https://ymqq127.github.io/posts/ce4687b7.html</id>
+    <link href="https://ymqq127.github.io/posts/ce4687b7.html"/>
+    <published>2026-11-13T04:00:00.000Z</published>
+    <summary>DMMd fd（续篇）民间汉化版像素动画无法正常播放的bug修复方法，使用LAVFilters解决。</summary>
+    <title>【教程】DMMd fd像素动画bug修复教程</title>
+    <updated>2026-11-13T13:34:51.962Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
@@ -27,7 +45,7 @@
     <published>2026-11-11T10:00:00.000Z</published>
     <summary>日系游戏攻略汇总站点「Half Adder」指路，涵盖AVG、blg、otome（乙女向）等类别攻略，需使用日文原名进行搜索，站点还提供二次元人物生日提示等板块。</summary>
     <title>【攻略汇总】日系游戏攻略汇总站点「Half Adder」</title>
-    <updated>2026-11-12T13:34:32.543Z</updated>
+    <updated>2026-11-13T13:17:12.297Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,16 +64,16 @@
     <published>2026-11-11T09:00:00.000Z</published>
     <summary>咎狗之血各版本对应攻略汇总传送，涵盖古早民汉版、台版繁中正版、改编版True Blood、咎狗扑克、咎狗打、CHiRAL NIGHT音游及日文版Lost Blood本篇的攻略指路。</summary>
     <title>【攻略汇总】咎狗之血·各版本对应攻略汇总传送</title>
-    <updated>2026-11-12T14:26:18.944Z</updated>
+    <updated>2026-11-13T13:17:12.297Z</updated>
   </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <category term="ons" scheme="https://ymqq127.github.io/tags/ons/"/>
@@ -67,15 +85,15 @@
     <published>2026-11-11T08:00:00.000Z</published>
     <summary>DMMd 戏剧性谋杀手机版 ONS 移植汉化版完全攻略：设备系统与游戏说明、常见问题与简易教学、 手机版与电脑版区别汇总、需要补全的剧情介绍、ONS 移植版本完全对应攻略、全通彩蛋说明， 附鸣谢与参考资料罗列。</summary>
     <title>【攻略】DMMd戏剧性谋杀手机版ONS移植汉化版</title>
-    <updated>2026-11-12T13:30:55.668Z</updated>
+    <updated>2026-11-13T13:17:12.288Z</updated>
   </entry>
   <entry>
     <author>
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="工具" scheme="https://ymqq127.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     <category term="转区" scheme="https://ymqq127.github.io/tags/%E8%BD%AC%E5%8C%BA/"/>
     <category term="Locale Emulator" scheme="https://ymqq127.github.io/tags/Locale-Emulator/"/>
@@ -89,7 +107,7 @@
     <title>
       <![CDATA[【工具】转区工具『Locale Emulator』&『AppLocale』]]>
     </title>
-    <updated>2026-11-12T13:33:50.691Z</updated>
+    <updated>2026-11-13T13:17:12.297Z</updated>
   </entry>
   <entry>
     <author>
@@ -97,9 +115,9 @@
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="PSP" scheme="https://ymqq127.github.io/tags/PSP/"/>
     <category term="咎狗之血" scheme="https://ymqq127.github.io/tags/%E5%92%8E%E7%8B%97%E4%B9%8B%E8%A1%80/"/>
     <category term="Nitro+CHiRAL" scheme="https://ymqq127.github.io/tags/Nitro-CHiRAL/"/>
-    <category term="PSP" scheme="https://ymqq127.github.io/tags/PSP/"/>
     <category term="模拟器" scheme="https://ymqq127.github.io/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="/img/togainu-psp/image1.webp" alt="【PSP游戏·日文】咎狗之血TrueBloodPortable"></p><p>本文整理自贴吧帖子 <a href="https://tieba.baidu.com/p/7348728762">【PSP游戏·日文】咎狗之血TrueBloodPortable</a>（原作者：L默伯）。介绍 PSP 版咎狗之血 True Blood Portable 的游戏本体下载、版本说明、攻略指路，以及在 PSP 掌机、手机端、电脑端的运行教程，附机翻推荐与录屏指路。</p><h2 id="💡-游戏简介"><a href="#💡-游戏简介" class="headerlink" title="💡 游戏简介"></a>💡 游戏简介</h2><p>💡 2010.12.23~咎狗の血~Togainu no chi True Blood Portable</p><p>与”PS2版咎狗之血True Blood”内容一致。</p><p>由于游戏是日文原版生肉，且是掌机端的游戏，所以这里会分别介绍一下在：</p><p>🔴【PSP游戏掌机】</p><p>🔴【手机端（使用模拟器）】</p><p>🔴【电脑端（使用模拟器）】</p><p>该如何运行。</p><p>另外由于游戏是日文生肉，不懂日文的吧友也可以考虑在电脑端配合机翻食用，或是在B站观看录屏（详情贴子正文会分别介绍）。</p><h2 id="🔗-PS2版传送"><a href="#🔗-PS2版传送" class="headerlink" title="🔗 PS2版传送"></a>🔗 PS2版传送</h2><p>〖PlayStation2 咎狗の血 True Blood〗传送：</p><p><a href="https://tieba.baidu.com/p/7348726201">【PS2游戏·日文】咎狗之血True Blood</a></p><h2 id="🎮-游戏本体"><a href="#🎮-游戏本体" class="headerlink" title="🎮 游戏本体"></a>🎮 游戏本体</h2><p>（自传。若失效会补档。）</p><p><a href="https://pan.baidu.com/s/1LM42RyAYW5wXP5Ymh6CSJg">网页链接（百度网盘）</a></p><p>提取🐴：6c5c</p><h2 id="📋-版本说明"><a href="#📋-版本说明" class="headerlink" title="📋 版本说明"></a>📋 版本说明</h2><p>PSP版咎狗True Blood Portable限制等级为15🈲，即相比原作会有删减的剧情。</p><p>卖点是新增可攻略人物”雪人（yukihito）”，多了雪人线，以及新增了CG。</p><p>新增CG的欣赏可跳转：<a href="https://tieba.baidu.com/p/6698117464">【贴图】咎狗之血PS2版True Blood新增CG…</a></p><h2 id="📖-游戏攻略"><a href="#📖-游戏攻略" class="headerlink" title="📖 游戏攻略"></a>📖 游戏攻略</h2><p><a href="http://half-a.net/games1/togainups2.html">网页链接（Half Adder 攻略站）</a></p><h2 id="🖥️-运行教程"><a href="#🖥️-运行教程" class="headerlink" title="🖥️ 运行教程"></a>🖥️ 运行教程</h2><h3 id="1️⃣【PSP游戏掌机】运行"><a href="#1️⃣【PSP游戏掌机】运行" class="headerlink" title="1️⃣【PSP游戏掌机】运行"></a>1️⃣【PSP游戏掌机】运行</h3><p>下载【游戏本体】中的游戏后，将如图两个文件直接拷入掌机（切记不要直接把整个文件夹拷进去，要单独拷文件夹中的内容）。</p><p>刷新目录运行即可。</p><p><img src="/img/togainu-psp/image2.webp" alt="PSP掌机拷入文件示意"></p><blockquote><p>💡 PSV掌机运行的话安装一个PSP模拟器，其他操作同理。</p></blockquote><h3 id="2️⃣【手机端-平板电脑端（使用模拟器）】运行"><a href="#2️⃣【手机端-平板电脑端（使用模拟器）】运行" class="headerlink" title="2️⃣【手机端&#x2F;平板电脑端（使用模拟器）】运行"></a>2️⃣【手机端&#x2F;平板电脑端（使用模拟器）】运行</h3><p>能在手机端模拟PSP环境的手机模拟器非常多，下载【游戏本体】中的游戏，按照模拟器的使用指南去存放在指定位置（指定目录、地址）刷新运行即可。</p><p>🔴安卓系统手机&#x2F;平板电脑：</p><p>这里再单独特别推荐一下以下两款模拟器：</p><p>✅悟饭游戏厅（图1）</p><p>✅小鸡模拟器（图2）</p><p>下载这两款模拟器后在库中直接搜索”咎狗”就可以看见PSP版的咎狗之血了，下载安装即可直玩，不需要自己手动处理，非常便利。</p><p>🔴苹果iOS系统手机&#x2F;平板电脑：</p><p>可使用iOS适用的PSP模拟器，例如图3。</p><p>具体的处理步骤不再赘述，自行查看下载的模拟器对应的使用说明指南。</p><p><img src="/img/togainu-psp/image3.webp" alt="安卓模拟器：悟饭游戏厅"></p><p><img src="/img/togainu-psp/image4.webp" alt="安卓模拟器：小鸡模拟器"></p><p><img src="/img/togainu-psp/image5.webp" alt="iOS端PSP模拟器"></p><h3 id="3️⃣【电脑端（使用模拟器）】运行"><a href="#3️⃣【电脑端（使用模拟器）】运行" class="headerlink" title="3️⃣【电脑端（使用模拟器）】运行"></a>3️⃣【电脑端（使用模拟器）】运行</h3><p>🔴window系统电脑可下载”电脑版-小鸡模拟器”等可模拟PSP环境的模拟器，同样自行按照所下载模拟器的使用说明指南去处理运行即可。</p><p>🔴苹果MacOS系统电脑可下载适用的PSP模拟器（例如图示的这款），也可以实现Win系统后再安装通常的win系统模拟器。</p><p>「Mac电脑实现win系统教程推荐」：</p><ul><li><a href="https://tieba.baidu.com/p/7270517632">【游戏】MacOS Big Sur版模拟器安装游玩…</a></li><li><a href="https://tieba.baidu.com/p/7001767031">【教程向】苹果电脑Mac OS系统运行DMMd以…</a></li></ul><p><img src="/img/togainu-psp/image6.webp" alt="MacOS端PSP模拟器图示"></p><h2 id="🤖-机翻推荐"><a href="#🤖-机翻推荐" class="headerlink" title="🤖 机翻推荐"></a>🤖 机翻推荐</h2><p>在电脑端运行、观看录屏想使用机翻翻译成中文的话——推荐使用”团子翻译器”来进行实时识别翻译：</p><p>「下载+使用教程」→ <a href="https://b23.tv/W8YFsy">网页链接（B站）</a></p><h2 id="📹-录屏指路"><a href="#📹-录屏指路" class="headerlink" title="📹 录屏指路"></a>📹 录屏指路</h2><p>想观看录屏直接在B站搜索”咎狗”或”咎狗 True Blood”即可。</p>]]>
@@ -109,7 +127,7 @@
     <published>2026-11-11T06:00:00.000Z</published>
     <summary>介绍 PSP 版咎狗之血 True Blood Portable 的游戏本体下载、版本说明、攻略指路与在 PSP 掌机、手机端、电脑端的运行教程，附机翻推荐与录屏指路。</summary>
     <title>【PSP游戏·日文】咎狗之血TrueBloodPortable</title>
-    <updated>2026-11-12T14:25:45.846Z</updated>
+    <updated>2026-11-13T13:17:12.297Z</updated>
   </entry>
   <entry>
     <author>
@@ -129,7 +147,7 @@
     <published>2026-11-11T05:00:00.000Z</published>
     <summary>介绍 PSNINE 站点——SONY PS 系列游戏奖杯成就系统综合查询站点，覆盖 PS3~PS5 主机与 PSVita 掌机，AVG 及其他类型游戏均包含，附站点说明与使用建议。</summary>
     <title>【PS】SONY·PS系列游戏奖杯成就系统·综合查询站点</title>
-    <updated>2026-11-12T14:25:09.094Z</updated>
+    <updated>2026-11-13T13:17:12.295Z</updated>
   </entry>
   <entry>
     <author>
@@ -148,7 +166,7 @@
     <published>2026-11-11T04:00:00.000Z</published>
     <summary>Lucky dog1 游戏本体+汉化补丁安装教程：运行 setup.exe 安装游戏、复制补丁文件替换 LD1.scb、LD1Patcher 打补丁到运行游戏全流程图解，附电脑不兼容问题解决方法。</summary>
     <title>【游戏教程】Lucky dog1游戏安装教程</title>
-    <updated>2026-11-12T14:25:27.651Z</updated>
+    <updated>2026-11-13T13:17:12.288Z</updated>
   </entry>
   <entry>
     <author>
@@ -234,9 +252,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="汉化" scheme="https://ymqq127.github.io/tags/%E6%B1%89%E5%8C%96/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <content>
@@ -254,9 +272,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <category term="入正" scheme="https://ymqq127.github.io/tags/%E5%85%A5%E6%AD%A3/"/>
     <content>
@@ -274,9 +292,9 @@
       <name>Li_Myu</name>
     </author>
     <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
+    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="教程" scheme="https://ymqq127.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     <category term="游戏" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
     <category term="DMMd" scheme="https://ymqq127.github.io/tags/DMMd/"/>
     <category term="入正" scheme="https://ymqq127.github.io/tags/%E5%85%A5%E6%AD%A3/"/>
     <content>
@@ -381,22 +399,5 @@
     <summary>Slow Damage DLsite日版AI汉化补丁入正辅助指南：入正渠道汇总、资源本体获取、AI汉化补丁下载、小白一体版辅助与常见问题答疑指路。</summary>
     <title>Slow Damage DL版AI汉化补丁入正辅助指南</title>
     <updated>2026-11-09T14:06:42.512Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Li_Myu</name>
-    </author>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <category term="资源汇总" scheme="https://ymqq127.github.io/tags/%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/"/>
-    <category term="AVG" scheme="https://ymqq127.github.io/tags/AVG/"/>
-    <category term="BLG" scheme="https://ymqq127.github.io/tags/BLG/"/>
-    <category term="游戏教程" scheme="https://ymqq127.github.io/tags/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/"/>
-    <content type="html">本文已加密，请前往网站查看。</content>
-    <id>https://ymqq127.github.io/posts/56950e97.html</id>
-    <link href="https://ymqq127.github.io/posts/56950e97.html"/>
-    <published>2026-10-27T16:00:00.000Z</published>
-    <summary>AVG资源汇总指路站：BLG、乙女向、Gal绅士向、综合单机、工具类等一站式资源导航，含文档、站点、贴吧指路，请爱惜资源、支持正版。</summary>
-    <title>AVG资源汇总指路站（文游+单机+工具）</title>
-    <updated>2026-11-09T14:22:04.897Z</updated>
   </entry>
 </feed>
