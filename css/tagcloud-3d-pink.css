@@ -54,3 +54,17 @@
 .tag-cloud-list .tagcloud-3d .tagcloud-3d-item::before {
   display: none !important;
 }
+
+/* ====== 锁定文字排版属性 ======
+   防止主题 hover 或全局样式改变文字宽度（font-weight/letter-spacing 等），
+   导致 translate(-50%,-50%) 的百分比偏移变化、标签跑位。 */
+.tag-cloud-list .tagcloud-3d .tagcloud-3d-item,
+.tag-cloud-list .tagcloud-3d .tagcloud-3d-item:hover {
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  font-style: normal !important;
+  text-transform: none !important;
+  padding: 4px 6px !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
