@@ -4,6 +4,8 @@
   perspective: 600px;
 }
 
+/* 基础标签样式：color 由 CSS 控制不写入 JS 内联，
+   避免与主题 hover 的 !important color 竞争导致闪色 */
 .tagcloud-3d-item {
   color: #C97080 !important;
   font-weight: 500;
@@ -11,62 +13,44 @@
   border-radius: 4px;
 }
 
-/* 不能给 transform 加 transition：JS 每帧都在改 transform，
-   带过渡会让标签滞后于球面位置，表现为乱飞/抖动。
-   缩放改由 JS 写入的 font-size 实现。
-   这里用 .tagcloud-3d 前缀 + !important 盖掉主题的
-   `.tag-cloud-list a { transition: .3s }`（特异性更高）。 */
-.tagcloud-3d .tagcloud-3d-item {
-  transition: color .2s ease, background .2s ease !important;
-}
-
-.tagcloud-3d-item:hover {
-  color: #FF85A2 !important;
-  background: rgba(255,182,193,.15);
-}
-
 /* 标签云页面标题 */
 .tag-cloud-title {
   color: #C97080 !important;
 }
 
-/* 深色模式 */
+/* 深色模式基础色 */
 [data-theme="dark"] .tagcloud-3d-item {
   color: #d4a0a0 !important;
-}
-
-[data-theme="dark"] .tagcloud-3d-item:hover {
-  color: #E8899A !important;
-  background: rgba(160,80,96,.15);
-}
-
-/* hover 时轻微放大，用独立的 transform 会覆盖 JS 定位，
-   这里改用 text-shadow 提示，不影响球面位置 */
-.tagcloud-3d-item:hover {
-  text-shadow: 0 0 8px rgba(255,133,162,.5);
 }
 
 [data-theme="dark"] .tag-cloud-title {
   color: #d4a0a0 !important;
 }
 
-/* 中和主题标签云 hover/active 的背景、阴影和扫光，
-   防止与3D球内联定位冲突导致标签闪跳 */
-.tagcloud-3d .tagcloud-3d-item:hover {
+/* ====== 中和主题 tags.styl 的 hover/active 干扰 ======
+   主题 .tag-cloud-list a:hover 的 color/background 带 !important，
+   特异性 (0,2,1)。这里用 .tag-cloud-list .tagcloud-3d .tagcloud-3d-item:hover
+   特异性 (0,4,0) + !important 确保压住，防止 hover 时颜色突变闪跳。
+   transform 不在这里覆盖：JS 内联 transform 优先于非 !important 的 CSS，
+   主题 hover 的 translateY/scale 无法生效。 */
+.tag-cloud-list .tagcloud-3d .tagcloud-3d-item:hover {
+  color: #FF85A2 !important;
   background: rgba(255,182,193,.15) !important;
   box-shadow: none !important;
+  text-shadow: 0 0 8px rgba(255,133,162,.5);
 }
 
-.tagcloud-3d .tagcloud-3d-item:active {
+.tag-cloud-list .tagcloud-3d .tagcloud-3d-item:active {
   box-shadow: none !important;
 }
 
-[data-theme="dark"] .tagcloud-3d .tagcloud-3d-item:hover {
+[data-theme="dark"] .tag-cloud-list .tagcloud-3d .tagcloud-3d-item:hover {
+  color: #E8899A !important;
   background: rgba(160,80,96,.15) !important;
   box-shadow: none !important;
 }
 
 /* 主题给标签加了 hover 扫光伪元素，3D球内不需要 */
-.tagcloud-3d .tagcloud-3d-item::before {
+.tag-cloud-list .tagcloud-3d .tagcloud-3d-item::before {
   display: none !important;
 }
