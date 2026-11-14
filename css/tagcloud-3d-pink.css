@@ -49,3 +49,24 @@
 [data-theme="dark"] .tag-cloud-title {
   color: #d4a0a0 !important;
 }
+
+/* 中和主题标签云 hover/active 的背景、阴影和扫光，
+   防止与3D球内联定位冲突导致标签闪跳 */
+.tagcloud-3d .tagcloud-3d-item:hover {
+  background: rgba(255,182,193,.15) !important;
+  box-shadow: none !important;
+}
+
+.tagcloud-3d .tagcloud-3d-item:active {
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .tagcloud-3d .tagcloud-3d-item:hover {
+  background: rgba(160,80,96,.15) !important;
+  box-shadow: none !important;
+}
+
+/* 主题给标签加了 hover 扫光伪元素，3D球内不需要 */
+.tagcloud-3d .tagcloud-3d-item::before {
+  display: none !important;
+}
