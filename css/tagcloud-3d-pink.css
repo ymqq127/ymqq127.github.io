@@ -68,10 +68,8 @@
   line-height: 1.2 !important;
 }
 
-/* ====== 中和主题 .tag-cloud-list:hover a:not(:hover) 的干扰 ======
-   主题对非 hover 标签设 opacity:.7 + transform:scale(.98)。
-   JS 内联 !important 的 transform/opacity 优先级更高（inline !important > CSS !important），
-   此规则作为双保险兜底：即使 JS 尚未写入内联，标签也不会被主题压暗/缩放。 */
-.tag-cloud-list:hover .tagcloud-3d .tagcloud-3d-item:not(:hover) {
-  opacity: 1 !important;
-}
+/* 主题 .tag-cloud-list:hover a:not(:hover) 设 opacity:.7 + transform:scale(.98)，
+   均为非!important声明。JS 每帧写入的内联 transform/opacity（直接赋值，非!important）
+   优先级高于任何CSS选择器，自然压制主题规则，无需额外CSS兜底。
+   注意：不能在这里写 opacity:1 !important —— CSS !important 会覆盖内联非!important，
+   导致 JS 的透视透明度渐变失效。 */
