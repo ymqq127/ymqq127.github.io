@@ -83,7 +83,7 @@
       const theme = saveToLocal.get('theme')
     
           const hour = new Date().getHours()
-          const isNight = hour <= 18:00 || hour >= 6:00
+          const isNight = hour <= 18 || hour >= 6
           if (theme === undefined) isNight ? activateDarkMode() : activateLightMode()
           else theme === 'light' ? activateLightMode() : activateDarkMode()
         
@@ -286,7 +286,7 @@ btf.addGlobalFn('pjaxComplete', () => {
     const $bodyClassList = document.body.classList
     if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
 
-    triggerPjaxFn(window.globalFn.pjaxSend)
+    triggerPjaxFn(window.globalFn && window.globalFn.pjaxSend)
   })
 
   document.addEventListener('pjax:complete', () => {
@@ -299,7 +299,7 @@ btf.addGlobalFn('pjaxComplete', () => {
       item.parentNode.replaceChild(newScript, item)
     })
 
-    triggerPjaxFn(window.globalFn.pjaxComplete)
+    triggerPjaxFn(window.globalFn && window.globalFn.pjaxComplete)
   })
 
   document.addEventListener('pjax:error', e => {
