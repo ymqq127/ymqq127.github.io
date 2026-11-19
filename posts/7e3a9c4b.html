@@ -381,8 +381,8 @@ btf.addGlobalFn('pjaxComplete', () => {
 
   document.addEventListener('pjax:send', () => {
     // removeEventListener
-    btf.removeGlobalFnEvent('pjaxSendOnce')
-    btf.removeGlobalFnEvent('themeChange')
+    btf.removeGlobalFnEvent && btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent && btf.removeGlobalFnEvent('themeChange')
 
     // reset readmode
     const $bodyClassList = document.body.classList
@@ -392,7 +392,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   })
 
   document.addEventListener('pjax:complete', () => {
-    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    btf.removeGlobalFnEvent && btf.removeGlobalFnEvent('pjaxCompleteOnce')
     document.querySelectorAll('script[data-pjax]').forEach(item => {
       const newScript = document.createElement('script')
       const content = item.text || item.textContent || item.innerHTML || ""
