@@ -96,16 +96,9 @@
       const theme = saveToLocal.get('theme')
     
           const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
-          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
 
           if (theme === undefined) {
-            if (mediaQueryLight.matches) activateLightMode()
-            else if (mediaQueryDark.matches) activateDarkMode()
-            else {
-              const hour = new Date().getHours()
-              const isNight = hour <= 18 || hour >= 6
-              isNight ? activateDarkMode() : activateLightMode()
-            }
+            mediaQueryDark.matches ? activateDarkMode() : activateLightMode()
             mediaQueryDark.addEventListener('change', (e) => {
               if (saveToLocal.get('theme') === undefined) {
                 e.matches ? activateDarkMode() : activateLightMode()
