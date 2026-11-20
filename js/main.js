@@ -769,7 +769,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    document.body && document.body.addEventListener('copy', handleCopy)
+    document.body.addEventListener('copy', handleCopy)
   }
 
   /**

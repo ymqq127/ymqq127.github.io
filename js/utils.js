@@ -334,5 +334,5 @@
     }
   }
 
-  window.btf = Object.assign({}, window.btf, btfFn)
+  window.btf = { ...window.btf, ...btfFn }
 })()
