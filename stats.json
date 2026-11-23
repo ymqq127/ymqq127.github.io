@@ -1,10 +1,10 @@
 {
-  "site_uv": 71,
-  "site_pv": 351,
+  "site_uv": 74,
+  "site_pv": 356,
   "pages": {
-    "/": 229,
+    "/": 232,
     "/flink/": 2,
-    "/index.html": 17,
+    "/index.html": 19,
     "/page/2/": 11,
     "/page/3/": 6,
     "/page/4/": 2,
@@ -21,5 +21,5 @@
     "/posts/f2415f2d.html": 2,
     "/posts/f2c8d4a6.html": 2
   },
-  "updated": "2026-11-21T22:43:58.651Z"
+  "updated": "2026-11-22T23:11:11.713Z"
 }
