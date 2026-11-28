@@ -1,8 +1,8 @@
 {
-  "site_uv": 90,
-  "site_pv": 423,
+  "site_uv": 93,
+  "site_pv": 436,
   "pages": {
-    "/": 253,
+    "/": 261,
     "/flink/": 4,
     "/index.html": 21,
     "/page/2/": 14,
@@ -13,6 +13,7 @@
     "/page/7/": 3,
     "/posts/128ef5d7.html": 4,
     "/posts/3c370aaa.html": 1,
+    "/posts/40996fc6.html": 1,
     "/posts/48a2cced.html": 1,
     "/posts/56950e97.html": 38,
     "/posts/67e86a86.html": 5,
@@ -30,5 +31,5 @@
     "/posts/f2c8d4a6.html": 2,
     "/tags/Nitro-CHiRAL/": 1
   },
-  "updated": "2026-11-27T01:27:41.893Z"
+  "updated": "2026-11-28T01:01:42.644Z"
 }
